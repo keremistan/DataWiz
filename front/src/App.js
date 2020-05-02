@@ -6,7 +6,7 @@ import { prepareData } from './lib/prepareData'
 function App() {
 
   const [data, setData] = useState(null)
-  const categories = ["temp", "cost", "color", "target", "volume"]
+  const categories = ["cpu", "traffic", "ram", "io", "energy"]
 
   useEffect(() => {
     setInterval(() => {
@@ -15,7 +15,6 @@ function App() {
         .then(data => {
           var parsedData = JSON.parse(JSON.parse(data))
           var preparedData = prepareData(categories, parsedData)
-          console.log('prepared data: ', preparedData);
           setData(preparedData)
         })
     }, 500)
@@ -27,7 +26,8 @@ function App() {
   } else {
     return (
       <div className="App">
-        <ParallelCoord style={{ height: '100vh' }} data={data.clusters} />
+        <ParallelCoord data={data.raw_data} />
+        <ParallelCoord data={data.clusters} />
       </div>
     );
   }

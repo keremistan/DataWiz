@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import ParallelCoord from './lib/ParallelCoord'
-import { prepareData } from './lib/prepareData'
+import { prepareData, forLine } from './lib/prepareData'
+import MyResponsiveLine from './lib/Line';
+
 
 function App() {
 
   const [data, setData] = useState(null)
+  const [lineData, setLineData] = useState(null)
   const categories = ["cpu", "traffic", "ram", "io", "energy"]
+  const dataForms = ['raw_data', 'clusters']
 
   useEffect(() => {
     setInterval(() => {
@@ -14,20 +18,33 @@ function App() {
         .then(res => res.json())
         .then(data => {
           var parsedData = JSON.parse(JSON.parse(data))
-          var preparedData = prepareData(categories, parsedData)
-          setData(preparedData)
+          setData(prepareData(categories, parsedData))
+          setLineData(forLine(categories, parsedData))
+          console.log('parsed data: ', parsedData);
+
         })
     }, 500)
   }, [])
 
 
-  if (data == null) {
+  if (data == null || lineData == null) {
     return null
   } else {
     return (
       <div className="App">
+      <div className="parallel-graphs">
         <ParallelCoord data={data.raw_data} />
         <ParallelCoord data={data.clusters} />
+      </div>
+
+        {categories.map(category => {
+          return (
+            <div className="category-graph">
+              <MyResponsiveLine data={lineData[category]} category={category} />
+            </div>
+          )
+        })}
+
       </div>
     );
   }

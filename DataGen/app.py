@@ -12,13 +12,13 @@ def start():
         body = {
             'data': []
         }
-        for _ in range(10):
+        for _ in range(50):
             temp_data_point = []
             for _ in range(5):
                 temp_data_point.append(random())
             body['data'].append(temp_data_point)
         post(URL, data=dumps(body), headers=headers)
-        sleep(0.5)
+        sleep(3)
 
 if __name__ == "__main__":
     start()

@@ -1,12 +1,20 @@
 .App {
   text-align: center;
-  height: 80vh;
-  display: flex;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.category-graph{
+  height: 40vh;
+  width: 100vw;
+}
+
+.parallel-graphs{
+  display: flex;
+  height: 50vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {

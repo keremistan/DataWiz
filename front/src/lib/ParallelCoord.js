@@ -7,8 +7,8 @@ import { ResponsiveParallelCoordinates, ResponsiveParallelCoordinatesCanvas } fr
 // you'll often use just a few of them.
 const MyResponsiveParallelCoordinates = ({ data }) => (
 
-    <ResponsiveParallelCoordinates
-    //<ResponsiveParallelCoordinatesCanvas
+    // <ResponsiveParallelCoordinates
+    <ResponsiveParallelCoordinatesCanvas
         data={data}
         variables={[
             {
@@ -61,7 +61,8 @@ const MyResponsiveParallelCoordinates = ({ data }) => (
                 legendOffset: -20
             }
         ]}
-        colors={{ scheme: 'oranges' }}
+        lineOpacity={0.5}
+        colors={{ scheme: 'dark2' }}
         margin={{ top: 50, right: 60, bottom: 50, left: 60 }}
         animate={true}
         motionStiffness={90}

@@ -20,8 +20,6 @@ function App() {
           var parsedData = JSON.parse(JSON.parse(data))
           setData(prepareData(categories, parsedData))
           setLineData(forLine(categories, parsedData))
-          console.log('parsed data: ', parsedData);
-
         })
     }, 500)
   }, [])
@@ -30,6 +28,9 @@ function App() {
   if (data == null || lineData == null) {
     return null
   } else {
+    console.log('for line data: ', lineData);
+    console.log('for parallel data: ', data);
+    
     return (
       <div className="App">
       <div className="parallel-graphs">

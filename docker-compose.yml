@@ -1,0 +1,29 @@
+version: '3'
+services:
+  clusterer:
+    build: Clusterer/
+    ports:
+      - "4545:4545"
+    volumes:
+      - ./Clusterer:/usr/src/app
+    environment:
+      - FLASK_ENV=docker
+    links:
+      - redis
+
+  datagen:
+    build: DataGen/
+    volumes:
+      - ./DataGen:/usr/src/app
+    environment:
+      - FLASK_ENV=docker
+    links:
+      - clusterer
+  
+  redis:
+    image: redis:latest
+    ports:
+        - 6379:6379
+    volumes:
+        - ./Redis/redis.conf:/redis.conf
+    command: [ "redis-server", "/redis.conf" ]      

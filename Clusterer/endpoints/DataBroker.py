@@ -3,17 +3,23 @@ from json import dumps
 from flask import request
 import evoStream
 import redis
+from os import environ
+
 
 class DataBroker(Resource):
     def __init__(self):
-        self.redis_client = redis.Redis()
+        if environ.get('FLASK_ENV') is None:
+            self.redis_client = redis.Redis()
+        else:
+            self.redis_client = redis.Redis('redis', 6379)
+        print('flask env chosen: {}'.format(environ.get('FLASK_ENV')))
+
         super(DataBroker, self).__init__()
-    
+
     def get(self):
         latest = self.redis_client.get('latest')
         latest = latest.decode('utf-8')
         return dumps(latest)
-
 
     def post(self):
         body = request.get_json()

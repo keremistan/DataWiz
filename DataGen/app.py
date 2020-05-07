@@ -18,10 +18,22 @@ def start():
         body = {
             'data': []
         }
-        for _ in range(50):
+        for _ in range(10):
             temp_data_point = []
             for _ in range(5):
-                temp_data_point.append(random())
+                i = 10
+                if i is 0: 
+                    temp_data_point.append(random())
+                elif i is 1:
+                    temp_data_point.append(randint(10, 20))
+                elif i is 2:
+                    temp_data_point.append(randint(20, 30))
+                elif i is 3:
+                    temp_data_point.append(randint(30, 40))
+                elif i is 4:
+                    temp_data_point.append(randint(40, 50))
+                else:
+                    temp_data_point.append(randint(0, 50))
             body['data'].append(temp_data_point)
         post(URL, data=dumps(body), headers=headers)
         sleep(1)

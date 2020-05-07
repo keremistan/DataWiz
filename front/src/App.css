@@ -10,11 +10,21 @@
 .category-graph{
   height: 40vh;
   width: 100vw;
+  margin-bottom: 3rem;
 }
 
 .parallel-graphs{
   display: flex;
   height: 50vh;
+}
+
+.choose-dim span{
+  margin-right: 1rem;
+}
+
+.choose-dim{
+  display: flex;
+  justify-content: space-around;
 }
 
 @media (prefers-reduced-motion: no-preference) {

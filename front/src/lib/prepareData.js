@@ -57,4 +57,27 @@ function getTransformedData(category, data) {
     return dataInThisCatefory
 }
 
+// clusterData: []
+// dimensions: [..].length == 2
+export function forScatter(dimensions, clusterData, weights) {
+    if (dimensions.length !== 2) throw new Error('not 2 dimensional')
+    var first_dim = dimensions[0]
+    var second_dim = dimensions[1]
+    var scatter = {
+        id: 'microclusters',
+        data: []
+    }
+
+    var index = 0
+    for (const x of clusterData) {
+        scatter.data.push({
+            x: x[first_dim],
+            y: x[second_dim],
+            radius: weights[index]
+        })
+        index += 1
+    }
+    return scatter
+}
+
 export default { prepareData }

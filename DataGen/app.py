@@ -14,29 +14,37 @@ else:
 def start():
     headers = {'Content-type': 'application/json'}
     while True:
-        print('new request is sent')
-        body = {
-            'data': []
-        }
-        for _ in range(10):
-            temp_data_point = []
-            for _ in range(5):
-                i = 10
-                if i is 0: 
-                    temp_data_point.append(random())
-                elif i is 1:
-                    temp_data_point.append(randint(10, 20))
-                elif i is 2:
-                    temp_data_point.append(randint(20, 30))
-                elif i is 3:
-                    temp_data_point.append(randint(30, 40))
-                elif i is 4:
-                    temp_data_point.append(randint(40, 50))
-                else:
-                    temp_data_point.append(randint(0, 50))
-            body['data'].append(temp_data_point)
-        post(URL, data=dumps(body), headers=headers)
-        sleep(1)
+        try:
+            print('new request is sent')
+            body = {
+                'data': []
+            }
+            for _ in range(300):
+                temp_data_point = []
+                for _ in range(5):
+                    i = 10
+                    if i is 0: 
+                        temp_data_point.append(random())
+                    elif i is 1:
+                        temp_data_point.append(randint(10, 20))
+                    elif i is 2:
+                        temp_data_point.append(randint(20, 30))
+                    elif i is 3:
+                        temp_data_point.append(randint(30, 40))
+                    elif i is 4:
+                        temp_data_point.append(randint(40, 50))
+                    else:
+                        temp_data_point.append(randint(0, 50))
+                body['data'].append(temp_data_point)
+            post(URL, data=dumps(body), headers=headers)
+            sleep(1)
+        except Exception as e:
+            print(e)
+            sleep(5)
+        else:
+            pass
+        finally:
+            pass
 
 
 if __name__ == "__main__":

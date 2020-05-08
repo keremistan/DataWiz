@@ -5,53 +5,61 @@ import { prepareData, forLine, forScatter } from './lib/prepareData'
 import MyResponsiveLine from './lib/Line';
 import Scatter from './lib/Scatter';
 
-
 function App() {
 
   const [data, setData] = useState(null)
+  const clusterData = useRef(null)
   const [lineData, setLineData] = useState(null)
-  const [scatterData, setScatterData] = useState(null)
-  // const [scatterDimensions, setScatterDimensions] = useState([0, 1])
+  const scatterData = useRef(null)
   const scatterDimensions = useRef([0, 1])
   const categories = ["cpu", "traffic", "ram", "io", "energy"]
-  const dataForms = ['raw_data', 'clusters']
+  const dataForms = ['raw_data', 'cluster']
 
   useEffect(() => {
     setInterval(() => {
       fetch('/dataBroker')
         .then(res => res.json())
-        .then(data => {
-          var parsedData = JSON.parse(JSON.parse(data))
+        .then(resData => {
+          var parsedData = JSON.parse(JSON.parse(resData))
+
+          var previousClusters = clusterData.current == null ? [] : clusterData.current
+          clusterData.current = push20(previousClusters, parsedData)
+          parsedData.cluster = clusterData.current.reduce((acc, curr) => acc = [...acc, ...curr] ,[])
           setData(prepareData(categories, parsedData))
-          setLineData(forLine(categories, { raw_data: parsedData.raw_data, clusters: parsedData.clusters }))
-          var forScatterData = JSON.parse(JSON.parse(data))
-          // setScatterData(forScatter(scatterDimensions, forScatterData.clusters, forScatterData.weights))
-          setScatterData(forScatter(scatterDimensions.current, forScatterData.clusters, forScatterData.weights))
+          setLineData(forLine(categories, { raw_data: parsedData.raw_data }))
+          var forScatterData = JSON.parse(JSON.parse(resData))
+          scatterData.current = forScatter(scatterDimensions.current, forScatterData, scatterData.current)
         })
     }, 500)
   }, [])
 
+  const push20 = (arr, parsedData) => {
+    var clusterElements = parsedData.cluster.map(clusterIndex => parsedData.raw_data[clusterIndex])
+    if(arr.length >= 10){
+      arr.shift()
+      arr.push(clusterElements)
+    }else{
+      arr.push(clusterElements)
+    }
+    return arr
+  }
 
-  if (data == null || lineData == null || scatterData == null) {
+  if (data == null || lineData == null || scatterData.current == null) {
     return null
   } else {
     return (
       <div className="App">
         <div className="category-graph">
-          <Scatter data={[scatterData]} nodeSize={d => 10 * d.radius} dimNames={scatterDimensions.current.map(dim => categories[dim])} />
+          <Scatter data={[scatterData.current]} nodeSize={d => 0.5 * d.radius} dimNames={scatterDimensions.current.map(dim => categories[dim])} />
           <div className="choose-dim">
             {
               ["First Dimension", "Second Dimension"].map((dim, index) => {
                 return <div>
                   <span>{dim}</span>
                   <select defaultValue={categories[index]} onChange={event => {
-                    // debugger
-                    var newScatterDims = index === 0 
-                    ? [categories.indexOf(event.target.value), scatterDimensions.current[1]]
-                    : [scatterDimensions.current[0], categories.indexOf(event.target.value)]
-                    console.log('new scatter dimensions: ', newScatterDims)
-                    console.log('previous scatter dimensions: ', scatterDimensions.current)
-                    // setScatterDimensions(newScatterDims)
+                    var newScatterDims = index === 0
+                      ? [categories.indexOf(event.target.value), scatterDimensions.current[1]]
+                      : [scatterDimensions.current[0], categories.indexOf(event.target.value)]
                     scatterDimensions.current = newScatterDims
                   }}>
                     {categories.map(category => {
@@ -59,15 +67,13 @@ function App() {
                     })}
                   </select>
                 </div>
-
               })
             }
           </div>
         </div>
-
         <div className="parallel-graphs">
           <ParallelCoord data={data.raw_data} />
-          <ParallelCoord data={data.clusters} />
+          <ParallelCoord data={data.cluster} />
         </div>
 
         {categories.map(category => {

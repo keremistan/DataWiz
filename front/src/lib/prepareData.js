@@ -1,6 +1,7 @@
 
 // data : {clusters: [], raw: []}
 export function prepareData(categories, data) {
+    var data = JSON.parse(JSON.stringify(data))
 
     Object.keys(data).forEach(category => {
         data[category].forEach((dataPoint, index) => {
@@ -19,18 +20,11 @@ export function prepareData(categories, data) {
 // categories: [...]
 // return { 'traffic': [{..},], 'io': [{..},] }
 export function forLine(categories, data) {
-    // TODO: create a property for each category
-    // {traffic: .., ..: ..}
-    // Extract the datapoints for that property 
-
-    // assign an array to each category property
-    // create a dic for each data form (raw vs clustered)
-    // put an id and data property to the data form dic
-
     var forLineTransformedData = {}
-
+    var counter = 0
     for (const category of categories) {
-        forLineTransformedData[category] = getTransformedData(category, data)
+        forLineTransformedData[category] = getTransformedData(counter, data)
+        counter += 1
     }
     return forLineTransformedData
 }
@@ -57,27 +51,44 @@ function getTransformedData(category, data) {
     return dataInThisCatefory
 }
 
-// clusterData: []
-// dimensions: [..].length == 2
-export function forScatter(dimensions, clusterData, weights) {
+export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
     if (dimensions.length !== 2) throw new Error('not 2 dimensional')
     var first_dim = dimensions[0]
     var second_dim = dimensions[1]
-    var scatter = {
-        id: 'microclusters',
-        data: []
+    scatterData = scatterData == null
+        ? {
+            id: 'microclusters',
+            data: []
+        }
+        : scatterData
+    var clusterData = data.cluster.map(clusterIndex => data.raw_data[clusterIndex])
+    var sphere
+    var firstCluster = clusterData.map(cluster => cluster[first_dim])
+    var secondCluster = clusterData.map(cluster => cluster[second_dim])
+    var N = firstCluster.length
+    var L1 = firstCluster.reduce((acc, curr) => acc + curr, 0)
+    var L2 = secondCluster.reduce((acc, curr) => acc + curr, 0)
+    var S = L1 * L1 + L2 * L2
+    let xx = (L1 / N) ** 2
+    let yy = (L2 / N) ** 2
+    var radiusX = Math.sqrt(S / N - xx)
+    var radiusY = Math.sqrt(S / N - yy)
+    var radius = parseInt(Math.max(radiusX, radiusY))
+    var x = parseInt(L1 / N)
+    var y = parseInt(L2 / N)
+    sphere = {
+        x: x,
+        y: y,
+        radius: radius
     }
 
-    var index = 0
-    for (const x of clusterData) {
-        scatter.data.push({
-            x: x[first_dim],
-            y: x[second_dim],
-            radius: weights[index]
-        })
-        index += 1
-    }
-    return scatter
+    var strData = scatterData.data.map(d => JSON.stringify(d))
+    var strSphere = JSON.stringify(sphere)
+    if(strData.indexOf(strSphere) !== -1) return scatterData
+    
+    if(scatterData.data.length >= maxNumOfEl) scatterData.data.shift()
+    scatterData.data.push(sphere)
+    return scatterData
 }
 
 export default { prepareData }

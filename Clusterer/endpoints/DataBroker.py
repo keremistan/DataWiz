@@ -1,7 +1,6 @@
 from flask_restful import Resource, reqparse
 from json import dumps
 from flask import request
-import evoStream
 import redis
 from os import environ
 from pyclustering.cluster.birch import birch
@@ -35,9 +34,9 @@ class DataBroker(Resource):
     def post(self):
         data = request.get_json()['data']
 
-        if CLUSTERING_ALGO is 'dbscan':
+        if CLUSTERING_ALGO == 'dbscan':
             clusters = self.dbscan(data)
-        elif CLUSTERING_ALGO is 'birch':
+        elif CLUSTERING_ALGO == 'birch':
             clusters = self.birch(data)
         else:
             clusters = self.dbscan(data)

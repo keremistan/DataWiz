@@ -3,12 +3,10 @@ from json import dumps
 from flask import request
 import redis
 from os import environ
-from pyclustering.cluster.birch import birch
-from pyclustering.cluster import cluster_visualizer
-from pyclustering.utils import read_sample
-from pyclustering.samples.definitions import FAMOUS_SAMPLES
-from pyclustering.cluster.dbscan import dbscan
-from pyclustering.samples.definitions import FCPS_SAMPLES
+from sklearn.cluster import DBSCAN, Birch
+from pprint import pprint
+
+# Choose an algorithm by oncommenting
 CLUSTERING_ALGO = 'dbscan'
 # CLUSTERING_ALGO = 'birch'
 
@@ -19,8 +17,6 @@ class DataBroker(Resource):
             self.redis_client = redis.Redis()
         else:
             self.redis_client = redis.Redis('redis', 6379)
-        # print('flask env chosen: {}'.format(environ.get('FLASK_ENV')))
-
         super(DataBroker, self).__init__()
 
     def get(self):
@@ -35,37 +31,42 @@ class DataBroker(Resource):
         data = request.get_json()['data']
 
         if CLUSTERING_ALGO == 'dbscan':
-            clusters = self.dbscan(data)
+            clusters = DBSCAN(10, 2).fit_predict(data)
         elif CLUSTERING_ALGO == 'birch':
-            clusters = self.birch(data)
+            clusters = Birch().fit_predict(data)
         else:
-            clusters = self.dbscan(data)
+            clusters = DBSCAN(10, 2).fit_predict(data)
 
-        clusters.sort(reverse=True, key=lambda cluster: len(cluster))
+        clustering_summary = self.clusters_info(clusters)
+        biggest_cluster_index = max(clustering_summary, key=clustering_summary.get)
+        biggest_cluster = []
+        clusters_len = len(clusters)
+        counter = 0
+        for cluster in clusters:
+            if(cluster == biggest_cluster_index):
+                biggest_cluster.append(counter)
+            counter += 1
 
-        if len(clusters) > 0:        
-            biggest_cluster = clusters[0]
+        both = {
+            'raw_data': data,
+            'cluster': biggest_cluster,
+        }
 
-            both = {
-                'raw_data': data,
-                'cluster': biggest_cluster,
-            }
+        self.redis_client.set('latest', dumps(both))
 
-            self.redis_client.set('latest', dumps(both))
 
-    def dbscan(self, data):
-        # Create DBSCAN algorithm.
-        dbscan_instance = dbscan(data, 10, 3)
-        # Start processing by DBSCAN.
-        dbscan_instance.process()
-        # Obtain results of clustering.
-        clusters = dbscan_instance.get_clusters()
-        return clusters
+    def clusters_info(self, clusters):
+        cluster_names = set(clusters)
+        cluster_summary = {}
 
-    def birch(self, data):
-        birch_instance = birch(data, 10, diameter=0.5)
-        # Cluster analysis
-        birch_instance.process()
-        # Obtain results of clustering
-        clusters = birch_instance.get_clusters()
-        return clusters
+        for name in cluster_names:
+            cluster_summary[name] = 0
+
+        for cluster in clusters:
+            cluster_summary[cluster] += 1
+
+        # Remove noise, if there is any
+        if -1 in cluster_summary.keys():
+            del cluster_summary[-1]
+
+        return cluster_summary

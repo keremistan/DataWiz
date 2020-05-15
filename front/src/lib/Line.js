@@ -9,7 +9,7 @@ const MyResponsiveLine = ({ data /* see data tab */, category }) => (
     <ResponsiveLineCanvas
         data={data}
 margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-        xScale={{ type: 'point' }}
+        xScale={{ type: 'linear' }}
         yScale={{ type: 'linear', min: 'auto', max: 'auto', stacked: true, reverse: false }}
         curve="basis"
         axisTop={null}
@@ -18,7 +18,7 @@ margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
             orient: 'bottom',
             tickSize: 5,
             tickPadding: 5,
-            tickRotation: 0,
+            tickRotation: 90,
             legend: category,
             legendOffset: 36,
             legendPosition: 'middle'

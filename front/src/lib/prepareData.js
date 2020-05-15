@@ -51,6 +51,30 @@ function getTransformedData(category, data) {
     return dataInThisCatefory
 }
 
+export function unclusteredScatter(dimensions, data) {
+    if (dimensions.length !== 2) throw new Error('not 2 dimensional')
+    var first_dim = dimensions[0]
+    var second_dim = dimensions[1]
+    var scatterData = []
+    if (data == null) return []
+    var raw_data = data.raw_data
+    var firstDimData = raw_data.map(dataPoint => dataPoint[first_dim])
+    var secondDimData = raw_data.map(dataPoint => dataPoint[second_dim])
+    
+    var dataPoints = []
+    firstDimData.map((fdd, index) => {
+        dataPoints.push({
+            x: fdd,
+            y: secondDimData[index]
+        })
+    })
+    
+    return {
+        id: 'raw_data',
+        data: dataPoints
+    }
+}
+
 export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
     if (dimensions.length !== 2) throw new Error('not 2 dimensional')
     var first_dim = dimensions[0]
@@ -84,11 +108,18 @@ export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
 
     var strData = scatterData.data.map(d => JSON.stringify(d))
     var strSphere = JSON.stringify(sphere)
-    if(strData.indexOf(strSphere) !== -1) return scatterData
-    
-    if(scatterData.data.length >= maxNumOfEl) scatterData.data.shift()
+    if (strData.indexOf(strSphere) !== -1) return scatterData
+
+    if (scatterData.data.length >= maxNumOfEl) scatterData.data.shift()
     scatterData.data.push(sphere)
     return scatterData
+}
+
+export function emptyClusterScatter() {
+    return {
+        id: 'microclusters',
+        data: []
+    }
 }
 
 export default { prepareData }

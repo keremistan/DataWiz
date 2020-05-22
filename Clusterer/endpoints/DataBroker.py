@@ -5,10 +5,10 @@ import redis
 from os import environ
 from sklearn.cluster import DBSCAN, Birch
 from pprint import pprint
-
+from json import dumps
 # Choose an algorithm by oncommenting
 CLUSTERING_ALGO = 'dbscan'
-# CLUSTERING_ALGO = 'birch'
+CLUSTERING_ALGO = 'birch'
 
 
 class DataBroker(Resource):
@@ -31,11 +31,11 @@ class DataBroker(Resource):
         data = request.get_json()['data']
 
         if CLUSTERING_ALGO == 'dbscan':
-            clusters = DBSCAN(10, 2).fit_predict(data)
+            clusters = DBSCAN(eps=30, min_samples=5).fit_predict(data)
         elif CLUSTERING_ALGO == 'birch':
             clusters = Birch().fit_predict(data)
         else:
-            clusters = DBSCAN(10, 2).fit_predict(data)
+            clusters = DBSCAN(eps=30, min_samples=5).fit_predict(data)
 
         clustering_summary = self.clusters_info(clusters)
         biggest_cluster_index = max(clustering_summary, key=clustering_summary.get)
@@ -50,6 +50,7 @@ class DataBroker(Resource):
         both = {
             'raw_data': data,
             'cluster': biggest_cluster,
+            'all_clusters': clusters.tolist()
         }
 
         self.redis_client.set('latest', dumps(both))

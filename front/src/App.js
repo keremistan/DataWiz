@@ -1,17 +1,16 @@
-import React, { useState, useEffect, useRef, useReducer } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import ParallelCoord from './lib/ParallelCoord'
-import { prepareData, forLine, forScatter, emptyClusterScatter, unclusteredScatter } from './lib/prepareData'
-import MyResponsiveLine from './lib/Line';
+import { prepareData, forScatter, emptyClusterScatter, unclusteredScatter, clusteredScatter, indexToData } from './lib/prepareData'
 import Scatter from './lib/Scatter';
 
 function App() {
 
   const [data, setData] = useState(null)
   const clusterData = useRef(null)
-  const [lineData, setLineData] = useState(null)
   const scatterData = useRef(null)
   const unclusteredScatterData = useRef(null)
+  const clusteredScatterData = useRef(null)
   const scatterDimensions = useRef([0, 1])
   const categories = ["cpu", "traffic", "ram", "io", "energy"]
   const dataForms = ['raw_data', 'cluster']
@@ -21,15 +20,17 @@ function App() {
       fetch('/dataBroker')
         .then(res => res.json())
         .then(resData => {
+
           var parsedData = JSON.parse(JSON.parse(resData))
           var previousClusters = clusterData.current == null ? [] : clusterData.current
           clusterData.current = push20(previousClusters, parsedData)
-          parsedData.cluster = clusterData.current.reduce((acc, curr) => acc = [...acc, ...curr], [])
+          parsedData.cluster = indexToData(parsedData.cluster, parsedData.raw_data)
           setData(prepareData(categories, parsedData))
-          setLineData(forLine(categories, { raw_data: parsedData.raw_data }))
+
           var forScatterData = JSON.parse(JSON.parse(resData))
           scatterData.current = forScatter(scatterDimensions.current, forScatterData, scatterData.current)
           unclusteredScatterData.current = unclusteredScatter(scatterDimensions.current, forScatterData)
+          clusteredScatterData.current = clusteredScatter(scatterDimensions.current, forScatterData)
         })
     }, 500)
   }, [])
@@ -45,7 +46,8 @@ function App() {
     return arr
   }
 
-  if (data == null || lineData == null || scatterData.current == null) {
+
+  if (data == null || scatterData.current == null) {
     return null
   } else {
     return (
@@ -53,7 +55,13 @@ function App() {
         <div className="category-graph">
           <Scatter
             data={[unclusteredScatterData.current, scatterData.current]}
-            nodeSize={d => d.radius != undefined ? d.radius * 0.75 : 5}
+            nodeSize={d => d.normalizedRadius != undefined ? d.normalizedRadius * 40 : 9}
+            dimNames={scatterDimensions.current.map(dim => categories[dim])}
+          />
+        </div>
+        <div className="category-graph">
+          <Scatter
+            data={clusteredScatterData.current}
             dimNames={scatterDimensions.current.map(dim => categories[dim])}
           />
         </div>
@@ -79,16 +87,10 @@ function App() {
           }
         </div>
 
-
-        <div className="parallel-graphs">
-          <ParallelCoord data={data.raw_data} />
-          <ParallelCoord data={data.cluster} />
-        </div>
-
-        {categories.map(category => {
+        {dataForms.map(form => {
           return (
-            <div className="category-graph">
-              <MyResponsiveLine data={lineData[category]} category={category} />
+            <div className="parallel-graphs">
+              <ParallelCoord data={data[form]} />
             </div>
           )
         })}

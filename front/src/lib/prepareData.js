@@ -60,7 +60,7 @@ export function unclusteredScatter(dimensions, data) {
     var raw_data = data.raw_data
     var firstDimData = raw_data.map(dataPoint => dataPoint[first_dim])
     var secondDimData = raw_data.map(dataPoint => dataPoint[second_dim])
-    
+
     var dataPoints = []
     firstDimData.map((fdd, index) => {
         dataPoints.push({
@@ -68,11 +68,59 @@ export function unclusteredScatter(dimensions, data) {
             y: secondDimData[index]
         })
     })
-    
+
     return {
         id: 'raw_data',
         data: dataPoints
     }
+}
+
+export function clusteredScatter(dimensions, data) {
+    if (dimensions.length !== 2) throw new Error('not 2 dimensional')
+    var first_dim = dimensions[0]
+    var second_dim = dimensions[1]
+    var scatterData = []
+    if (data == null) return []
+
+    var all_clustered_data = data.all_clusters
+    var raw_data = data.raw_data
+    var cluster_numbers = Array.from(new Set(all_clustered_data)).sort()
+
+    if (cluster_numbers[0] == -1){
+        cluster_numbers.shift()
+        cluster_numbers.push(-1)
+    }
+
+    for (const cluster_number of cluster_numbers) {
+        let tempPoints = []
+        var counter = 0
+        for (const cluster_data of all_clustered_data){
+            if (cluster_data == cluster_number) {
+                tempPoints.push({
+                    x: raw_data[counter][first_dim],
+                    y: raw_data[counter][second_dim]
+                })
+            }
+            counter += 1
+        }
+        counter = 0
+
+        var cluster_name = ''
+        if (cluster_number == 0){
+            cluster_name = 'largest_cluster'
+        }else if(cluster_number == -1){
+            cluster_name = 'noise'
+        }else{
+            cluster_name = cluster_number + '. cluster'
+        }
+
+        scatterData.push({
+            'id': cluster_name,
+            'data': tempPoints
+        })
+    }
+
+    return scatterData
 }
 
 export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
@@ -100,10 +148,17 @@ export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
     var radius = parseInt(Math.max(radiusX, radiusY))
     var x = parseInt(L1 / N)
     var y = parseInt(L2 / N)
+    
+    debugger
+    var meanRadius = scatterData.data.reduce((acc, dataPoint) => dataPoint.radius + acc , 0) / scatterData.data.length
+    scatterData.data.forEach(clusterPoint => clusterPoint.normalizedRadius = clusterPoint.radius / meanRadius)
+    var normRadius = radius / (meanRadius || radius)
+
     sphere = {
         x: x,
         y: y,
-        radius: radius
+        radius: radius,
+        normalizedRadius: normRadius
     }
 
     var strData = scatterData.data.map(d => JSON.stringify(d))
@@ -120,6 +175,14 @@ export function emptyClusterScatter() {
         id: 'microclusters',
         data: []
     }
+}
+
+// indexes: [], dataArr: []
+export function indexToData( indexes, dataArr ){
+
+    var mappedIndexes = indexes.map(singleIndex => dataArr[singleIndex])
+    return mappedIndexes
+
 }
 
 export default { prepareData }

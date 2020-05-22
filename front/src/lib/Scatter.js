@@ -14,7 +14,8 @@ const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames }
         yScale={{ type: 'linear', min: -100, max: 120 }}
         axisTop={null}
         axisRight={null}
-        colors={{scheme: 'dark2'}}
+        colors={{scheme: 'red_blue'}}
+        blendMode={'lighten'}
         axisBottom={{
             orient: 'bottom',
             tickSize: 5,

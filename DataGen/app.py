@@ -6,9 +6,9 @@ from os import environ
 from random import lognormvariate, vonmisesvariate, gauss
 print(environ)
 if environ.get('FLASK_ENV') is None:
-    URL = 'http://localhost:4545/dataBroker'
+    URL = 'http://localhost:4545/dataBroker/'
 else:
-    URL = 'http://clusterer:4545/dataBroker'
+    URL = 'http://clusterer:4545/dataBroker/'
 
 
 def start():
@@ -19,24 +19,25 @@ def start():
             body = {
                 'data': []
             }
-            for _ in range(1000):
-                temp_data_point = []
-                for i in range(5):
-                    # i = 10
-                    if i == 0: 
-                        temp_data_point.append(gauss(randint(0, 5*i), 35))
-                    elif i == 1:
-                        temp_data_point.append(gauss(randint(0, 5*i), 35))
-                    elif i == 2:
-                        temp_data_point.append(gauss(randint(0, 5*i), 35))
-                    elif i == 3:
-                        temp_data_point.append(gauss(randint(0, 5*i), 35))
-                    elif i == 4:
-                        temp_data_point.append(gauss(randint(0, 5*i), 35))
-                    else:
-                        temp_data_point.append(lognormvariate(10, 3))
-                body['data'].append(temp_data_point)
-            post(URL, data=dumps(body), headers=headers)
+            for resource_id in range(5):
+                for _ in range(300):
+                    temp_data_point = []
+                    for i in range(5):
+                        # i = 10
+                        if i == 0: 
+                            temp_data_point.append(gauss(randint(0, 5*i), 35))
+                        elif i == 1:
+                            temp_data_point.append(gauss(randint(0, 5*i), 35))
+                        elif i == 2:
+                            temp_data_point.append(gauss(randint(0, 5*i), 35))
+                        elif i == 3:
+                            temp_data_point.append(gauss(randint(0, 5*i), 35))
+                        elif i == 4:
+                            temp_data_point.append(gauss(randint(0, 5*i), 35))
+                        else:
+                            temp_data_point.append(lognormvariate(10, 3))
+                    body['data'].append(temp_data_point)
+                post(URL+str(resource_id), data=dumps(body), headers=headers)
             sleep(1)
         except Exception as e:
             print(e)

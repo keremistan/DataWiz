@@ -19,15 +19,22 @@ class DataBroker(Resource):
             self.redis_client = redis.Redis('redis', 6379)
         super(DataBroker, self).__init__()
 
-    def get(self):
+    def get(self, resource_id):
         try:
-            latest = self.redis_client.get('latest')
-            latest = latest.decode('utf-8')
-            return dumps(latest)
+            if resource_id == 'default':
+                resource_id = self.redis_client.keys()[0]
+            latest = self.redis_client.get(resource_id)
+            if latest == None:
+                resource_not_found = dumps({'type': 'error', 'message': 'ResourceNotFound'})
+                return resource_not_found
+            else:
+                latest = latest.decode('utf-8')
+                return dumps(latest)
+
         except Exception as e:
             print(e)
 
-    def post(self):
+    def post(self, resource_id):
         data = request.get_json()['data']
 
         if CLUSTERING_ALGO == 'dbscan':
@@ -53,7 +60,7 @@ class DataBroker(Resource):
             'all_clusters': clusters.tolist()
         }
 
-        self.redis_client.set('latest', dumps(both))
+        self.redis_client.set(resource_id, dumps(both))
 
 
     def clusters_info(self, clusters):

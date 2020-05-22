@@ -6,10 +6,11 @@ from endpoints.DataBroker import DataBroker
 app = Flask(__name__, static_folder='templates/static', template_folder="templates")
 api = Api(app)
 
-api.add_resource(DataBroker, '/dataBroker')
+api.add_resource(DataBroker, '/dataBroker/<string:resource_id>')
 
 @app.route("/")
-def vis():
+@app.route("/<resource_id>")
+def vis(resource_id=None):
     return render_template('index.html')
 
 if __name__ == '__main__':

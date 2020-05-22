@@ -149,7 +149,6 @@ export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
     var x = parseInt(L1 / N)
     var y = parseInt(L2 / N)
     
-    debugger
     var meanRadius = scatterData.data.reduce((acc, dataPoint) => dataPoint.radius + acc , 0) / scatterData.data.length
     scatterData.data.forEach(clusterPoint => clusterPoint.normalizedRadius = clusterPoint.radius / meanRadius)
     var normRadius = radius / (meanRadius || radius)

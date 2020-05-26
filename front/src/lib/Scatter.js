@@ -5,13 +5,18 @@ import { ResponsiveScatterPlot, ResponsiveScatterPlotCanvas } from '@nivo/scatte
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames }) => (
+const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames, scales }) => {
+    debugger
+    console.log('scatterda scales:', scales);
+    
+    return (
+
     <ResponsiveScatterPlotCanvas
         data={data}
         nodeSize={nodeSize}
         margin={{ top: 60, right: 140, bottom: 70, left: 90 }}
-        xScale={{ type: 'linear', min: -100, max: 120 }}
-        yScale={{ type: 'linear', min: -100, max: 120 }}
+        xScale={{ type: 'linear', min: scales.xScaleMin, max: scales.xScaleMax }}
+        yScale={{ type: 'linear', min: scales.yScaleMin, max: scales.yScaleMax }}
         axisTop={null}
         axisRight={null}
         colors={{scheme: 'red_blue'}}
@@ -58,6 +63,6 @@ const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames }
             }
         ]}
     />
-)
+)}
 
 export default MyResponsiveScatterPlot

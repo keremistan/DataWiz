@@ -1,4 +1,4 @@
-
+import { medianAbsoluteDeviation, variance, mean, standardDeviation } from 'simple-statistics'
 // data : {clusters: [], raw: []}
 export function prepareData(categories, data) {
     var data = JSON.parse(JSON.stringify(data))
@@ -86,7 +86,7 @@ export function clusteredScatter(dimensions, data) {
     var raw_data = data.raw_data
     var cluster_numbers = Array.from(new Set(all_clustered_data)).sort()
 
-    if (cluster_numbers[0] == -1){
+    if (cluster_numbers[0] == -1) {
         cluster_numbers.shift()
         cluster_numbers.push(-1)
     }
@@ -94,7 +94,7 @@ export function clusteredScatter(dimensions, data) {
     for (const cluster_number of cluster_numbers) {
         let tempPoints = []
         var counter = 0
-        for (const cluster_data of all_clustered_data){
+        for (const cluster_data of all_clustered_data) {
             if (cluster_data == cluster_number) {
                 tempPoints.push({
                     x: raw_data[counter][first_dim],
@@ -106,11 +106,11 @@ export function clusteredScatter(dimensions, data) {
         counter = 0
 
         var cluster_name = ''
-        if (cluster_number == 0){
+        if (cluster_number == 0) {
             cluster_name = 'largest_cluster'
-        }else if(cluster_number == -1){
+        } else if (cluster_number == -1) {
             cluster_name = 'noise'
-        }else{
+        } else {
             cluster_name = cluster_number + '. cluster'
         }
 
@@ -148,8 +148,8 @@ export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
     var radius = parseInt(Math.max(radiusX, radiusY))
     var x = parseInt(L1 / N)
     var y = parseInt(L2 / N)
-    
-    var meanRadius = scatterData.data.reduce((acc, dataPoint) => dataPoint.radius + acc , 0) / scatterData.data.length
+
+    var meanRadius = scatterData.data.reduce((acc, dataPoint) => dataPoint.radius + acc, 0) / scatterData.data.length
     scatterData.data.forEach(clusterPoint => clusterPoint.normalizedRadius = clusterPoint.radius / meanRadius)
     var normRadius = radius / (meanRadius || radius)
 
@@ -177,11 +177,31 @@ export function emptyClusterScatter() {
 }
 
 // indexes: [], dataArr: []
-export function indexToData( indexes, dataArr ){
+export function indexToData(indexes, dataArr) {
 
     var mappedIndexes = indexes.map(singleIndex => dataArr[singleIndex])
     return mappedIndexes
 
+}
+
+export function getXandYScales(scatterData, dimensions) {
+    if (dimensions.length != 2) throw new Error('length of dimension must be 2')
+
+    var data = scatterData.data
+    var dim1Arr = data.map(el => el.x)
+    var dim2Arr = data.map(el => el.y)
+
+    var dim1Mean = mean(dim1Arr)
+    var dim2Mean = mean(dim2Arr)
+    var dim1Variance = standardDeviation(dim1Arr)
+    var dim2Variance = standardDeviation(dim2Arr)
+
+    return {
+        'xScaleMin': dim1Mean - ( dim1Variance * 5),
+        'xScaleMax': dim1Mean + ( dim1Variance * 5),
+        'yScaleMin': dim2Mean - ( dim2Variance * 5),
+        'yScaleMax': dim2Mean + ( dim2Variance * 5),
+    }
 }
 
 export default { prepareData }

@@ -17,12 +17,13 @@ def start():
         try:
             print('new request is sent')
             body = {
-                'data': []
+                'data': [],
+                'dimensions': ["cpu", "mpu", "traffic", "ram", "imo", "kinergy"]
             }
             for resource_id in range(5):
                 for _ in range(300):
                     temp_data_point = []
-                    for i in range(5):
+                    for i in range(6):
                         # i = 10
                         if i == 0: 
                             temp_data_point.append(gauss(randint(0, 5*i), 35))
@@ -33,6 +34,8 @@ def start():
                         elif i == 3:
                             temp_data_point.append(gauss(randint(0, 5*i), 35))
                         elif i == 4:
+                            temp_data_point.append(gauss(randint(0, 5*i), 35))
+                        elif i == 5:
                             temp_data_point.append(gauss(randint(0, 5*i), 35))
                         else:
                             temp_data_point.append(lognormvariate(10, 3))

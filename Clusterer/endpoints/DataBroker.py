@@ -3,11 +3,13 @@ from json import dumps
 from flask import request
 import redis
 from os import environ
-from sklearn.cluster import DBSCAN, Birch
+from sklearn.cluster import DBSCAN, Birch, KMeans, OPTICS
 from pprint import pprint
 from json import dumps
 # Choose an algorithm by oncommenting
-CLUSTERING_ALGO = 'dbscan'
+# CLUSTERING_ALGO = 'kmeans'
+# CLUSTERING_ALGO = 'optics'
+# CLUSTERING_ALGO = 'dbscan'
 CLUSTERING_ALGO = 'birch'
 
 
@@ -36,9 +38,16 @@ class DataBroker(Resource):
 
     def post(self, resource_id):
         data = request.get_json()['data']
+        dimensions = request.get_json()['dimensions']
 
         if CLUSTERING_ALGO == 'dbscan':
             clusters = DBSCAN(eps=30, min_samples=5).fit_predict(data)
+        elif CLUSTERING_ALGO == 'birch':
+            clusters = Birch().fit_predict(data)
+        elif CLUSTERING_ALGO == 'kmeans':
+            clusters = KMeans().fit_predict(data)
+        elif CLUSTERING_ALGO == 'optics':
+            clusters = OPTICS().fit_predict(data)
         elif CLUSTERING_ALGO == 'birch':
             clusters = Birch().fit_predict(data)
         else:
@@ -57,7 +66,8 @@ class DataBroker(Resource):
         both = {
             'raw_data': data,
             'cluster': biggest_cluster,
-            'all_clusters': clusters.tolist()
+            'all_clusters': clusters.tolist(),
+            'dimensions': dimensions
         }
 
         self.redis_client.set(resource_id, dumps(both))

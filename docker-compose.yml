@@ -11,14 +11,14 @@ services:
     links:
       - redis
 
-  datagen:
-    build: DataGen/
-    volumes:
-      - ./DataGen:/usr/src/app
-    environment:
-      - FLASK_ENV=docker
-    links:
-      - clusterer
+  # datagen:
+  #   build: DataGen/
+  #   volumes:
+  #     - ./DataGen:/usr/src/app
+  #   environment:
+  #     - FLASK_ENV=docker
+  #   links:
+  #     - clusterer
   
   redis:
     image: redis:latest

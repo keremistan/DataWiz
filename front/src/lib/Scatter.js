@@ -6,8 +6,6 @@ import { ResponsiveScatterPlot, ResponsiveScatterPlotCanvas } from '@nivo/scatte
 // website examples showcase many properties,
 // you'll often use just a few of them.
 const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames, scales }) => {
-    debugger
-    console.log('scatterda scales:', scales);
     
     return (
 

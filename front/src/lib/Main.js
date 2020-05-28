@@ -1,82 +1,102 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, Profiler } from 'react';
 import ParallelCoord from './ParallelCoord'
 import { prepareData, forScatter, emptyClusterScatter, unclusteredScatter, clusteredScatter, indexToData, getXandYScales } from './prepareData'
+import { onRenderProfilerHandler } from './measurement'
 import Scatter from './Scatter';
 import { useLocation } from 'react-router-dom';
 
-function Main(props){
+function Main(props) {
 
-    const [data, setData] = useState(null)
-    const clusterData = useRef(null)
-    const scatterData = useRef(null)
-    const unclusteredScatterData = useRef(null)
-    const clusteredScatterData = useRef(null)
-    const scatterDimensions = useRef([0, 1])
-    const dimensions = useRef(null)
-    const scales = useRef(null)
-    const dataForms = ['raw_data', 'cluster']
-    var pathname = useLocation().pathname
+  const [data, setData] = useState(null)
+  const clusterData = useRef(null)
+  const scatterData = useRef(null)
+  const unclusteredScatterData = useRef(null)
+  const clusteredScatterData = useRef(null)
+  const scatterDimensions = useRef([0, 1])
+  const dimensions = useRef(null)
+  const scales = useRef(null)
+  const profileSaver = useRef([])
+  const dataForms = ['raw_data', 'cluster']
+  var pathname = useLocation().pathname
 
-    useEffect(() => {
-      pathname = pathname == '/' ? '/default' : pathname
-      setInterval(() => {
-        fetch('/dataBroker'+pathname)
-          .then(res => res.json())
-          .then(resData => {
-            
-            if (typeof resData == 'string' && resData.includes('error') && resData.includes('ResourceNotFound')){
-              throw new Error('ResourceNotFound')
-            }
-            
-            var parsedData = JSON.parse(JSON.parse(resData))
-            dimensions.current = parsedData.dimensions
-            var previousClusters = clusterData.current == null ? [] : clusterData.current
-            clusterData.current = push20(previousClusters, parsedData)
-            parsedData.cluster = indexToData(parsedData.cluster, parsedData.raw_data)
-            var preparedParsedData = prepareData(dimensions.current, parsedData)
-            setData(preparedParsedData)
-  
-            var forScatterData = JSON.parse(JSON.parse(resData))
-            scatterData.current = forScatter(scatterDimensions.current, forScatterData, scatterData.current)
-            unclusteredScatterData.current = unclusteredScatter(scatterDimensions.current, forScatterData)
-            clusteredScatterData.current = clusteredScatter(scatterDimensions.current, forScatterData)
-            debugger
-            scales.current = getXandYScales(unclusteredScatterData.current, scatterDimensions.current)
-          })
-      }, 500)
-    }, [])
-  
-    const push20 = (arr, parsedData) => {
-      var clusterElements = parsedData.cluster.map(clusterIndex => parsedData.raw_data[clusterIndex])
-      if (arr.length >= 10) {
-        arr.shift()
-        arr.push(clusterElements)
-      } else {
-        arr.push(clusterElements)
-      }
-      return arr
-    }
-  
-    if (data == null || scatterData.current == null || scales.current == null) {
-      return null
+  useEffect(() => {
+    pathname = pathname == '/' ? '/default' : pathname
+    setInterval(() => {
+      fetch('/dataBroker' + pathname)
+        .then(res => res.json())
+        .then(resData => {
+
+          if (typeof resData == 'string' && resData.includes('error') && resData.includes('ResourceNotFound')) {
+            throw new Error('ResourceNotFound')
+          }
+
+          var parsedData = JSON.parse(JSON.parse(resData))
+          dimensions.current = parsedData.dimensions
+          var previousClusters = clusterData.current == null ? [] : clusterData.current
+          clusterData.current = push20(previousClusters, parsedData)
+          parsedData.cluster = indexToData(parsedData.cluster, parsedData.raw_data)
+          var preparedParsedData = prepareData(dimensions.current, parsedData)
+          setData(preparedParsedData)
+
+          var forScatterData = JSON.parse(JSON.parse(resData))
+          scatterData.current = forScatter(scatterDimensions.current, forScatterData, scatterData.current)
+          unclusteredScatterData.current = unclusteredScatter(scatterDimensions.current, forScatterData)
+          clusteredScatterData.current = clusteredScatter(scatterDimensions.current, forScatterData)
+
+          scales.current = getXandYScales(unclusteredScatterData.current, scatterDimensions.current)
+        })
+    }, 500)
+  }, [])
+
+  const push20 = (arr, parsedData) => {
+    var clusterElements = parsedData.cluster.map(clusterIndex => parsedData.raw_data[clusterIndex])
+    if (arr.length >= 10) {
+      arr.shift()
+      arr.push(clusterElements)
     } else {
-      return (
+      arr.push(clusterElements)
+    }
+    return arr
+  }
+
+  if (data == null || scatterData.current == null || scales.current == null) {
+    return null
+  } else {
+    return (
+      <Profiler id="overall"
+        onRender={(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions) => {
+          profileSaver.current.push(onRenderProfilerHandler(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
+        }
+        }>
         <div className="App">
           <div className="category-graph">
-            <Scatter
-              data={[unclusteredScatterData.current, scatterData.current]}
-              nodeSize={d => d.normalizedRadius != undefined ? d.normalizedRadius * 40 : 9}
-              dimNames={scatterDimensions.current.map(dim => dimensions.current[dim])}
-              scales={scales.current}
-            />
+            <Profiler id="scatterWithClusters"
+              onRender={(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions) => {
+                profileSaver.current.push(onRenderProfilerHandler(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
+              }
+              }>
+              <Scatter
+                data={[unclusteredScatterData.current, scatterData.current]}
+                nodeSize={d => d.normalizedRadius != undefined ? d.normalizedRadius * 40 : 9}
+                dimNames={scatterDimensions.current.map(dim => dimensions.current[dim])}
+                scales={scales.current}
+              />
+            </Profiler>
           </div>
           <div className="category-graph">
-            <Scatter
-              data={clusteredScatterData.current}
-              dimNames={scatterDimensions.current.map(dim => dimensions.current[dim])}
-              scales={scales.current}
-            />
+            <Profiler id="scatterWithRaw"
+              onRender={(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions) => {
+                profileSaver.current.push(onRenderProfilerHandler(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
+              }
+              }>
+              <Scatter
+                data={clusteredScatterData.current}
+                dimNames={scatterDimensions.current.map(dim => dimensions.current[dim])}
+                scales={scales.current}
+              />
+            </Profiler>
           </div>
+
           <div className="choose-dim">
             {
               ["First Dimension", "Second Dimension"].map((dim, index) => {
@@ -94,23 +114,30 @@ function Main(props){
                     })}
                   </select>
                 </div>
-  
+
               })
             }
           </div>
-  
+
           {dataForms.map(form => {
             return (
               <div className="parallel-graphs">
-                <ParallelCoord data={data[form]} />
+                <Profiler id={'parallel_' + form}
+                  onRender={(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions) => {
+                    profileSaver.current.push(onRenderProfilerHandler(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
+                  }
+                  }>
+                  <ParallelCoord data={data[form]} />
+                </Profiler>
               </div>
             )
           })}
-  
+
         </div>
-      );
-    }
-  
+      </Profiler>
+    );
+  }
+
 }
 
 export default Main

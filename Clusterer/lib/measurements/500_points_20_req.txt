@@ -1,0 +1,1584 @@
+Processes: 333 total, 5 running, 328 sleeping, 1324 threads 
+2020/05/27 18:17:38
+Load Avg: 5.79, 4.13, 3.06 
+CPU usage: 38.56% user, 43.13% sys, 18.30% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7924M used (1652M wired), 267M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46250180/78G in, 20288225/31G out.
+Disks: 22694741/1207G read, 15886038/1083G written.
+
+PID    COMMAND          %CPU MEM   TIME    
+47304  com.apple.geod   0.0  9340K 00:06.02
+47219  coreauthd        0.0  1540K 00:05.36
+43504  distnoted        0.0  3540K 00:01.61
+43502  lsd              0.0  13M   00:04.42
+40666  distnoted        0.0  2484K 00:00.19
+40542  netbiosd         0.0  2924K 00:00.92
+22264  top              0.0  1748K 00:00.25
+22250  syncdefaultsd    0.0  9820K 00:00.39
+22246  mdworker_shared  0.0  3388K 00:00.09
+22245  com.apple.iCloud 0.0  3276K 00:00.21
+Processes: 333 total, 4 running, 329 sleeping, 1321 threads 
+2020/05/27 18:17:39
+Load Avg: 5.57, 4.11, 3.06 
+CPU usage: 30.15% user, 17.13% sys, 52.71% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7925M used (1631M wired), 267M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46250347/78G in, 20288392/31G out.
+Disks: 22694742/1207G read, 15886066/1083G written.
+
+PID    COMMAND          %CPU MEM    TIME    
+22150  Brave Browser He 68.3 192M+  06:02.80
+21866  Brave Browser He 28.0 126M   02:29.67
+205    WindowServer     15.1 648M+  12:10:40
+0      kernel_task      14.8 195M   09:04:37
+22103  com.docker.hyper 12.7 3007M  08:59.51
+22264  top              9.9  1800K+ 00:00.40
+18952  Finder           4.7  69M+   01:14.70
+22077  com.docker.backe 2.7  9152K- 00:23.79
+21926  Terminal         2.3  59M-   01:02.44
+21867  Brave Browser He 2.1  26M+   00:19.70
+Processes: 333 total, 3 running, 330 sleeping, 1317 threads 
+2020/05/27 18:17:40
+Load Avg: 5.57, 4.11, 3.06 
+CPU usage: 32.69% user, 19.71% sys, 47.59% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7926M used (1596M wired), 264M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46250675/78G in, 20288720/31G out.
+Disks: 22694742/1207G read, 15886122/1083G written.
+
+PID    COMMAND          %CPU MEM    TIME    
+22150  Brave Browser He 92.5 206M+  06:03.77
+22103  com.docker.hyper 32.5 3007M  08:59.85
+21866  Brave Browser He 32.2 126M   02:30.01
+0      kernel_task      15.0 195M   09:04:38
+205    WindowServer     7.9  630M-  12:10:40
+22077  com.docker.backe 6.2  9480K+ 00:23.86
+21926  Terminal         5.9  65M+   01:02.50
+22091  vpnkit-bridge    5.9  5828K- 00:22.24
+21867  Brave Browser He 4.1  26M    00:19.74
+22264  top              3.0  1812K+ 00:00.43
+Processes: 333 total, 4 running, 329 sleeping, 1295 threads 
+2020/05/27 18:17:41
+Load Avg: 5.57, 4.11, 3.06 
+CPU usage: 32.3% user, 15.4% sys, 52.91% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7921M used (1596M wired), 270M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46250839/78G in, 20288884/31G out.
+Disks: 22694742/1207G read, 15886151/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 101.1 167M-  06:04.82
+21866  Brave Browser He 28.9  126M   02:30.31
+22103  com.docker.hyper 19.6  3007M  09:00.06
+0      kernel_task      11.8  195M   09:04:38
+205    WindowServer     7.3   630M   12:10:40
+22091  vpnkit-bridge    3.1   5724K- 00:22.27
+22077  com.docker.backe 3.0   9672K+ 00:23.89
+22264  top              2.9   1820K+ 00:00.46
+21926  Terminal         2.7   59M-   01:02.53
+21867  Brave Browser He 2.1   26M    00:19.76
+Processes: 333 total, 3 running, 330 sleeping, 1306 threads 
+2020/05/27 18:17:42
+Load Avg: 5.57, 4.11, 3.06 
+CPU usage: 32.53% user, 22.16% sys, 45.30% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7929M used (1638M wired), 261M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46251171/78G in, 20289208/31G out.
+Disks: 22694742/1207G read, 15886203/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 81.1  179M+  06:05.66
+21866  Brave Browser He 38.3  126M   02:30.71
+22103  com.docker.hyper 30.3  3007M  09:00.37
+0      kernel_task      16.8  195M   09:04:38
+205    WindowServer     12.2  641M+  12:10:41
+21926  Terminal         11.2  95M+   01:02.65
+22077  com.docker.backe 6.9   9688K+ 00:23.96
+22091  vpnkit-bridge    5.6   5900K+ 00:22.33
+21867  Brave Browser He 3.9   26M    00:19.80
+21859  Brave Browser    2.9   173M   00:33.52
+Processes: 333 total, 4 running, 329 sleeping, 1303 threads 
+2020/05/27 18:17:43
+Load Avg: 5.57, 4.11, 3.06 
+CPU usage: 29.97% user, 16.54% sys, 53.47% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7930M used (1631M wired), 260M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46251342/78G in, 20289379/31G out.
+Disks: 22694746/1207G read, 15886235/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 86.4  201M+  06:06.56
+21866  Brave Browser He 35.7  126M   02:31.08
+22103  com.docker.hyper 19.9  3007M+ 09:00.58
+0      kernel_task      13.3  195M   09:04:38
+205    WindowServer     7.5   641M+  12:10:41
+22077  com.docker.backe 3.6   9144K- 00:24.00
+22264  top              3.5   1824K  00:00.52
+22091  vpnkit-bridge    3.3   5716K- 00:22.37
+21926  Terminal         3.0   65M-   01:02.68
+21867  Brave Browser He 2.2   26M    00:19.83
+Processes: 333 total, 3 running, 330 sleeping, 1307 threads 
+2020/05/27 18:17:44
+Load Avg: 5.68, 4.15, 3.09 
+CPU usage: 32.20% user, 21.6% sys, 46.73% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7932M used (1620M wired), 259M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46251666/78G in, 20289703/31G out.
+Disks: 22694746/1207G read, 15886291/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 84.9  223M+  06:07.44
+22103  com.docker.hyper 33.6  3007M  09:00.93
+21866  Brave Browser He 32.4  126M   02:31.42
+0      kernel_task      15.1  195M   09:04:38
+205    WindowServer     9.3   634M-  12:10:41
+22077  com.docker.backe 6.2   9096K- 00:24.06
+18952  Finder           6.0   69M    01:14.76
+22091  vpnkit-bridge    5.6   5956K+ 00:22.42
+21926  Terminal         5.3   71M+   01:02.73
+21867  Brave Browser He 4.0   26M    00:19.87
+Processes: 333 total, 3 running, 330 sleeping, 1304 threads 
+2020/05/27 18:17:45
+Load Avg: 5.68, 4.15, 3.09 
+CPU usage: 35.10% user, 18.40% sys, 46.48% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7921M used (1620M wired), 269M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46251835/78G in, 20289864/31G out.
+Disks: 22694752/1207G read, 15886510/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 108.1 155M-  06:08.55
+21866  Brave Browser He 34.2  126M   02:31.77
+22103  com.docker.hyper 18.1  3007M  09:01.11
+0      kernel_task      15.1  195M   09:04:38
+205    WindowServer     12.6  634M+  12:10:41
+1      launchd          5.5   32M+   21:28.53
+22091  vpnkit-bridge    3.6   5708K- 00:22.46
+22264  top              3.2   1828K+ 00:00.58
+22077  com.docker.backe 3.2   9128K+ 00:24.10
+21926  Terminal         3.0   65M-   01:02.76
+Processes: 333 total, 3 running, 330 sleeping, 1306 threads 
+2020/05/27 18:17:46
+Load Avg: 5.68, 4.15, 3.09 
+CPU usage: 31.80% user, 20.24% sys, 47.95% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7924M used (1620M wired), 267M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46252171/78G in, 20290186/31G out.
+Disks: 22694752/1207G read, 15886562/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 84.5  179M+  06:09.43
+21866  Brave Browser He 33.6  126M   02:32.12
+22103  com.docker.hyper 30.2  3007M  09:01.43
+0      kernel_task      16.1  195M   09:04:38
+205    WindowServer     13.4  634M   12:10:41
+22077  com.docker.backe 6.2   9456K+ 00:24.16
+22091  vpnkit-bridge    5.9   5844K+ 00:22.52
+21926  Terminal         5.0   71M+   01:02.82
+21867  Brave Browser He 3.9   26M    00:19.93
+21859  Brave Browser    2.8   173M+  00:33.61
+Processes: 333 total, 8 running, 325 sleeping, 1306 threads 
+2020/05/27 18:17:47
+Load Avg: 5.68, 4.15, 3.09 
+CPU usage: 31.31% user, 22.37% sys, 46.30% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59078 total, 1346M resident, 90M private, 2659M shared.
+PhysMem: 7925M used (1589M wired), 265M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46252505/78G in, 20290511/31G out.
+Disks: 22694762/1207G read, 15886616/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 86.0  191M+  06:10.32
+21866  Brave Browser He 45.8  126M   02:32.59
+22103  com.docker.hyper 33.8  3007M+ 09:01.78
+0      kernel_task      17.5  195M   09:04:39
+205    WindowServer     13.1  619M-  12:10:41
+21926  Terminal         6.0   71M-   01:02.88
+22077  com.docker.backe 5.7   9680K+ 00:24.22
+22091  vpnkit-bridge    5.2   6148K+ 00:22.58
+21867  Brave Browser He 4.2   26M    00:19.97
+22264  top              3.8   1832K  00:00.65
+Processes: 332 total, 3 running, 329 sleeping, 1313 threads 
+2020/05/27 18:17:48
+Load Avg: 5.68, 4.15, 3.09 
+CPU usage: 36.23% user, 14.73% sys, 49.3% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 58971 total, 1337M resident, 89M private, 2659M shared.
+PhysMem: 7912M used (1574M wired), 279M unused.
+VM: 1487G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46252675/78G in, 20290681/31G out.
+Disks: 22694810/1207G read, 15886643/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 105.5 149M-  06:11.50
+21866  Brave Browser He 20.7  126M   02:32.82
+22103  com.docker.hyper 16.7  3007M  09:01.97
+0      kernel_task      13.2  195M+  09:04:39
+205    WindowServer     12.1  617M-  12:10:41
+22077  com.docker.backe 4.0   9296K- 00:24.27
+21926  Terminal         3.1   71M    01:02.91
+22091  vpnkit-bridge    3.0   6140K- 00:22.61
+22264  top              2.2   1832K  00:00.67
+21867  Brave Browser He 1.7   26M    00:19.99
+Processes: 332 total, 4 running, 328 sleeping, 1311 threads 
+2020/05/27 18:17:49
+Load Avg: 5.47, 4.14, 3.08 
+CPU usage: 30.82% user, 23.5% sys, 46.11% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 58971 total, 1337M resident, 89M private, 2659M shared.
+PhysMem: 7914M used (1574M wired), 277M unused.
+VM: 1487G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46253005/78G in, 20291011/31G out.
+Disks: 22694810/1207G read, 15886702/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 81.7  164M+  06:12.43
+21866  Brave Browser He 41.1  126M   02:33.29
+22103  com.docker.hyper 29.0  3007M  09:02.30
+0      kernel_task      17.3  195M   09:04:39
+22264  top              11.5  1832K  00:00.80
+205    WindowServer     8.0   617M+  12:10:41
+22091  vpnkit-bridge    5.7   6308K+ 00:22.68
+22077  com.docker.backe 5.2   9640K+ 00:24.32
+21926  Terminal         5.2   71M    01:02.97
+21867  Brave Browser He 3.7   26M    00:20.03
+Processes: 332 total, 4 running, 328 sleeping, 1310 threads 
+2020/05/27 18:17:50
+Load Avg: 5.47, 4.14, 3.08 
+CPU usage: 31.56% user, 14.93% sys, 53.49% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 58971 total, 1337M resident, 89M private, 2659M shared.
+PhysMem: 7915M used (1569M wired), 276M unused.
+VM: 1487G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46253165/78G in, 20291171/31G out.
+Disks: 22694810/1207G read, 15886729/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 98.4  186M+  06:13.44
+21866  Brave Browser He 32.5  126M   02:33.62
+22103  com.docker.hyper 14.9  3007M  09:02.45
+0      kernel_task      12.9  195M   09:04:39
+205    WindowServer     6.9   617M   12:10:41
+22091  vpnkit-bridge    4.0   5700K- 00:22.72
+22077  com.docker.backe 3.6   9240K- 00:24.36
+22264  top              3.2   1836K+ 00:00.84
+21926  Terminal         2.2   71M    01:03.00
+21867  Brave Browser He 2.0   26M    00:20.05
+Processes: 332 total, 4 running, 328 sleeping, 1304 threads 
+2020/05/27 18:17:51
+Load Avg: 5.47, 4.14, 3.08 
+CPU usage: 30.84% user, 21.20% sys, 47.95% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 58971 total, 1337M resident, 89M private, 2659M shared.
+PhysMem: 7917M used (1574M wired), 274M unused.
+VM: 1487G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46253497/78G in, 20291495/31G out.
+Disks: 22694811/1207G read, 15886782/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 81.9  203M+  06:14.29
+22103  com.docker.hyper 35.8  3007M  09:02.82
+21866  Brave Browser He 35.2  126M   02:33.99
+0      kernel_task      15.9  195M   09:04:39
+205    WindowServer     7.1   617M-  12:10:42
+22077  com.docker.backe 6.2   9352K+ 00:24.43
+22091  vpnkit-bridge    6.1   5740K+ 00:22.78
+21926  Terminal         6.1   71M    01:03.06
+21867  Brave Browser He 3.9   26M    00:20.10
+21859  Brave Browser    2.9   173M   00:33.74
+Processes: 332 total, 4 running, 328 sleeping, 1301 threads 
+2020/05/27 18:17:52
+Load Avg: 5.47, 4.14, 3.08 
+CPU usage: 33.57% user, 15.21% sys, 51.20% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 58971 total, 1337M resident, 89M private, 2659M shared.
+PhysMem: 7888M used (1574M wired), 303M unused.
+VM: 1487G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46253672/78G in, 20291670/31G out.
+Disks: 22694811/1207G read, 15886814/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 109.6 159M-  06:15.42
+21866  Brave Browser He 29.7  126M   02:34.30
+22103  com.docker.hyper 19.3  3007M  09:03.02
+0      kernel_task      11.0  195M   09:04:39
+205    WindowServer     6.8   617M   12:10:42
+22077  com.docker.backe 3.6   9048K- 00:24.47
+22264  top              3.3   1836K  00:00.90
+22091  vpnkit-bridge    2.9   5796K+ 00:22.82
+21926  Terminal         2.7   65M-   01:03.09
+21867  Brave Browser He 2.2   26M    00:20.12
+Processes: 333 total, 5 running, 328 sleeping, 1296 threads 
+2020/05/27 18:17:53
+Load Avg: 5.47, 4.14, 3.08 
+CPU usage: 34.52% user, 35.0% sys, 30.47% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7910M used (1588M wired), 281M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46254039/78G in, 20292037/31G out.
+Disks: 22695380/1207G read, 15886873/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 72.3  3007M+ 09:03.77
+22150  Brave Browser He 68.1  174M+  06:16.13
+21866  Brave Browser He 43.4  126M   02:34.75
+0      kernel_task      20.8  195M+  09:04:40
+205    WindowServer     10.2  618M+  12:10:42
+21926  Terminal         10.1  71M+   01:03.19
+22077  com.docker.backe 6.1   9832K+ 00:24.53
+22091  vpnkit-bridge    5.5   6404K+ 00:22.87
+21867  Brave Browser He 4.2   26M    00:20.16
+22264  top              4.1   1836K  00:00.94
+Processes: 333 total, 5 running, 328 sleeping, 1297 threads 
+2020/05/27 18:17:54
+Load Avg: 5.27, 4.12, 3.08 
+CPU usage: 32.69% user, 36.99% sys, 30.31% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7913M used (1576M wired), 278M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46254276/78G in, 20292274/31G out.
+Disks: 22695451/1207G read, 15886905/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 106.3 3007M+ 09:04.89
+22150  Brave Browser He 83.7  196M+  06:17.01
+21866  Brave Browser He 29.5  126M   02:35.06
+0      kernel_task      13.1  195M   09:04:40
+205    WindowServer     9.6   617M-  12:10:42
+22265  Python           8.8   15M+   00:00.35
+21926  Terminal         6.6   71M    01:03.26
+22091  vpnkit-bridge    5.0   5732K- 00:22.93
+22077  com.docker.backe 4.8   9176K- 00:24.58
+22264  top              3.5   1836K  00:00.98
+Processes: 333 total, 4 running, 329 sleeping, 1298 threads 
+2020/05/27 18:17:56
+Load Avg: 5.27, 4.12, 3.08 
+CPU usage: 30.60% user, 38.31% sys, 31.8% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7917M used (1587M wired), 274M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46254487/78G in, 20292485/31G out.
+Disks: 22695794/1207G read, 15886933/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 103.6 3007M+ 09:05.97
+22150  Brave Browser He 77.5  208M+  06:17.82
+21866  Brave Browser He 41.3  126M   02:35.49
+0      kernel_task      16.2  195M   09:04:40
+205    WindowServer     9.0   617M   12:10:42
+22265  Python           5.4   16M+   00:00.40
+21926  Terminal         4.2   65M-   01:03.31
+22264  top              3.7   1836K  00:01.02
+22091  vpnkit-bridge    3.6   5692K- 00:22.96
+22077  com.docker.backe 2.9   9680K+ 00:24.61
+Processes: 333 total, 7 running, 326 sleeping, 1300 threads 
+2020/05/27 18:17:57
+Load Avg: 5.27, 4.12, 3.08 
+CPU usage: 33.49% user, 41.14% sys, 25.35% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7914M used (1597M wired), 278M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46254887/78G in, 20292874/31G out.
+Disks: 22695859/1207G read, 15887045/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 103.4 3007M  09:07.05
+22150  Brave Browser He 69.6  220M+  06:18.54
+21866  Brave Browser He 44.6  126M+  02:35.95
+0      kernel_task      20.9  194M-  09:04:40
+21926  Terminal         16.4  71M+   01:03.48
+205    WindowServer     9.9   628M+  12:10:42
+22077  com.docker.backe 7.5   9672K- 00:24.69
+22091  vpnkit-bridge    6.4   6372K+ 00:23.03
+22265  Python           4.8   17M+   00:00.45
+22264  top              3.8   1836K  00:01.06
+Processes: 333 total, 7 running, 326 sleeping, 1301 threads 
+2020/05/27 18:17:58
+Load Avg: 5.27, 4.12, 3.08 
+CPU usage: 34.44% user, 34.44% sys, 31.10% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7908M used (1596M wired), 283M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46255069/78G in, 20293056/31G out.
+Disks: 22695872/1207G read, 15887092/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 110.0 154M-  06:19.69
+22103  com.docker.hyper 98.2  3007M+ 09:08.08
+21866  Brave Browser He 26.2  126M   02:36.23
+0      kernel_task      11.3  194M   09:04:40
+205    WindowServer     8.9   628M   12:10:42
+22077  com.docker.backe 4.0   9384K- 00:24.73
+22264  top              3.7   1836K  00:01.10
+22091  vpnkit-bridge    3.6   5812K- 00:23.07
+21867  Brave Browser He 2.9   26M    00:20.27
+21859  Brave Browser    2.1   173M   00:33.88
+Processes: 333 total, 5 running, 328 sleeping, 1284 threads 
+2020/05/27 18:17:59
+Load Avg: 5.97, 4.28, 3.15 
+CPU usage: 31.65% user, 37.17% sys, 31.17% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7906M used (1584M wired), 285M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46255456/78G in, 20293443/31G out.
+Disks: 22695960/1207G read, 15887168/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 100.1 3007M+ 09:09.12
+22150  Brave Browser He 76.6  171M+  06:20.49
+21866  Brave Browser He 35.4  126M   02:36.60
+0      kernel_task      13.5  194M   09:04:40
+205    WindowServer     8.9   628M   12:10:42
+21926  Terminal         6.9   71M    01:03.57
+22077  com.docker.backe 6.1   9912K+ 00:24.80
+22091  vpnkit-bridge    5.6   6204K+ 00:23.13
+22265  Python           3.9   18M+   00:00.50
+22264  top              3.7   1836K  00:01.14
+Processes: 333 total, 6 running, 327 sleeping, 1285 threads 
+2020/05/27 18:18:00
+Load Avg: 5.97, 4.28, 3.15 
+CPU usage: 29.40% user, 40.0% sys, 30.60% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7908M used (1586M wired), 284M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46255525/78G in, 20293512/31G out.
+Disks: 22695970/1207G read, 15887168/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 107.6 3007M  09:10.46
+22150  Brave Browser He 81.5  195M+  06:21.50
+21866  Brave Browser He 36.2  126M   02:37.05
+22264  top              15.0  1836K  00:01.32
+0      kernel_task      13.4  194M   09:04:41
+205    WindowServer     9.0   628M+  12:10:42
+22265  Python           3.9   19M+   00:00.54
+22077  com.docker.backe 2.7   8960K- 00:24.83
+22091  vpnkit-bridge    2.6   5724K- 00:23.16
+21926  Terminal         1.4   71M    01:03.59
+Processes: 333 total, 6 running, 327 sleeping, 1285 threads 
+2020/05/27 18:18:01
+Load Avg: 5.97, 4.28, 3.15 
+CPU usage: 28.32% user, 38.25% sys, 33.41% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7909M used (1601M wired), 282M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46255696/78G in, 20293683/31G out.
+Disks: 22695971/1207G read, 15887230/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 101.3 3007M  09:11.52
+22150  Brave Browser He 73.0  203M+  06:22.27
+21866  Brave Browser He 41.6  126M   02:37.48
+0      kernel_task      17.2  194M   09:04:41
+205    WindowServer     9.5   628M   12:10:42
+22077  com.docker.backe 3.2   9160K+ 00:24.86
+22264  top              3.1   1836K  00:01.36
+22091  vpnkit-bridge    3.1   5700K- 00:23.20
+21867  Brave Browser He 2.8   25M    00:20.35
+21926  Terminal         2.4   65M-   01:03.62
+Processes: 333 total, 4 running, 329 sleeping, 1283 threads 
+2020/05/27 18:18:02
+Load Avg: 5.97, 4.28, 3.15 
+CPU usage: 23.18% user, 36.71% sys, 40.9% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7911M used (1585M wired), 280M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46255943/78G in, 20293924/31G out.
+Disks: 22695988/1207G read, 15887282/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 110.0 3007M  09:12.66
+22150  Brave Browser He 54.7  215M+  06:22.84
+21866  Brave Browser He 26.5  126M   02:37.76
+0      kernel_task      12.0  194M   09:04:41
+205    WindowServer     9.0   612M-  12:10:43
+22265  Python           4.2   20M+   00:00.59
+22077  com.docker.backe 3.9   9040K- 00:24.91
+21926  Terminal         3.8   71M+   01:03.66
+22091  vpnkit-bridge    3.4   5940K+ 00:23.23
+22264  top              3.1   1836K  00:01.39
+Processes: 333 total, 5 running, 328 sleeping, 1286 threads 
+2020/05/27 18:18:03
+Load Avg: 5.97, 4.28, 3.15 
+CPU usage: 31.57% user, 37.8% sys, 31.33% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7899M used (1585M wired), 292M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46256112/78G in, 20294093/31G out.
+Disks: 22695988/1207G read, 15887331/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 102.6 3007M  09:13.73
+22150  Brave Browser He 91.6  148M-  06:23.79
+21866  Brave Browser He 37.0  126M   02:38.14
+0      kernel_task      14.1  194M   09:04:41
+205    WindowServer     9.1   612M   12:10:43
+22264  top              3.5   1836K  00:01.43
+22077  com.docker.backe 3.1   9216K+ 00:24.94
+22091  vpnkit-bridge    2.8   5860K- 00:23.26
+21867  Brave Browser He 2.5   25M    00:20.40
+21926  Terminal         2.4   65M-   01:03.68
+Processes: 333 total, 5 running, 328 sleeping, 1286 threads 
+2020/05/27 18:18:04
+Load Avg: 6.61, 4.44, 3.21 
+CPU usage: 18.0% user, 34.79% sys, 47.20% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7901M used (1573M wired), 290M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46256594/78G in, 20294575/31G out.
+Disks: 22695996/1207G read, 15887403/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 111.5 3007M  09:14.89
+22150  Brave Browser He 37.3  157M+  06:24.18
+22077  com.docker.backe 8.7   9256K+ 00:25.03
+21866  Brave Browser He 8.1   126M   02:38.23
+22091  vpnkit-bridge    7.4   5828K- 00:23.34
+21926  Terminal         7.3   77M+   01:03.76
+205    WindowServer     7.1   612M   12:10:43
+0      kernel_task      6.9   194M   09:04:41
+21867  Brave Browser He 5.6   26M+   00:20.46
+21859  Brave Browser    3.5   173M+  00:34.00
+Processes: 333 total, 6 running, 327 sleeping, 1285 threads 
+2020/05/27 18:18:05
+Load Avg: 6.61, 4.44, 3.21 
+CPU usage: 31.66% user, 36.66% sys, 31.66% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7903M used (1572M wired), 288M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46256854/78G in, 20294835/31G out.
+Disks: 22695996/1207G read, 15887444/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 102.5 3007M  09:15.94
+22150  Brave Browser He 83.2  174M+  06:25.03
+21866  Brave Browser He 38.7  126M   02:38.63
+0      kernel_task      13.8  194M   09:04:41
+205    WindowServer     7.5   612M-  12:10:43
+22265  Python           6.1   21M+   00:00.65
+21926  Terminal         4.4   65M-   01:03.80
+22264  top              4.3   1836K  00:01.50
+22077  com.docker.backe 4.0   9136K- 00:25.07
+22091  vpnkit-bridge    4.0   5820K- 00:23.38
+Processes: 333 total, 4 running, 329 sleeping, 1285 threads 
+2020/05/27 18:18:06
+Load Avg: 6.61, 4.44, 3.21 
+CPU usage: 30.28% user, 38.46% sys, 31.25% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1583M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46257029/78G in, 20295010/31G out.
+Disks: 22695996/1207G read, 15887485/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 96.9  3007M  09:16.97
+22150  Brave Browser He 80.0  186M+  06:25.88
+21866  Brave Browser He 46.8  126M   02:39.12
+0      kernel_task      18.2  194M   09:04:41
+205    WindowServer     8.4   612M-  12:10:43
+22091  vpnkit-bridge    3.7   5764K- 00:23.42
+22077  com.docker.backe 3.1   9536K+ 00:25.10
+22264  top              2.9   1836K  00:01.53
+21867  Brave Browser He 2.5   26M    00:20.52
+21926  Terminal         2.2   65M    01:03.83
+Processes: 333 total, 6 running, 327 sleeping, 1286 threads 
+2020/05/27 18:18:07
+Load Avg: 6.61, 4.44, 3.21 
+CPU usage: 30.0% user, 35.47% sys, 34.52% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7906M used (1597M wired), 285M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46257141/78G in, 20295117/31G out.
+Disks: 22695996/1207G read, 15887514/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 102.0 3007M  09:18.02
+22150  Brave Browser He 88.8  207M+  06:26.80
+21866  Brave Browser He 36.1  126M   02:39.50
+0      kernel_task      12.5  194M   09:04:42
+205    WindowServer     7.4   612M   12:10:43
+22264  top              4.7   1836K  00:01.58
+22077  com.docker.backe 2.2   9784K+ 00:25.13
+21926  Terminal         2.0   71M+   01:03.85
+21867  Brave Browser He 2.0   26M    00:20.54
+21859  Brave Browser    1.6   173M   00:34.07
+Processes: 333 total, 4 running, 329 sleeping, 1285 threads 
+2020/05/27 18:18:08
+Load Avg: 6.61, 4.44, 3.21 
+CPU usage: 36.38% user, 37.10% sys, 26.50% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7904M used (1597M wired), 288M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46257634/78G in, 20295585/31G out.
+Disks: 22696000/1207G read, 15887568/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 101.1 3007M  09:19.08
+22150  Brave Browser He 96.1  151M-  06:27.81
+21866  Brave Browser He 29.8  126M   02:39.81
+0      kernel_task      13.4  194M   09:04:42
+22091  vpnkit-bridge    8.8   5724K- 00:23.53
+22077  com.docker.backe 8.6   9096K- 00:25.22
+205    WindowServer     8.1   612M   12:10:43
+21926  Terminal         7.3   71M    01:03.93
+22265  Python           4.9   21M+   00:00.70
+21867  Brave Browser He 3.5   26M    00:20.57
+Processes: 333 total, 4 running, 329 sleeping, 1284 threads 
+2020/05/27 18:18:09
+Load Avg: 6.32, 4.42, 3.21 
+CPU usage: 29.32% user, 39.18% sys, 31.49% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1591M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46257797/78G in, 20295748/31G out.
+Disks: 22696000/1207G read, 15887594/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 101.1 3007M  09:20.13
+22150  Brave Browser He 77.2  163M+  06:28.61
+21866  Brave Browser He 48.8  126M   02:40.32
+0      kernel_task      18.5  194M   09:04:42
+205    WindowServer     8.0   612M-  12:10:43
+22264  top              3.2   1836K  00:01.65
+22091  vpnkit-bridge    3.0   5980K+ 00:23.56
+22077  com.docker.backe 2.7   9592K+ 00:25.25
+21926  Terminal         2.6   71M    01:03.95
+21867  Brave Browser He 2.1   26M    00:20.60
+Processes: 333 total, 5 running, 328 sleeping, 1289 threads 
+2020/05/27 18:18:10
+Load Avg: 6.32, 4.42, 3.21 
+CPU usage: 28.47% user, 36.61% sys, 34.90% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1591M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46257816/78G in, 20295767/31G out.
+Disks: 22696000/1207G read, 15887602/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 94.5  3007M  09:21.23
+22150  Brave Browser He 85.8  186M+  06:29.61
+21866  Brave Browser He 39.7  126M   02:40.78
+22264  top              13.7  1836K  00:01.81
+0      kernel_task      13.7  194M   09:04:42
+205    WindowServer     7.1   612M-  12:10:43
+21859  Brave Browser    0.8   173M   00:34.12
+21867  Brave Browser He 0.6   25M-   00:20.60
+22091  vpnkit-bridge    0.4   5732K- 00:23.56
+19162  appstoreagent    0.3   18M+   00:03.64
+Processes: 333 total, 10 running, 323 sleeping, 1299 threads 
+2020/05/27 18:18:11
+Load Avg: 6.32, 4.42, 3.21 
+CPU usage: 17.78% user, 38.70% sys, 43.50% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7908M used (1584M wired), 283M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46258453/78G in, 20296405/31G out.
+Disks: 22696015/1207G read, 15887702/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 123.8 3007M  09:22.52
+22150  Brave Browser He 28.3  190M+  06:29.90
+22091  vpnkit-bridge    12.5  6036K+ 00:23.69
+22077  com.docker.backe 11.7  9640K- 00:25.37
+21926  Terminal         8.9   77M+   01:04.05
+21867  Brave Browser He 7.8   27M+   00:20.69
+21866  Brave Browser He 7.3   126M   02:40.86
+205    WindowServer     6.9   612M+  12:10:43
+0      kernel_task      6.8   194M   09:04:42
+21859  Brave Browser    4.5   173M   00:34.17
+Processes: 333 total, 6 running, 327 sleeping, 1293 threads 
+2020/05/27 18:18:13
+Load Avg: 6.32, 4.42, 3.21 
+CPU usage: 34.83% user, 35.54% sys, 29.62% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7910M used (1573M wired), 281M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46258739/78G in, 20296685/31G out.
+Disks: 22696015/1207G read, 15887739/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 95.4  3007M  09:23.52
+22150  Brave Browser He 95.4  213M+  06:30.90
+21866  Brave Browser He 35.3  126M   02:41.23
+0      kernel_task      13.5  194M   09:04:42
+22265  Python           7.8   22M+   00:00.79
+205    WindowServer     7.4   612M   12:10:43
+22264  top              4.5   1836K  00:01.90
+22077  com.docker.backe 4.4   9096K- 00:25.42
+22091  vpnkit-bridge    4.0   6220K+ 00:23.74
+21926  Terminal         4.0   71M-   01:04.09
+Processes: 333 total, 5 running, 328 sleeping, 1293 threads 
+2020/05/27 18:18:14
+Load Avg: 6.32, 4.42, 3.21 
+CPU usage: 31.80% user, 35.18% sys, 33.1% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1573M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46258913/78G in, 20296859/31G out.
+Disks: 22696015/1207G read, 15887778/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 97.2  3007M+ 09:24.55
+22150  Brave Browser He 94.0  156M-  06:31.89
+21866  Brave Browser He 32.2  126M   02:41.56
+0      kernel_task      13.4  194M   09:04:42
+205    WindowServer     8.1   612M   12:10:43
+21867  Brave Browser He 3.3   26M-   00:20.75
+22264  top              3.2   1836K  00:01.93
+22077  com.docker.backe 3.2   9144K+ 00:25.45
+22091  vpnkit-bridge    3.1   5788K- 00:23.77
+21926  Terminal         2.7   65M-   01:04.12
+Processes: 333 total, 4 running, 329 sleeping, 1296 threads 
+2020/05/27 18:18:15
+Load Avg: 6.05, 4.39, 3.21 
+CPU usage: 28.88% user, 36.16% sys, 34.95% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1591M wired), 285M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46258932/78G in, 20296878/31G out.
+Disks: 22696015/1207G read, 15887786/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 96.6  3007M  09:25.55
+22150  Brave Browser He 83.2  177M+  06:32.76
+21866  Brave Browser He 45.1  126M   02:42.03
+0      kernel_task      16.3  194M   09:04:43
+205    WindowServer     7.5   612M   12:10:44
+22264  top              2.9   1836K  00:01.96
+21859  Brave Browser    1.1   173M   00:34.22
+21867  Brave Browser He 0.7   25M-   00:20.76
+22091  vpnkit-bridge    0.1   5788K  00:23.77
+21926  Terminal         0.1   65M    01:04.12
+Processes: 333 total, 4 running, 329 sleeping, 1295 threads 
+2020/05/27 18:18:16
+Load Avg: 6.05, 4.39, 3.21 
+CPU usage: 26.84% user, 40.14% sys, 33.1% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1591M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46258932/78G in, 20296878/31G out.
+Disks: 22696017/1207G read, 15887980/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 100.5 3007M  09:26.59
+22150  Brave Browser He 74.3  185M+  06:33.52
+21866  Brave Browser He 52.1  126M   02:42.57
+0      kernel_task      19.2  194M   09:04:43
+205    WindowServer     7.4   612M   12:10:44
+1      launchd          6.9   32M    21:28.61
+22264  top              4.0   1836K  00:02.00
+21859  Brave Browser    0.8   173M   00:34.23
+257    runningboardd    0.2   3264K  00:35.68
+21867  Brave Browser He 0.2   25M    00:20.76
+Processes: 333 total, 6 running, 327 sleeping, 1288 threads 
+2020/05/27 18:18:17
+Load Avg: 6.05, 4.39, 3.21 
+CPU usage: 30.26% user, 39.46% sys, 30.26% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7909M used (1590M wired), 283M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46259555/78G in, 20297501/31G out.
+Disks: 22696035/1207G read, 15888102/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 113.5 3007M+ 09:27.78
+22150  Brave Browser He 67.1  201M+  06:34.23
+21866  Brave Browser He 24.0  126M   02:42.82
+0      kernel_task      11.9  194M   09:04:43
+22077  com.docker.backe 9.1   9832K+ 00:25.55
+21926  Terminal         8.5   65M    01:04.21
+205    WindowServer     8.4   612M+  12:10:44
+22265  Python           8.1   23M+   00:00.87
+21867  Brave Browser He 7.9   26M+   00:20.84
+22091  vpnkit-bridge    7.8   5692K- 00:23.86
+Processes: 333 total, 5 running, 328 sleeping, 1287 threads 
+2020/05/27 18:18:18
+Load Avg: 6.05, 4.39, 3.21 
+CPU usage: 34.62% user, 30.99% sys, 34.38% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7903M used (1591M wired), 288M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46259686/78G in, 20297632/31G out.
+Disks: 22696035/1207G read, 15888114/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 112.8 152M-  06:35.39
+22103  com.docker.hyper 93.1  3007M  09:28.74
+21866  Brave Browser He 23.0  126M   02:43.06
+0      kernel_task      9.0   194M-  09:04:43
+205    WindowServer     7.0   612M   12:10:44
+22091  vpnkit-bridge    3.9   5732K+ 00:23.90
+22264  top              3.1   1840K+ 00:02.07
+22077  com.docker.backe 2.7   9704K- 00:25.58
+21926  Terminal         2.3   71M+   01:04.23
+21867  Brave Browser He 0.8   26M+   00:20.85
+Processes: 333 total, 5 running, 328 sleeping, 1285 threads 
+2020/05/27 18:18:19
+Load Avg: 5.97, 4.40, 3.22 
+CPU usage: 29.73% user, 38.60% sys, 31.65% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7904M used (1591M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46259855/78G in, 20297795/31G out.
+Disks: 22696126/1207G read, 15888143/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 97.4  3007M+ 09:29.75
+22150  Brave Browser He 79.8  166M+  06:36.22
+21866  Brave Browser He 50.1  126M   02:43.58
+0      kernel_task      17.9  194M   09:04:43
+205    WindowServer     8.2   612M+  12:10:44
+22077  com.docker.backe 4.2   9040K- 00:25.62
+22264  top              4.0   1840K  00:02.11
+22091  vpnkit-bridge    3.0   5812K+ 00:23.93
+21867  Brave Browser He 1.8   26M    00:20.87
+21926  Terminal         1.7   65M-   01:04.25
+Processes: 333 total, 3 running, 330 sleeping, 1287 threads 
+2020/05/27 18:18:20
+Load Avg: 5.97, 4.40, 3.22 
+CPU usage: 21.98% user, 36.47% sys, 41.54% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1591M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46259886/78G in, 20297814/31G out.
+Disks: 22696126/1207G read, 15888151/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 101.3 3007M  09:30.81
+22150  Brave Browser He 56.3  178M+  06:36.81
+21866  Brave Browser He 39.4  126M   02:43.99
+0      kernel_task      16.6  194M   09:04:43
+205    WindowServer     7.6   612M   12:10:44
+22264  top              2.5   1840K  00:02.13
+21859  Brave Browser    1.4   173M   00:34.31
+21867  Brave Browser He 0.8   25M-   00:20.88
+22091  vpnkit-bridge    0.1   5812K  00:23.93
+22142  docker-compose   0.1   31M    00:03.65
+Processes: 333 total, 7 running, 326 sleeping, 1289 threads 
+2020/05/27 18:18:21
+Load Avg: 5.97, 4.40, 3.22 
+CPU usage: 16.70% user, 37.52% sys, 45.77% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7907M used (1577M wired), 284M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46260494/78G in, 20298422/31G out.
+Disks: 22696143/1207G read, 15888240/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 123.6 3007M  09:32.22
+22150  Brave Browser He 34.4  186M+  06:37.20
+22264  top              13.0  1840K  00:02.28
+22077  com.docker.backe 9.8   9616K+ 00:25.73
+22091  vpnkit-bridge    9.3   6076K+ 00:24.04
+21926  Terminal         7.8   77M+   01:04.34
+205    WindowServer     6.4   612M   12:10:44
+21867  Brave Browser He 5.7   27M+   00:20.95
+21859  Brave Browser    3.0   173M   00:34.35
+0      kernel_task      2.3   194M   09:04:43
+Processes: 333 total, 4 running, 329 sleeping, 1284 threads 
+2020/05/27 18:18:22
+Load Avg: 5.97, 4.40, 3.22 
+CPU usage: 31.32% user, 37.83% sys, 30.84% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7910M used (1565M wired), 281M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46260806/78G in, 20298731/31G out.
+Disks: 22696143/1207G read, 15888283/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 103.8 3007M+ 09:33.30
+22150  Brave Browser He 79.3  203M+  06:38.02
+21866  Brave Browser He 37.0  125M-  02:44.38
+0      kernel_task      14.5  194M   09:04:44
+205    WindowServer     7.7   612M-  12:10:44
+22265  Python           6.3   22M-   00:00.94
+22077  com.docker.backe 5.1   9032K- 00:25.79
+22091  vpnkit-bridge    4.7   5956K- 00:24.09
+21926  Terminal         4.6   71M-   01:04.39
+22264  top              3.5   1840K  00:02.32
+Processes: 333 total, 4 running, 329 sleeping, 1283 threads 
+2020/05/27 18:18:23
+Load Avg: 5.97, 4.40, 3.22 
+CPU usage: 34.14% user, 31.47% sys, 34.38% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7904M used (1566M wired), 287M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46260807/78G in, 20298731/31G out.
+Disks: 22696144/1207G read, 15888283/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 115.8 148M-  06:39.22
+22103  com.docker.hyper 92.5  3007M+ 09:34.26
+21866  Brave Browser He 29.0  126M+  02:44.68
+0      kernel_task      10.9  194M   09:04:44
+205    WindowServer     6.9   612M   12:10:44
+22264  top              2.7   1840K  00:02.35
+21859  Brave Browser    0.4   173M   00:34.38
+22091  vpnkit-bridge    0.1   5956K  00:24.09
+22142  docker-compose   0.1   31M    00:03.65
+21867  Brave Browser He 0.0   26M    00:20.98
+Processes: 333 total, 8 running, 325 sleeping, 1282 threads 
+2020/05/27 18:18:24
+Load Avg: 5.89, 4.41, 3.23 
+CPU usage: 28.36% user, 38.46% sys, 33.17% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1577M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46260826/78G in, 20298750/31G out.
+Disks: 22696144/1207G read, 15888291/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 94.9  3007M  09:35.24
+22150  Brave Browser He 80.2  159M+  06:40.05
+21866  Brave Browser He 52.4  126M   02:45.22
+0      kernel_task      23.5  194M   09:04:44
+205    WindowServer     8.0   612M   12:10:44
+22264  top              3.5   1840K  00:02.38
+21859  Brave Browser    1.0   173M+  00:34.39
+21867  Brave Browser He 0.8   25M-   00:20.99
+22091  vpnkit-bridge    0.1   5956K  00:24.09
+21926  Terminal         0.1   65M    01:04.39
+Processes: 333 total, 3 running, 330 sleeping, 1281 threads 
+2020/05/27 18:18:25
+Load Avg: 5.89, 4.41, 3.23 
+CPU usage: 8.75% user, 32.60% sys, 58.63% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1577M wired), 287M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46260826/78G in, 20298750/31G out.
+Disks: 22696144/1207G read, 15888291/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 103.7 3007M  09:36.31
+21866  Brave Browser He 22.9  126M   02:45.46
+22150  Brave Browser He 13.5  159M+  06:40.19
+0      kernel_task      9.9   194M   09:04:44
+205    WindowServer     6.3   612M   12:10:44
+22264  top              2.5   1840K  00:02.41
+21859  Brave Browser    0.8   173M+  00:34.39
+21867  Brave Browser He 0.2   25M    00:20.99
+22091  vpnkit-bridge    0.1   5956K  00:24.09
+22142  docker-compose   0.1   31M    00:03.65
+Processes: 333 total, 9 running, 324 sleeping, 1285 threads 
+2020/05/27 18:18:26
+Load Avg: 5.89, 4.41, 3.23 
+CPU usage: 18.20% user, 37.13% sys, 44.66% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7908M used (1577M wired), 283M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46261548/78G in, 20299472/31G out.
+Disks: 22696152/1207G read, 15888426/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 125.0 3007M+ 09:37.60
+22150  Brave Browser He 28.9  165M+  06:40.49
+21926  Terminal         14.5  77M+   01:04.54
+22077  com.docker.backe 12.1  9688K+ 00:25.91
+22091  vpnkit-bridge    10.2  6132K+ 00:24.20
+21867  Brave Browser He 9.8   27M+   00:21.09
+205    WindowServer     6.5   612M   12:10:44
+21859  Brave Browser    4.5   173M   00:34.44
+22264  top              3.2   1840K  00:02.44
+0      kernel_task      2.8   194M   09:04:44
+Processes: 333 total, 4 running, 329 sleeping, 1282 threads 
+2020/05/27 18:18:27
+Load Avg: 5.89, 4.41, 3.23 
+CPU usage: 31.90% user, 36.90% sys, 31.19% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7909M used (1584M wired), 281M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46261884/78G in, 20299808/31G out.
+Disks: 22696152/1207G read, 15888447/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 103.8 3007M  09:38.68
+22150  Brave Browser He 80.0  185M+  06:41.32
+21866  Brave Browser He 36.3  126M   02:45.84
+0      kernel_task      13.0  194M   09:04:44
+205    WindowServer     7.6   612M+  12:10:44
+22265  Python           6.8   23M+   00:01.01
+22091  vpnkit-bridge    6.5   5932K- 00:24.27
+22077  com.docker.backe 6.3   9104K- 00:25.98
+21926  Terminal         4.7   71M-   01:04.59
+22264  top              3.9   1840K  00:02.49
+Processes: 333 total, 4 running, 329 sleeping, 1283 threads 
+2020/05/27 18:18:28
+Load Avg: 5.89, 4.41, 3.23 
+CPU usage: 29.45% user, 38.0% sys, 32.54% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7911M used (1573M wired), 280M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46261952/78G in, 20299870/31G out.
+Disks: 22696152/1207G read, 15888476/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 96.4  3007M  09:39.69
+22150  Brave Browser He 83.5  201M+  06:42.20
+21866  Brave Browser He 50.1  126M   02:46.36
+0      kernel_task      19.1  194M   09:04:44
+205    WindowServer     7.6   612M+  12:10:45
+22264  top              3.8   1840K  00:02.53
+21867  Brave Browser He 2.2   25M-   00:21.14
+21859  Brave Browser    1.7   173M+  00:34.48
+22091  vpnkit-bridge    0.4   5932K  00:24.27
+22077  com.docker.backe 0.3   9104K  00:25.98
+Processes: 333 total, 5 running, 328 sleeping, 1281 threads 
+2020/05/27 18:18:29
+Load Avg: 5.66, 4.39, 3.23 
+CPU usage: 32.93% user, 31.97% sys, 35.9% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1577M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46262084/78G in, 20299995/31G out.
+Disks: 22696177/1207G read, 15888490/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 110.0 155M-  06:43.35
+22103  com.docker.hyper 97.7  3007M+ 09:40.71
+21866  Brave Browser He 21.1  126M   02:46.58
+0      kernel_task      8.3   194M   09:04:44
+205    WindowServer     7.4   612M   12:10:45
+22264  top              3.4   1840K  00:02.56
+22091  vpnkit-bridge    2.9   5740K- 00:24.30
+22077  com.docker.backe 2.8   9072K- 00:26.01
+21926  Terminal         2.4   65M    01:04.62
+21867  Brave Browser He 1.1   26M+   00:21.15
+Processes: 333 total, 6 running, 327 sleeping, 1282 threads 
+2020/05/27 18:18:30
+Load Avg: 5.66, 4.39, 3.23 
+CPU usage: 29.62% user, 38.38% sys, 31.99% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1577M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46262123/78G in, 20300016/31G out.
+Disks: 22696177/1207G read, 15888498/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 94.0  3007M  09:41.70
+22150  Brave Browser He 82.7  169M+  06:44.22
+21866  Brave Browser He 56.8  126M   02:47.18
+0      kernel_task      20.6  194M   09:04:45
+205    WindowServer     6.8   612M   12:10:45
+22264  top              3.6   1840K  00:02.60
+21859  Brave Browser    1.0   173M   00:34.50
+21867  Brave Browser He 0.7   25M-   00:21.16
+22091  vpnkit-bridge    0.1   5740K  00:24.30
+102    powerd           0.1   2348K+ 03:56.66
+Processes: 333 total, 3 running, 330 sleeping, 1279 threads 
+2020/05/27 18:18:31
+Load Avg: 5.66, 4.39, 3.23 
+CPU usage: 16.31% user, 34.53% sys, 49.15% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7905M used (1577M wired), 286M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46262123/78G in, 20300016/31G out.
+Disks: 22696178/1207G read, 15888505/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 97.9  3007M  09:42.88
+22150  Brave Browser He 44.6  177M+  06:44.76
+21866  Brave Browser He 24.5  126M   02:47.48
+22264  top              13.7  1840K  00:02.77
+0      kernel_task      11.1  194M   09:04:45
+205    WindowServer     7.1   612M-  12:10:45
+21859  Brave Browser    0.7   173M   00:34.51
+21867  Brave Browser He 0.1   25M    00:21.16
+22091  vpnkit-bridge    0.1   5740K  00:24.30
+22142  docker-compose   0.1   31M    00:03.67
+Processes: 333 total, 5 running, 328 sleeping, 1279 threads 
+2020/05/27 18:18:33
+Load Avg: 5.66, 4.39, 3.23 
+CPU usage: 16.58% user, 35.33% sys, 48.7% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7908M used (1577M wired), 283M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46262731/78G in, 20300620/31G out.
+Disks: 22696201/1207G read, 15888599/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 122.2 3007M+ 09:44.13
+22150  Brave Browser He 31.8  186M+  06:45.08
+22077  com.docker.backe 10.1  9616K+ 00:26.12
+22091  vpnkit-bridge    9.6   6364K+ 00:24.40
+21926  Terminal         8.1   77M+   01:04.70
+21867  Brave Browser He 6.7   27M+   00:21.23
+205    WindowServer     6.3   612M   12:10:45
+22264  top              3.7   1840K  00:02.80
+21859  Brave Browser    3.6   173M   00:34.54
+0      kernel_task      2.4   194M   09:04:45
+Processes: 333 total, 5 running, 328 sleeping, 1280 threads 
+2020/05/27 18:18:34
+Load Avg: 5.66, 4.39, 3.23 
+CPU usage: 31.40% user, 40.82% sys, 27.77% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7911M used (1566M wired), 280M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46263269/78G in, 20301158/31G out.
+Disks: 22696201/1207G read, 15888701/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 109.0 3007M  09:45.27
+22150  Brave Browser He 75.4  209M+  06:45.87
+21866  Brave Browser He 32.7  126M   02:47.82
+0      kernel_task      13.3  194M   09:04:45
+22077  com.docker.backe 11.6  9120K- 00:26.24
+22091  vpnkit-bridge    10.3  5852K- 00:24.51
+205    WindowServer     8.7   612M   12:10:45
+21867  Brave Browser He 7.4   26M-   00:21.31
+21926  Terminal         6.4   71M-   01:04.77
+21859  Brave Browser    4.7   173M+  00:34.59
+Processes: 333 total, 4 running, 329 sleeping, 1281 threads 
+2020/05/27 18:18:35
+Load Avg: 5.45, 4.37, 3.23 
+CPU usage: 33.89% user, 33.17% sys, 32.93% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7906M used (1566M wired), 285M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46263387/78G in, 20301276/31G out.
+Disks: 22696201/1207G read, 15888701/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 103.0 146M-  06:46.94
+22103  com.docker.hyper 93.1  3007M  09:46.24
+21866  Brave Browser He 35.0  126M   02:48.18
+0      kernel_task      12.5  194M   09:04:45
+22265  Python           7.0   24M+   00:01.08
+205    WindowServer     7.0   612M   12:10:45
+22264  top              3.2   1840K  00:02.87
+21926  Terminal         1.5   71M    01:04.79
+22091  vpnkit-bridge    1.4   5852K  00:24.53
+22077  com.docker.backe 0.8   9120K  00:26.25
+Processes: 333 total, 7 running, 326 sleeping, 1279 threads 
+2020/05/27 18:18:36
+Load Avg: 5.45, 4.37, 3.23 
+CPU usage: 29.1% user, 34.77% sys, 36.21% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7906M used (1577M wired), 284M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46263387/78G in, 20301276/31G out.
+Disks: 22696201/1207G read, 15888701/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 97.9  3007M  09:47.25
+22150  Brave Browser He 89.0  166M+  06:47.86
+21866  Brave Browser He 40.2  126M   02:48.60
+0      kernel_task      13.7  194M   09:04:45
+205    WindowServer     7.0   612M-  12:10:45
+22264  top              3.8   1840K  00:02.91
+21859  Brave Browser    0.4   173M   00:34.60
+22142  docker-compose   0.1   31M    00:03.68
+21926  Terminal         0.1   71M    01:04.79
+22091  vpnkit-bridge    0.1   5852K  00:24.53
+Processes: 333 total, 4 running, 329 sleeping, 1282 threads 
+2020/05/27 18:18:37
+Load Avg: 5.45, 4.37, 3.23 
+CPU usage: 29.29% user, 36.31% sys, 34.38% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7909M used (1590M wired), 282M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46263419/78G in, 20301308/31G out.
+Disks: 22696257/1207G read, 15888717/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 96.9  3007M+ 09:48.26
+22150  Brave Browser He 86.6  179M+  06:48.76
+21866  Brave Browser He 42.4  125M-  02:49.04
+0      kernel_task      17.2  194M   09:04:45
+205    WindowServer     7.4   612M   12:10:45
+22264  top              3.0   1840K  00:02.94
+21859  Brave Browser    1.5   173M   00:34.62
+21867  Brave Browser He 1.3   25M-   00:21.32
+22091  vpnkit-bridge    0.2   5852K  00:24.53
+22077  com.docker.backe 0.1   9120K  00:26.25
+Processes: 333 total, 3 running, 330 sleeping, 1281 threads 
+2020/05/27 18:18:38
+Load Avg: 5.45, 4.37, 3.23 
+CPU usage: 20.82% user, 37.28% sys, 41.88% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7909M used (1591M wired), 282M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46263419/78G in, 20301308/31G out.
+Disks: 22696257/1207G read, 15888719/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 100.5 3007M  09:49.30
+22150  Brave Browser He 51.7  189M+  06:49.30
+21866  Brave Browser He 46.8  126M+  02:49.53
+0      kernel_task      17.6  194M   09:04:46
+205    WindowServer     7.2   612M   12:10:45
+22264  top              2.5   1840K  00:02.97
+21859  Brave Browser    0.7   173M   00:34.63
+21867  Brave Browser He 0.1   25M    00:21.32
+22142  docker-compose   0.1   31M    00:03.68
+22091  vpnkit-bridge    0.1   5852K  00:24.53
+Processes: 333 total, 3 running, 330 sleeping, 1279 threads 
+2020/05/27 18:18:39
+Load Avg: 5.45, 4.37, 3.23 
+CPU usage: 1.95% user, 28.11% sys, 69.92% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7909M used (1577M wired), 282M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46263419/78G in, 20301308/31G out.
+Disks: 22696257/1207G read, 15888719/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 108.7 3007M  09:50.42
+205    WindowServer     5.3   612M-  12:10:45
+22264  top              2.7   1840K  00:03.00
+0      kernel_task      1.3   194M   09:04:46
+21859  Brave Browser    0.5   173M+  00:34.63
+22150  Brave Browser He 0.2   189M+  06:49.30
+22091  vpnkit-bridge    0.1   5852K  00:24.53
+21867  Brave Browser He 0.1   25M    00:21.32
+22142  docker-compose   0.0   31M    00:03.68
+18952  Finder           0.0   69M    01:14.79
+Processes: 333 total, 6 running, 327 sleeping, 1282 threads 
+2020/05/27 18:18:40
+Load Avg: 5.17, 4.33, 3.22 
+CPU usage: 31.13% user, 43.63% sys, 25.23% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7912M used (1572M wired), 279M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46264377/78G in, 20302266/31G out.
+Disks: 22696277/1207G read, 15888873/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 130.3 3007M  09:51.76
+22150  Brave Browser He 61.1  201M+  06:49.93
+21866  Brave Browser He 20.4  126M   02:49.74
+22077  com.docker.backe 18.2  9216K+ 00:26.44
+22091  vpnkit-bridge    16.5  5708K- 00:24.70
+21926  Terminal         12.5  65M-   01:04.92
+21867  Brave Browser He 11.1  28M+   00:21.44
+0      kernel_task      8.3   194M   09:04:46
+205    WindowServer     7.8   612M   12:10:45
+21859  Brave Browser    5.3   173M   00:34.69
+Processes: 333 total, 4 running, 329 sleeping, 1295 threads 
+2020/05/27 18:18:41
+Load Avg: 5.17, 4.33, 3.22 
+CPU usage: 38.1% user, 32.44% sys, 29.53% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7921M used (1612M wired), 271M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46264720/78G in, 20302609/31G out.
+Disks: 22696280/1207G read, 15888934/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22150  Brave Browser He 105.0 145M-  06:51.04
+22103  com.docker.hyper 88.4  3007M  09:52.69
+21866  Brave Browser He 17.3  126M   02:49.92
+205    WindowServer     12.7  635M+  12:10:45
+21926  Terminal         12.7  65M+   01:05.05
+0      kernel_task      10.1  194M+  09:04:46
+22265  Python           8.2   25M+   00:01.17
+21867  Brave Browser He 4.5   26M-   00:21.49
+22077  com.docker.backe 3.8   9064K- 00:26.48
+22091  vpnkit-bridge    3.7   5716K+ 00:24.74
+Processes: 333 total, 5 running, 328 sleeping, 1302 threads 
+2020/05/27 18:18:42
+Load Avg: 5.17, 4.33, 3.22 
+CPU usage: 29.3% user, 38.70% sys, 32.25% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7921M used (1612M wired), 270M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46264739/78G in, 20302610/31G out.
+Disks: 22696280/1207G read, 15888934/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 95.3  3007M  09:53.78
+22150  Brave Browser He 85.4  166M+  06:52.02
+21866  Brave Browser He 48.1  126M   02:50.47
+0      kernel_task      17.2  194M   09:04:46
+22264  top              13.3  1840K  00:03.23
+205    WindowServer     6.5   635M+  12:10:46
+22091  vpnkit-bridge    1.2   5716K  00:24.76
+22077  com.docker.backe 0.6   9064K  00:26.49
+21859  Brave Browser    0.3   173M   00:34.72
+7594   com.apple.geod   0.3   10M+   01:25.75
+Processes: 333 total, 4 running, 329 sleeping, 1304 threads 
+2020/05/27 18:18:43
+Load Avg: 5.17, 4.33, 3.22 
+CPU usage: 29.71% user, 33.57% sys, 36.71% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7921M used (1630M wired), 270M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46264743/78G in, 20302610/31G out.
+Disks: 22696280/1207G read, 15888934/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 95.9  3007M  09:54.79
+22150  Brave Browser He 94.0  187M+  06:53.00
+21866  Brave Browser He 33.8  126M   02:50.83
+0      kernel_task      12.9  194M   09:04:46
+205    WindowServer     7.4   635M   12:10:46
+22264  top              3.5   1840K  00:03.26
+21859  Brave Browser    0.3   173M   00:34.73
+22142  docker-compose   0.1   31M    00:03.69
+22091  vpnkit-bridge    0.0   5716K  00:24.76
+21867  Brave Browser He 0.0   26M    00:21.49
+Processes: 333 total, 4 running, 329 sleeping, 1304 threads 
+2020/05/27 18:18:44
+Load Avg: 5.24, 4.35, 3.23 
+CPU usage: 30.7% user, 38.18% sys, 31.74% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7921M used (1637M wired), 269M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46264762/78G in, 20302629/31G out.
+Disks: 22696280/1207G read, 15888942/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 95.4  3007M  09:55.78
+22150  Brave Browser He 83.6  201M+  06:53.87
+21866  Brave Browser He 57.8  126M   02:51.43
+0      kernel_task      21.0  194M   09:04:46
+205    WindowServer     7.5   635M   12:10:46
+22264  top              4.0   1840K  00:03.31
+21859  Brave Browser    0.8   173M   00:34.74
+21867  Brave Browser He 0.6   25M-   00:21.50
+22091  vpnkit-bridge    0.2   5716K  00:24.76
+22142  docker-compose   0.1   31M    00:03.69
+Processes: 333 total, 3 running, 330 sleeping, 1299 threads 
+2020/05/27 18:18:45
+Load Avg: 5.24, 4.35, 3.23 
+CPU usage: 4.58% user, 32.60% sys, 62.80% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7921M used (1637M wired), 270M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46264762/78G in, 20302629/31G out.
+Disks: 22696280/1207G read, 15889103/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 102.9 3007M  09:56.86
+21866  Brave Browser He 13.2  126M   02:51.57
+0      kernel_task      8.8   194M   09:04:46
+205    WindowServer     6.9   635M-  12:10:46
+1      launchd          6.0   32M    21:28.67
+22150  Brave Browser He 3.0   198M-  06:53.90
+22264  top              2.6   1840K  00:03.33
+21859  Brave Browser    0.8   173M   00:34.75
+21867  Brave Browser He 0.1   25M    00:21.50
+22142  docker-compose   0.1   31M    00:03.69
+Processes: 333 total, 3 running, 330 sleeping, 1281 threads 
+2020/05/27 18:18:46
+Load Avg: 5.24, 4.35, 3.23 
+CPU usage: 2.20% user, 27.87% sys, 69.92% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7921M used (1577M wired), 270M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46264762/78G in, 20302629/31G out.
+Disks: 22696280/1207G read, 15889103/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 107.2 3007M  09:57.97
+205    WindowServer     5.5   618M-  12:10:46
+22264  top              2.4   1840K  00:03.36
+0      kernel_task      1.7   194M   09:04:46
+21859  Brave Browser    0.7   173M   00:34.75
+22150  Brave Browser He 0.2   198M+  06:53.91
+21867  Brave Browser He 0.1   25M    00:21.50
+22142  docker-compose   0.1   31M    00:03.69
+22091  vpnkit-bridge    0.0   5716K  00:24.76
+47219  coreauthd        0.0   1580K+ 00:05.36
+Processes: 333 total, 4 running, 329 sleeping, 1277 threads 
+2020/05/27 18:18:47
+Load Avg: 5.24, 4.35, 3.23 
+CPU usage: 27.75% user, 39.23% sys, 33.1% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7925M used (1565M wired), 267M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46265711/78G in, 20303578/31G out.
+Disks: 22696290/1207G read, 15889247/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 129.5 3007M+ 09:59.30
+22150  Brave Browser He 62.6  213M+  06:54.55
+22077  com.docker.backe 16.4  9808K+ 00:26.66
+22091  vpnkit-bridge    14.6  6212K+ 00:24.91
+21926  Terminal         13.0  71M+   01:05.19
+21867  Brave Browser He 11.3  27M+   00:21.62
+205    WindowServer     6.8   618M-  12:10:46
+21859  Brave Browser    5.4   173M   00:34.81
+22264  top              3.8   1840K  00:03.40
+0      kernel_task      3.5   194M   09:04:47
+Processes: 333 total, 4 running, 329 sleeping, 1275 threads 
+2020/05/27 18:18:48
+Load Avg: 5.24, 4.35, 3.23 
+CPU usage: 32.93% user, 37.70% sys, 29.35% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7922M used (1572M wired), 269M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46266009/78G in, 20303876/31G out.
+Disks: 22696290/1207G read, 15889288/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 101.2 3007M+ 10:00.36
+22150  Brave Browser He 89.9  156M-  06:55.49
+21866  Brave Browser He 36.2  126M+  02:51.95
+0      kernel_task      13.3  194M   09:04:47
+205    WindowServer     8.0   618M   12:10:46
+22077  com.docker.backe 7.2   9232K- 00:26.73
+22091  vpnkit-bridge    6.6   5740K- 00:24.98
+21926  Terminal         5.2   59M-   01:05.24
+21867  Brave Browser He 3.5   28M+   00:21.65
+22264  top              3.5   1840K  00:03.44
+Processes: 333 total, 4 running, 329 sleeping, 1282 threads 
+2020/05/27 18:18:49
+Load Avg: 5.14, 4.35, 3.24 
+CPU usage: 31.8% user, 38.31% sys, 30.60% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7924M used (1572M wired), 267M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46266220/78G in, 20304081/31G out.
+Disks: 22696290/1207G read, 15889328/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 94.9  3007M+ 10:01.35
+22150  Brave Browser He 78.5  175M+  06:56.31
+21866  Brave Browser He 49.8  125M-  02:52.47
+0      kernel_task      19.2  194M   09:04:47
+205    WindowServer     7.7   618M+  12:10:46
+22265  Python           7.6   23M-   00:01.25
+22264  top              3.5   1840K  00:03.47
+21867  Brave Browser He 3.1   25M-   00:21.69
+21859  Brave Browser    2.3   173M   00:34.86
+21926  Terminal         1.8   59M    01:05.26
+Processes: 333 total, 9 running, 324 sleeping, 1289 threads 
+2020/05/27 18:18:50
+Load Avg: 5.14, 4.35, 3.24 
+CPU usage: 32.23% user, 34.58% sys, 33.17% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7937M used (1628M wired), 254M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46266366/78G in, 20304221/31G out.
+Disks: 22696290/1207G read, 15889347/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 100.9 3007M  10:02.40
+22150  Brave Browser He 86.8  197M+  06:57.22
+21866  Brave Browser He 25.3  125M   02:52.73
+21926  Terminal         16.6  84M+   01:05.44
+205    WindowServer     15.0  635M+  12:10:46
+0      kernel_task      10.2  194M-  09:04:47
+22264  top              3.9   1840K  00:03.51
+22091  vpnkit-bridge    3.8   5716K- 00:25.04
+22077  com.docker.backe 2.4   9704K+ 00:26.77
+21867  Brave Browser He 1.3   26M+   00:21.70
+Processes: 333 total, 4 running, 329 sleeping, 1291 threads 
+2020/05/27 18:18:51
+Load Avg: 5.14, 4.35, 3.24 
+CPU usage: 29.61% user, 33.98% sys, 36.40% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7943M used (1610M wired), 248M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46266366/78G in, 20304221/31G out.
+Disks: 22696290/1207G read, 15889347/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 92.3  3007M  10:03.38
+22150  Brave Browser He 89.7  212M+  06:58.17
+21866  Brave Browser He 36.5  126M+  02:53.12
+0      kernel_task      14.0  194M   09:04:47
+205    WindowServer     7.7   638M+  12:10:46
+22264  top              2.7   1840K  00:03.54
+21926  Terminal         2.6   65M-   01:05.46
+21859  Brave Browser    0.4   173M   00:34.87
+146    hidd             0.1   3852K  99:05.28
+22142  docker-compose   0.1   31M    00:03.70
+Processes: 333 total, 5 running, 328 sleeping, 1289 threads 
+2020/05/27 18:18:53
+Load Avg: 5.14, 4.35, 3.24 
+CPU usage: 29.97% user, 39.20% sys, 30.81% idle 
+SharedLibs: 174M resident, 50M data, 20M linkedit.
+MemRegions: 59164 total, 1350M resident, 89M private, 2664M shared.
+PhysMem: 7947M used (1605M wired), 244M unused.
+VM: 1491G vsize, 1992M framework vsize, 231279647(0) swapins, 243855730(0) swapouts.
+Networks: packets: 46266382/78G in, 20304233/31G out.
+Disks: 22696290/1207G read, 15889347/1083G written.
+
+PID    COMMAND          %CPU  MEM    TIME    
+22103  com.docker.hyper 100.1 3007M  10:04.57
+22150  Brave Browser He 90.1  229M+  06:59.24
+21866  Brave Browser He 42.7  126M   02:53.63
+0      kernel_task      15.5  194M   09:04:47
+22264  top              15.1  1840K  00:03.72
+205    WindowServer     6.9   638M+  12:10:46
+22077  com.docker.backe 1.3   9016K- 00:26.79
+21859  Brave Browser    0.7   173M   00:34.88
+21867  Brave Browser He 0.2   26M    00:21.70
+22085  com.docker.vpnki 0.1   68M    00:03.28

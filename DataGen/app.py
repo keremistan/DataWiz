@@ -20,8 +20,8 @@ def start():
                 'data': [],
                 'dimensions': ["cpu", "mpu", "traffic", "ram", "imo", "kinergy"]
             }
-            for resource_id in range(5):
-                for _ in range(300):
+            for resource_id in ["1"]:
+                for _ in range(20000):
                     temp_data_point = []
                     for i in range(6):
                         # i = 10

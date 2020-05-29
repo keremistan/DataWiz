@@ -57,6 +57,7 @@ def start(resource_id, data_points):
         finally:
             pass
 
+
 def record_system_load(data_points, reqs, timeout):
 
     f = open(data_points + '_points_' + reqs + '_req.txt', 'w')
@@ -68,28 +69,35 @@ def record_system_load(data_points, reqs, timeout):
         proc.kill()
         outs, errs = proc.communicate()
 
+
 def compose_up(timeout):
-    proc = Popen('docker-compose up', shell=True, cwd='/Users/base/MEGA/Universität/Tez/DataWiz')
+    proc = Popen('docker-compose up', shell=True,
+                 cwd='/Users/base/MEGA/Universität/Tez/DataWiz')
     try:
         outs, errs = proc.communicate(timeout=timeout)
     except TimeoutExpired:
         proc.kill()
-        outs, errs = proc.communicate()            
+        outs, errs = proc.communicate()
+
 
 def remove_containers():
     call('docker rm $(docker ps -aq)', shell=True)
 
+
 def stop_containers():
-    call(['docker-compose', 'stop'], cwd='/Users/base/MEGA/Universität/Tez/DataWiz')
+    call(['docker-compose', 'stop'],
+         cwd='/Users/base/MEGA/Universität/Tez/DataWiz')
+
 
 if __name__ == "__main__":
     for data_points in ['500', '1000']:
         for reqs in ['1', '5', '10', '20', '50']:
             try:
-                secs = 10 + 0*1  # 5 saniye
+                secs = 30 * 60  # 30 dk
                 timeout = time() + secs
 
-                composer = multiprocessing.Process(target=compose_up, args=(secs, ))
+                composer = multiprocessing.Process(
+                    target=compose_up, args=(secs, ))
                 composer.start()
 
                 sub_instances = []
@@ -99,7 +107,8 @@ if __name__ == "__main__":
                     p.start()
                     sub_instances.append(p)
 
-                recorder = multiprocessing.Process(target=record_system_load, args=(data_points, reqs, secs, ))
+                recorder = multiprocessing.Process(
+                    target=record_system_load, args=(data_points, reqs, secs, ))
                 recorder.start()
 
                 while True:
@@ -117,7 +126,7 @@ if __name__ == "__main__":
                 print('containers are being stopped & removed')
                 stop_containers()
                 remove_containers()
-                
+
                 sleep(1)
             except Exception:
                 print_exc()

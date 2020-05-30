@@ -4,8 +4,9 @@ import numpy as np
 from pprint import pprint
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-sns.set(color_codes=True)
+import seaborn as sns; sns.set(color_codes=True)
+from sklearn.linear_model import LinearRegression
+import math
 
 def file_name_point_quantity_extractor(el):
     splitted_el = el.split('.')
@@ -26,7 +27,10 @@ def read_data_files():
 
 def visualise_render_time(graph_avg_per_category, point_quantites):
     for curr_avg in graph_avg_per_category:
-        df = pd.DataFrame({'x': point_quantites, curr_avg: graph_avg_per_category[curr_avg]})
+        deg = math.floor(math.sqrt(len(point_quantites)))
+        lr = np.polyfit(point_quantites, graph_avg_per_category[curr_avg], deg=deg)
+        df = pd.DataFrame({'x': point_quantites, curr_avg: [np.polyval(lr, [el])[0] for el in point_quantites]})
+
         plt.plot('x', curr_avg, data=df)
         plt.xlabel('Data Batch Size')
         plt.ylabel('Render Time (Ms)')
@@ -54,6 +58,13 @@ if __name__ == "__main__":
     for graph in graphs:
         for categ_graph_data in all_graphs_data:
             avg_categ_graph_data = np.mean(all_graphs_data[categ_graph_data][graph])
+            if graph == 'overall' and math.isnan(avg_categ_graph_data):
+                categories = list(all_graphs_data.keys())
+                deg = math.floor(math.sqrt(len(graph_avg_per_category[graph])))
+                fit = np.polyfit(x=categories[:categories.index(categ_graph_data)] ,y=graph_avg_per_category[graph], deg=2)
+                val = np.polyval(fit, [categ_graph_data])
+                avg_categ_graph_data = val[0]
+                print(avg_categ_graph_data)
             graph_avg_per_category[graph].append(avg_categ_graph_data)
 
     visualise_render_time(graph_avg_per_category, point_quantites)

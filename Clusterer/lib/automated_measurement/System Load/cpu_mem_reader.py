@@ -1,3 +1,4 @@
+import math
 import argparse
 import pandas as pd
 from traceback import print_exc
@@ -6,8 +7,7 @@ import os
 import sys
 from pprint import pprint
 import numpy as np
-import seaborn as sns
-sns.set(color_codes=True)
+import seaborn as sns; sns.set(color_codes=True)
 
 categories = ['cpu_500', 'cpu_1000', 'mem_500', 'mem_1000']
 
@@ -19,8 +19,6 @@ def text_file_sorter(el):
     return (data_points, reqs)
 
 # cite: https://stackoverflow.com/questions/354038/how-do-i-check-if-a-string-is-a-number-float
-
-
 def check_number(number_string):
     try:
         if number_string == '-':
@@ -45,9 +43,8 @@ def read_data_files():
 
 def visualise_results(all_extracted_vals, intervals):
     cpu_means, mem_means = get_means(all_extracted_vals)
-    # intervals = [1, 5, 10, 20, 30, 40, 50]
-    cpu_df = pd.DataFrame(
-        {'x': intervals, '500_points': cpu_means['cpu_500'], '1000_points': cpu_means['cpu_1000']})
+
+    cpu_df = pd.DataFrame({'x': intervals, '500_points': cpu_means['cpu_500'], '1000_points': cpu_means['cpu_1000']})
     plt.plot('x', '500_points', data=cpu_df)
     plt.plot('x', '1000_points', data=cpu_df)
     plt.xlabel('Simultaneous Requests')
@@ -56,8 +53,7 @@ def visualise_results(all_extracted_vals, intervals):
     plt.savefig('cpu.png')
 
     plt.figure()
-    cpu_df = pd.DataFrame(
-        {'x': intervals, '500_points': mem_means['mem_500'], '1000_points': mem_means['mem_1000']})
+    cpu_df = pd.DataFrame({'x': intervals, '500_points': mem_means['mem_500'], '1000_points': mem_means['mem_1000']})
     plt.plot('x', '500_points', data=cpu_df)
     plt.plot('x', '1000_points', data=cpu_df)
     plt.xlabel('Simultaneous Requests')

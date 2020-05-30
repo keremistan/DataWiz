@@ -19,7 +19,7 @@ def read_data_files():
         all_files.append(file_names)
 
     cwd_all_files = all_files[0]
-    cwd_all_txt_files = list(filter(lambda x: '.log' in x, cwd_all_files))
+    cwd_all_txt_files = list(filter(lambda x: '.json' in x, cwd_all_files))
     cwd_all_txt_files = sorted(cwd_all_txt_files, key=file_name_point_quantity_extractor)
     return cwd_all_txt_files
 
@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
     for point_quantity in point_quantites:
         temp_graphs_data = dict(map(lambda el: (el, []), graphs))
-        with open(str(point_quantity) + '.log') as f:
+        with open(str(point_quantity) + '.json') as f:
             curr_file_content = f.read()
             curr_file_content = json.loads(curr_file_content)
             for meas_point in curr_file_content:

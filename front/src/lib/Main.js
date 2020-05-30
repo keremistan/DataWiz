@@ -16,8 +16,10 @@ function Main(props) {
   const dimensions = useRef(null)
   const scales = useRef(null)
   const profileSaver = useRef([])
+  const qty_of_points = useRef(0)
   const dataForms = ['raw_data', 'cluster']
   var pathname = useLocation().pathname
+
 
   useEffect(() => {
     pathname = pathname == '/' ? '/default' : pathname
@@ -31,6 +33,12 @@ function Main(props) {
           }
 
           var parsedData = JSON.parse(JSON.parse(resData))
+
+          if (qty_of_points.current != parsedData.raw_data.length){
+            profileSaver.current = []
+          }
+          qty_of_points.current = parsedData.raw_data.length
+
           dimensions.current = parsedData.dimensions
           var previousClusters = clusterData.current == null ? [] : clusterData.current
           clusterData.current = push20(previousClusters, parsedData)
@@ -65,14 +73,14 @@ function Main(props) {
     return (
       <Profiler id="overall"
         onRender={(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions) => {
-          profileSaver.current.push(onRenderProfilerHandler(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
+          profileSaver.current.push(onRenderProfilerHandler(qty_of_points.current, id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
         }
         }>
         <div className="App">
           <div className="category-graph">
             <Profiler id="scatterWithClusters"
               onRender={(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions) => {
-                profileSaver.current.push(onRenderProfilerHandler(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
+                profileSaver.current.push(onRenderProfilerHandler(qty_of_points.current, id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
               }
               }>
               <Scatter
@@ -86,7 +94,7 @@ function Main(props) {
           <div className="category-graph">
             <Profiler id="scatterWithRaw"
               onRender={(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions) => {
-                profileSaver.current.push(onRenderProfilerHandler(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
+                profileSaver.current.push(onRenderProfilerHandler(qty_of_points.current, id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
               }
               }>
               <Scatter
@@ -124,7 +132,7 @@ function Main(props) {
               <div className="parallel-graphs">
                 <Profiler id={'parallel_' + form}
                   onRender={(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions) => {
-                    profileSaver.current.push(onRenderProfilerHandler(id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
+                    profileSaver.current.push(onRenderProfilerHandler(qty_of_points.current, id, phase, actualDuration, baseDuration, startTime, commitTime, interactions, profileSaver.current))
                   }
                   }>
                   <ParallelCoord data={data[form]} />

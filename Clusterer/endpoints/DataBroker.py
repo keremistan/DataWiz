@@ -6,6 +6,8 @@ from os import environ
 from sklearn.cluster import DBSCAN, Birch, KMeans, OPTICS
 from pprint import pprint
 from json import dumps
+import argparse
+
 # Choose an algorithm by oncommenting
 # CLUSTERING_ALGO = 'kmeans'
 # CLUSTERING_ALGO = 'optics'
@@ -15,8 +17,19 @@ CLUSTERING_ALGO = 'dbscan'
 
 class DataBroker(Resource):
     def __init__(self):
+        arguments_parser = argparse.ArgumentParser()
+        arguments_parser.add_argument('--redis',
+                                    type=str,
+                                    default='6379'
+                                    )
+        arguments_parser.add_argument('--port', '-p',
+                                    default='4545'
+                                    )        
+        args = arguments_parser.parse_args()
+
+
         if environ.get('FLASK_ENV') is None:
-            self.redis_client = redis.Redis()
+            self.redis_client = redis.Redis('127.0.0.1', socket_connect_timeout=1, port=args.redis)
         else:
             self.redis_client = redis.Redis('redis', 6379)
         super(DataBroker, self).__init__()
@@ -69,7 +82,6 @@ class DataBroker(Resource):
             'all_clusters': clusters.tolist(),
             'dimensions': dimensions
         }
-
         self.redis_client.set(resource_id, dumps(both))
 
 

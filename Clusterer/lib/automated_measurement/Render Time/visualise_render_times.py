@@ -28,9 +28,18 @@ def read_data_files():
 def visualise_render_time(graph_avg_per_category, point_quantites):
     for curr_avg in graph_avg_per_category:
         deg = math.floor(math.sqrt(len(point_quantites)))
-        lr = np.polyfit(point_quantites, graph_avg_per_category[curr_avg], deg=deg)
+        cur_categs_vals = graph_avg_per_category[curr_avg]
+
+        for point in cur_categs_vals: # clean nans
+            if math.isnan(point):
+                curr_index = cur_categs_vals.index(point)
+                nans_avg = (cur_categs_vals[curr_index-1] + cur_categs_vals[curr_index+1]) / 2
+                cur_categs_vals[curr_index] = nans_avg
+
+        lr = np.polyfit(point_quantites, cur_categs_vals, deg=deg)
         df = pd.DataFrame({'x': point_quantites, curr_avg: [np.polyval(lr, [el])[0] for el in point_quantites]})
 
+        plt.figure()
         plt.plot('x', curr_avg, data=df)
         plt.xlabel('Data Batch Size')
         plt.ylabel('Render Time (Ms)')

@@ -1,0 +1,15 @@
+@startuml
+
+title Producing Clusters
+scale 5
+
+DataSource -> Server: post(raw_data)
+Server -> Server: cluster(raw_data)
+Server -> Cache: save(raw_data, clusters)
+alt Saving Successfull
+    Server <- Cache: return True
+else
+    Server <- Cache: return !True
+    Server -> Server: raise Exception
+end
+@enduml

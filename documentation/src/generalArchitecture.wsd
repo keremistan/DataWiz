@@ -1,0 +1,14 @@
+@startuml
+
+scale 3
+
+[server/Flask] as server
+[client/ReactJS] as client
+[dataSource] as ds
+' [db/InfluxDB] as db
+
+ds -> server
+' server - db
+server --> client
+
+@enduml

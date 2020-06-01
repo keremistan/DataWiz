@@ -1,0 +1,18 @@
+@startuml
+
+title Consuming Clusters
+scale 5
+
+Client -> Server: fetch(resource_id)
+Server -> Cache: query(resource_id)
+alt Query Successful
+    Server <- Cache: return query_results
+    Server -> Server: stringify(query_results)
+    Client <- Server: return stringified_query_results
+else
+    Server <- Cache: return None
+    Client <- Server: return {type: error, message: ResourceNotFound}
+end
+
+
+@enduml

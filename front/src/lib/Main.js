@@ -37,11 +37,14 @@ function Main(props) {
           if (qty_of_points.current != parsedData.raw_data.length){
             profileSaver.current = []
           }
+
           qty_of_points.current = parsedData.raw_data.length
 
           dimensions.current = parsedData.dimensions
+
           var previousClusters = clusterData.current == null ? [] : clusterData.current
-          clusterData.current = push20(previousClusters, parsedData)
+          clusterData.current = push10(previousClusters, parsedData)
+
           parsedData.cluster = indexToData(parsedData.cluster, parsedData.raw_data)
           var preparedParsedData = prepareData(dimensions.current, parsedData)
           setData(preparedParsedData)
@@ -56,7 +59,7 @@ function Main(props) {
     }, 500)
   }, [])
 
-  const push20 = (arr, parsedData) => {
+  const push10 = (arr, parsedData) => {
     var clusterElements = parsedData.cluster.map(clusterIndex => parsedData.raw_data[clusterIndex])
     if (arr.length >= 10) {
       arr.shift()

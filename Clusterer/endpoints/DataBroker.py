@@ -82,7 +82,8 @@ class DataBroker(Resource):
             'all_clusters': clusters.tolist(),
             'dimensions': dimensions
         }
-        self.redis_client.set(resource_id, dumps(both))
+        if self.redis_client.set(resource_id, dumps(both)) != True:
+            raise Exception('Data could not be saved.')
 
 
     def clusters_info(self, clusters):

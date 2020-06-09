@@ -7,10 +7,10 @@ from sklearn.cluster import DBSCAN, Birch, KMeans, OPTICS
 from pprint import pprint
 from json import dumps
 # Choose an algorithm by oncommenting
-# CLUSTERING_ALGO = 'kmeans'
+CLUSTERING_ALGO = 'kmeans'
 # CLUSTERING_ALGO = 'optics'
 # CLUSTERING_ALGO = 'dbscan'
-CLUSTERING_ALGO = 'birch'
+# CLUSTERING_ALGO = 'birch'
 
 
 class DataBroker(Resource):

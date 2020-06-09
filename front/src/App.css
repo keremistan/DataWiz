@@ -27,6 +27,17 @@
   justify-content: space-around;
 }
 
+.control-panel{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75em 1em;
+  background-color: beige;
+}
+
+.retained-clusters-input{
+  width: 2em;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

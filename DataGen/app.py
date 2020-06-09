@@ -18,12 +18,12 @@ def start():
             print('new request is sent')
             body = {
                 'data': [],
-                'dimensions': ["cpu", "mpu", "traffic", "ram", "imo", "kinergy"]
+                'dimensions': ["cpu", "traffic", "ram", "kinergy"]
             }
             for resource_id in range(5):
                 for _ in range(50):
                     temp_data_point = []
-                    for i in range(6):
+                    for i in range(len(body['dimensions'])):
                         # i = 10
                         if i == 0: 
                             temp_data_point.append(gauss(randint(0, 5*i), 35))

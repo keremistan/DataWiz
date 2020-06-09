@@ -5,62 +5,12 @@ import { ResponsiveParallelCoordinates, ResponsiveParallelCoordinatesCanvas } fr
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const MyResponsiveParallelCoordinates = ({ data }) => (
+const MyResponsiveParallelCoordinates = ({ data, variables }) => (
 
     // <ResponsiveParallelCoordinates
     <ResponsiveParallelCoordinatesCanvas
         data={data}
-        variables={[
-            {
-                key: 'cpu',
-                type: 'linear',
-                min: 'auto',
-                max: 'auto',
-                ticksPosition: 'before',
-                legend: 'cpu',
-                legendPosition: 'start',
-                legendOffset: 20
-            },
-            {
-                key: 'traffic',
-                type: 'linear',
-                min: 'auto',
-                max: 'auto',
-                ticksPosition: 'before',
-                legend: 'traffic',
-                legendPosition: 'start',
-                legendOffset: 20
-            },
-            {
-                key: 'ram',
-                type: 'linear',
-                padding: 1,
-                min: 'auto',
-                max: 'auto',
-                legend: 'ram',
-                legendPosition: 'start',
-                legendOffset: -20
-            },
-            {
-                key: 'io',
-                type: 'linear',
-                padding: 0,
-                min: 'auto',
-                max: 'auto',
-                legend: 'io',
-                legendPosition: 'start',
-                legendOffset: -20
-            },
-            {
-                key: 'energy',
-                type: 'linear',
-                min: 'auto',
-                max: 'auto',
-                legend: 'energy',
-                legendPosition: 'start',
-                legendOffset: -20
-            }
-        ]}
+        variables={variables}
         lineOpacity={0.5}
         colors={{ scheme: 'dark2' }}
         margin={{ top: 50, right: 60, bottom: 50, left: 60 }}

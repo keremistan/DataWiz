@@ -108,7 +108,7 @@ function Main(props) {
     }
   }
 
-  if (data == null || scatterData.current == null || scales.current == null) {
+  if (data == null || scatterData.current == null || scales.current == null || dimensions.current == null) {
     return null
   } else {
     return (
@@ -164,7 +164,7 @@ function Main(props) {
         {dataForms.map(form => {
           return (
             <div className="parallel-graphs">
-              <ParallelCoord data={data[form]} />
+              <ParallelCoord data={data[form]} variables={dimensions.current.map(dim => ({'key': dim, 'type': 'linear', 'legend': dim}))} />
             </div>
           )
         })}

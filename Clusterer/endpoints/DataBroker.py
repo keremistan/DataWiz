@@ -54,6 +54,7 @@ class DataBroker(Resource):
             clusters = DBSCAN(eps=30, min_samples=5).fit_predict(data)
 
         clustering_summary = self.clusters_info(clusters)
+        # TODO: fix the constant error throwing of max 
         biggest_cluster_index = max(clustering_summary, key=clustering_summary.get)
         biggest_cluster = []
         clusters_len = len(clusters)
@@ -83,7 +84,7 @@ class DataBroker(Resource):
         for cluster in clusters:
             cluster_summary[cluster] += 1
 
-        # Remove noise, if there is any
+        # Removes noise, if there is any
         if -1 in cluster_summary.keys():
             del cluster_summary[-1]
 

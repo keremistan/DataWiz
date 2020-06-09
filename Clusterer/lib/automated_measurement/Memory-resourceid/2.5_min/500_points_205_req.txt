@@ -1,0 +1,894 @@
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   MEM %               NET I/O             BLOCK I/O           PIDS
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1     0.00%               1.535MiB / 1.945GiB   0.08%               180B / 0B           0B / 0B             1
+[2J[HCONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1     0.00%               1.535MiB / 1.945GiB   0.08%               180B / 0B           0B / 0B             1
+                    --                  0.00%               0B / 0B               0.00%               0B / 0B             0B / 0B             0
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.64%               2.219MiB / 1.945GiB   0.11%               446B / 0B           0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   0.00%               25.35MiB / 1.945GiB   1.27%               180B / 0B           0B / 0B             2
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.64%               2.219MiB / 1.945GiB   0.11%               446B / 0B           0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   0.00%               25.35MiB / 1.945GiB   1.27%               180B / 0B           0B / 0B             2
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.14%               2.219MiB / 1.945GiB   0.11%               812B / 0B           0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   58.45%              52.9MiB / 1.945GiB    2.66%               604B / 258B         0B / 0B             2
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.14%               2.219MiB / 1.945GiB   0.11%               812B / 0B           0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   58.45%              52.9MiB / 1.945GiB    2.66%               604B / 258B         0B / 0B             2
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.11%               2.219MiB / 1.945GiB   0.11%               812B / 0B           0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   1.89%               53.83MiB / 1.945GiB   2.70%               555kB / 6.93kB      0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.11%               2.219MiB / 1.945GiB   0.11%               812B / 0B           0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   1.89%               53.83MiB / 1.945GiB   2.70%               555kB / 6.93kB      0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.11%               2.219MiB / 1.945GiB   0.11%               812B / 0B           0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   1.89%               53.83MiB / 1.945GiB   2.70%               555kB / 6.93kB      0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.11%               2.219MiB / 1.945GiB   0.11%               812B / 0B           0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   1.89%               53.83MiB / 1.945GiB   2.70%               555kB / 6.93kB      0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       --                  -- / --               --                  --                  --                  --
+f6cc70f3ca5d        datawiz_clusterer_1   11.86%              56.99MiB / 1.945GiB   2.86%               564kB / 519kB       0B / 0B             2
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.38%               2.832MiB / 1.945GiB   0.14%               509kB / 6.28kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   11.86%              56.99MiB / 1.945GiB   2.86%               564kB / 519kB       0B / 0B             2
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       0.38%               2.832MiB / 1.945GiB   0.14%               509kB / 6.28kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   11.86%              56.99MiB / 1.945GiB   2.86%               564kB / 519kB       0B / 0B             2
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       1.37%               3.859MiB / 1.945GiB   0.19%               1.4MB / 17.6kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   58.88%              58.51MiB / 1.945GiB   2.94%               9.45MB / 1.52MB     0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       1.37%               3.859MiB / 1.945GiB   0.19%               1.4MB / 17.6kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   58.88%              58.51MiB / 1.945GiB   2.94%               9.45MB / 1.52MB     0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.75%               5.895MiB / 1.945GiB   0.30%               3.56MB / 44.8kB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.69%             58.96MiB / 1.945GiB   2.96%               12.1MB / 3.74MB     0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.75%               5.895MiB / 1.945GiB   0.30%               3.56MB / 44.8kB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.69%             58.96MiB / 1.945GiB   2.96%               12.1MB / 3.74MB     0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.51%               7.836MiB / 1.945GiB   0.39%               5.47MB / 69.2kB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.15%             59.11MiB / 1.945GiB   2.97%               14.3MB / 5.69MB     0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.51%               7.836MiB / 1.945GiB   0.39%               5.47MB / 69.2kB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.15%             59.11MiB / 1.945GiB   2.97%               14.3MB / 5.69MB     0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.93%               10.03MiB / 1.945GiB   0.50%               7.63MB / 96.8kB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.94%             59.61MiB / 1.945GiB   2.99%               16.8MB / 7.9MB      0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.93%               10.03MiB / 1.945GiB   0.50%               7.63MB / 96.8kB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.94%             59.61MiB / 1.945GiB   2.99%               16.8MB / 7.9MB      0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.20%               11.57MiB / 1.945GiB   0.58%               9.47MB / 120kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.98%             59.61MiB / 1.945GiB   2.99%               18.5MB / 9.79MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.20%               11.57MiB / 1.945GiB   0.58%               9.47MB / 120kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.98%             59.61MiB / 1.945GiB   2.99%               18.5MB / 9.79MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.72%               13.23MiB / 1.945GiB   0.66%               11.7MB / 148kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.48%             59.6MiB / 1.945GiB    2.99%               21.4MB / 12.1MB     0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.72%               13.23MiB / 1.945GiB   0.66%               11.7MB / 148kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.48%             59.6MiB / 1.945GiB    2.99%               21.4MB / 12.1MB     0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               14.49MiB / 1.945GiB   0.73%               13.8MB / 175kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.93%             60.83MiB / 1.945GiB   3.05%               23.4MB / 14.3MB     0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               14.49MiB / 1.945GiB   0.73%               13.8MB / 175kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.93%             60.83MiB / 1.945GiB   3.05%               23.4MB / 14.3MB     0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.66%               15.81MiB / 1.945GiB   0.79%               16MB / 203kB        0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.16%             60.89MiB / 1.945GiB   3.06%               25.8MB / 16.5MB     0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.66%               15.81MiB / 1.945GiB   0.79%               16MB / 203kB        0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.16%             60.89MiB / 1.945GiB   3.06%               25.8MB / 16.5MB     0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.47%               16.88MiB / 1.945GiB   0.85%               17.9MB / 227kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.18%             61.27MiB / 1.945GiB   3.08%               28MB / 18.5MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.47%               16.88MiB / 1.945GiB   0.85%               17.9MB / 227kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.18%             61.27MiB / 1.945GiB   3.08%               28MB / 18.5MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.82%               17.94MiB / 1.945GiB   0.90%               20.3MB / 258kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   115.42%             61.12MiB / 1.945GiB   3.07%               30.2MB / 21MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.82%               17.94MiB / 1.945GiB   0.90%               20.3MB / 258kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   115.42%             61.12MiB / 1.945GiB   3.07%               30.2MB / 21MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.05%               19.27MiB / 1.945GiB   0.97%               22.7MB / 287kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.87%             61.21MiB / 1.945GiB   3.07%               32.6MB / 23.3MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.05%               19.27MiB / 1.945GiB   0.97%               22.7MB / 287kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.87%             61.21MiB / 1.945GiB   3.07%               32.6MB / 23.3MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.05%               19.44MiB / 1.945GiB   0.98%               24.8MB / 315kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.81%             61.31MiB / 1.945GiB   3.08%               34.8MB / 25.5MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.05%               19.44MiB / 1.945GiB   0.98%               24.8MB / 315kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.81%             61.31MiB / 1.945GiB   3.08%               34.8MB / 25.5MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.97%               20.04MiB / 1.945GiB   1.01%               27.3MB / 345kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   121.31%             61.37MiB / 1.945GiB   3.08%               37.3MB / 28MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.97%               20.04MiB / 1.945GiB   1.01%               27.3MB / 345kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   121.31%             61.37MiB / 1.945GiB   3.08%               37.3MB / 28MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.36%               20.73MiB / 1.945GiB   1.04%               29.2MB / 370kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.53%             61.24MiB / 1.945GiB   3.08%               39.4MB / 30MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.36%               20.73MiB / 1.945GiB   1.04%               29.2MB / 370kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.53%             61.24MiB / 1.945GiB   3.08%               39.4MB / 30MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.44%               21.5MiB / 1.945GiB    1.08%               31.5MB / 399kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.81%             61.33MiB / 1.945GiB   3.08%               41.9MB / 32.3MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.44%               21.5MiB / 1.945GiB    1.08%               31.5MB / 399kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.81%             61.33MiB / 1.945GiB   3.08%               41.9MB / 32.3MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.43%               20.91MiB / 1.945GiB   1.05%               33.4MB / 424kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.75%             61.56MiB / 1.945GiB   3.09%               43.9MB / 34.4MB     0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.43%               20.91MiB / 1.945GiB   1.05%               33.4MB / 424kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.75%             61.56MiB / 1.945GiB   3.09%               43.9MB / 34.4MB     0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.31%               21.84MiB / 1.945GiB   1.10%               35.5MB / 450kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.82%             61.71MiB / 1.945GiB   3.10%               46.2MB / 36.5MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.31%               21.84MiB / 1.945GiB   1.10%               35.5MB / 450kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.82%             61.71MiB / 1.945GiB   3.10%               46.2MB / 36.5MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.53%               23.13MiB / 1.945GiB   1.16%               37.6MB / 477kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.33%             61.45MiB / 1.945GiB   3.09%               48.4MB / 38.7MB     0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.53%               23.13MiB / 1.945GiB   1.16%               37.6MB / 477kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.33%             61.45MiB / 1.945GiB   3.09%               48.4MB / 38.7MB     0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.53%               23.13MiB / 1.945GiB   1.16%               37.6MB / 477kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.33%             61.45MiB / 1.945GiB   3.09%               48.4MB / 38.7MB     0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.05%               22.65MiB / 1.945GiB   1.14%               40MB / 507kB        0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   120.80%             61.34MiB / 1.945GiB   3.08%               50.4MB / 41MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.05%               22.65MiB / 1.945GiB   1.14%               40MB / 507kB        0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   120.80%             61.34MiB / 1.945GiB   3.08%               50.4MB / 41MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.40%               23.77MiB / 1.945GiB   1.19%               42.4MB / 537kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   123.11%             61.36MiB / 1.945GiB   3.08%               53MB / 43.4MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.40%               23.77MiB / 1.945GiB   1.19%               42.4MB / 537kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   123.11%             61.36MiB / 1.945GiB   3.08%               53MB / 43.4MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.27%               24.66MiB / 1.945GiB   1.24%               44.2MB / 561kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.00%             61.63MiB / 1.945GiB   3.09%               55.5MB / 45.3MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.27%               24.66MiB / 1.945GiB   1.24%               44.2MB / 561kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.00%             61.63MiB / 1.945GiB   3.09%               55.5MB / 45.3MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT    MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.54%               25.3MiB / 1.945GiB   1.27%               46.6MB / 591kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.53%             61.7MiB / 1.945GiB   3.10%               57.7MB / 47.7MB     0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT    MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.54%               25.3MiB / 1.945GiB   1.27%               46.6MB / 591kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.53%             61.7MiB / 1.945GiB   3.10%               57.7MB / 47.7MB     0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.71%               24.54MiB / 1.945GiB   1.23%               48.6MB / 616kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.82%             62.85MiB / 1.945GiB   3.16%               60.3MB / 49.8MB     0B / 0B             15
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.71%               24.54MiB / 1.945GiB   1.23%               48.6MB / 616kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.82%             62.85MiB / 1.945GiB   3.16%               60.3MB / 49.8MB     0B / 0B             15
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.11%               25.11MiB / 1.945GiB   1.26%               50.7MB / 643kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.12%             63.14MiB / 1.945GiB   3.17%               62.1MB / 52MB       0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.11%               25.11MiB / 1.945GiB   1.26%               50.7MB / 643kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.12%             63.14MiB / 1.945GiB   3.17%               62.1MB / 52MB       0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.90%               25.66MiB / 1.945GiB   1.29%               52.7MB / 669kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.67%             63.02MiB / 1.945GiB   3.16%               64.6MB / 54.1MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.90%               25.66MiB / 1.945GiB   1.29%               52.7MB / 669kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.67%             63.02MiB / 1.945GiB   3.16%               64.6MB / 54.1MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.10%               26.04MiB / 1.945GiB   1.31%               54.2MB / 688kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   124.04%             63.06MiB / 1.945GiB   3.17%               66.1MB / 55.5MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.10%               26.04MiB / 1.945GiB   1.31%               54.2MB / 688kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   124.04%             63.06MiB / 1.945GiB   3.17%               66.1MB / 55.5MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.77%               25.42MiB / 1.945GiB   1.28%               56.3MB / 715kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.55%             63.34MiB / 1.945GiB   3.18%               68.7MB / 57.8MB     0B / 0B             18
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.77%               25.42MiB / 1.945GiB   1.28%               56.3MB / 715kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.55%             63.34MiB / 1.945GiB   3.18%               68.7MB / 57.8MB     0B / 0B             18
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.37%               24.36MiB / 1.945GiB   1.22%               58.6MB / 744kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.88%             63.27MiB / 1.945GiB   3.18%               70.7MB / 60MB       0B / 0B             13
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.37%               24.36MiB / 1.945GiB   1.22%               58.6MB / 744kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.88%             63.27MiB / 1.945GiB   3.18%               70.7MB / 60MB       0B / 0B             13
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.30%               25.27MiB / 1.945GiB   1.27%               60.4MB / 767kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.39%             63.34MiB / 1.945GiB   3.18%               72.8MB / 61.9MB     0B / 0B             15
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.30%               25.27MiB / 1.945GiB   1.27%               60.4MB / 767kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.39%             63.34MiB / 1.945GiB   3.18%               72.8MB / 61.9MB     0B / 0B             15
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.77%               26.47MiB / 1.945GiB   1.33%               62.5MB / 794kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.79%             63.21MiB / 1.945GiB   3.17%               75.2MB / 64.1MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.77%               26.47MiB / 1.945GiB   1.33%               62.5MB / 794kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.79%             63.21MiB / 1.945GiB   3.17%               75.2MB / 64.1MB     0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.12%               28.19MiB / 1.945GiB   1.42%               64.8MB / 822kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.03%             63.09MiB / 1.945GiB   3.17%               77.1MB / 66.4MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.12%               28.19MiB / 1.945GiB   1.42%               64.8MB / 822kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.03%             63.09MiB / 1.945GiB   3.17%               77.1MB / 66.4MB     0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.23%               25.46MiB / 1.945GiB   1.28%               66.8MB / 847kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   120.23%             63.14MiB / 1.945GiB   3.17%               79.5MB / 68.4MB     0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.23%               25.46MiB / 1.945GiB   1.28%               66.8MB / 847kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   120.23%             63.14MiB / 1.945GiB   3.17%               79.5MB / 68.4MB     0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.49%               26.55MiB / 1.945GiB   1.33%               68.8MB / 873kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.67%             63.1MiB / 1.945GiB    3.17%               81.4MB / 70.5MB     0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.49%               26.55MiB / 1.945GiB   1.33%               68.8MB / 873kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.67%             63.1MiB / 1.945GiB    3.17%               81.4MB / 70.5MB     0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.86%               26.95MiB / 1.945GiB   1.35%               70.9MB / 900kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.41%             63.18MiB / 1.945GiB   3.17%               84MB / 72.6MB       0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.86%               26.95MiB / 1.945GiB   1.35%               70.9MB / 900kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.41%             63.18MiB / 1.945GiB   3.17%               84MB / 72.6MB       0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.94%               26.09MiB / 1.945GiB   1.31%               73.1MB / 927kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.30%             63.11MiB / 1.945GiB   3.17%               86MB / 74.9MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.94%               26.09MiB / 1.945GiB   1.31%               73.1MB / 927kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.30%             63.11MiB / 1.945GiB   3.17%               86MB / 74.9MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               27.23MiB / 1.945GiB   1.37%               75.4MB / 956kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.78%             63.16MiB / 1.945GiB   3.17%               88.1MB / 77.2MB     0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               27.23MiB / 1.945GiB   1.37%               75.4MB / 956kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.78%             63.16MiB / 1.945GiB   3.17%               88.1MB / 77.2MB     0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.22%               27.06MiB / 1.945GiB   1.36%               77.5MB / 983kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.03%             63.14MiB / 1.945GiB   3.17%               90.4MB / 79.3MB     0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.22%               27.06MiB / 1.945GiB   1.36%               77.5MB / 983kB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.03%             63.14MiB / 1.945GiB   3.17%               90.4MB / 79.3MB     0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.77%               28.5MiB / 1.945GiB    1.43%               79.6MB / 1.01MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.48%             63.04MiB / 1.945GiB   3.17%               92.8MB / 81.5MB     0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.77%               28.5MiB / 1.945GiB    1.43%               79.6MB / 1.01MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.48%             63.04MiB / 1.945GiB   3.17%               92.8MB / 81.5MB     0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.11%               26.07MiB / 1.945GiB   1.31%               81.7MB / 1.04MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.34%             63.14MiB / 1.945GiB   3.17%               95.1MB / 83.6MB     0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.11%               26.07MiB / 1.945GiB   1.31%               81.7MB / 1.04MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.34%             63.14MiB / 1.945GiB   3.17%               95.1MB / 83.6MB     0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.60%               26.41MiB / 1.945GiB   1.33%               83.8MB / 1.06MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.58%             63.2MiB / 1.945GiB    3.17%               97.5MB / 85.8MB     0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.60%               26.41MiB / 1.945GiB   1.33%               83.8MB / 1.06MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.58%             63.2MiB / 1.945GiB    3.17%               97.5MB / 85.8MB     0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.14%               25.67MiB / 1.945GiB   1.29%               85.8MB / 1.09MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   101.80%             63.14MiB / 1.945GiB   3.17%               99.8MB / 87.9MB     0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.14%               25.67MiB / 1.945GiB   1.29%               85.8MB / 1.09MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   101.80%             63.14MiB / 1.945GiB   3.17%               99.8MB / 87.9MB     0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.44%               26.66MiB / 1.945GiB   1.34%               87.8MB / 1.11MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.77%             63.14MiB / 1.945GiB   3.17%               102MB / 89.9MB      0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.44%               26.66MiB / 1.945GiB   1.34%               87.8MB / 1.11MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.77%             63.14MiB / 1.945GiB   3.17%               102MB / 89.9MB      0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               24.21MiB / 1.945GiB   1.22%               89.9MB / 1.14MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.28%             63.22MiB / 1.945GiB   3.17%               104MB / 92MB        0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               24.21MiB / 1.945GiB   1.22%               89.9MB / 1.14MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.28%             63.22MiB / 1.945GiB   3.17%               104MB / 92MB        0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.95%               25.67MiB / 1.945GiB   1.29%               92.2MB / 1.17MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.37%             63.27MiB / 1.945GiB   3.18%               107MB / 94.4MB      0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.95%               25.67MiB / 1.945GiB   1.29%               92.2MB / 1.17MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.37%             63.27MiB / 1.945GiB   3.18%               107MB / 94.4MB      0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.51%               25.56MiB / 1.945GiB   1.28%               94.2MB / 1.19MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.37%             63.27MiB / 1.945GiB   3.18%               107MB / 94.4MB      0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.51%               25.56MiB / 1.945GiB   1.28%               94.2MB / 1.19MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   100.79%             63.33MiB / 1.945GiB   3.18%               109MB / 96.4MB      0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.51%               25.56MiB / 1.945GiB   1.28%               94.2MB / 1.19MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   100.79%             63.33MiB / 1.945GiB   3.18%               109MB / 96.4MB      0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.52%               24.14MiB / 1.945GiB   1.21%               96.5MB / 1.22MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.26%             63.14MiB / 1.945GiB   3.17%               111MB / 98.8MB      0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.52%               24.14MiB / 1.945GiB   1.21%               96.5MB / 1.22MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.26%             63.14MiB / 1.945GiB   3.17%               111MB / 98.8MB      0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.84%               25.36MiB / 1.945GiB   1.27%               98.4MB / 1.25MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.73%             63.2MiB / 1.945GiB    3.17%               113MB / 101MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.84%               25.36MiB / 1.945GiB   1.27%               98.4MB / 1.25MB     0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.73%             63.2MiB / 1.945GiB    3.17%               113MB / 101MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       4.73%               27MiB / 1.945GiB      1.36%               101MB / 1.28MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.32%             63.34MiB / 1.945GiB   3.18%               115MB / 103MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       4.73%               27MiB / 1.945GiB      1.36%               101MB / 1.28MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.32%             63.34MiB / 1.945GiB   3.18%               115MB / 103MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.80%               28.23MiB / 1.945GiB   1.42%               103MB / 1.3MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.56%             63.24MiB / 1.945GiB   3.18%               118MB / 105MB       0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.80%               28.23MiB / 1.945GiB   1.42%               103MB / 1.3MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.56%             63.24MiB / 1.945GiB   3.18%               118MB / 105MB       0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.65%               27.24MiB / 1.945GiB   1.37%               105MB / 1.33MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.00%             63.28MiB / 1.945GiB   3.18%               120MB / 107MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.65%               27.24MiB / 1.945GiB   1.37%               105MB / 1.33MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.00%             63.28MiB / 1.945GiB   3.18%               120MB / 107MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.94%               29.23MiB / 1.945GiB   1.47%               107MB / 1.36MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.65%             63.25MiB / 1.945GiB   3.18%               123MB / 110MB       0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.94%               29.23MiB / 1.945GiB   1.47%               107MB / 1.36MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.65%             63.25MiB / 1.945GiB   3.18%               123MB / 110MB       0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.73%               30.66MiB / 1.945GiB   1.54%               109MB / 1.39MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.76%             63.35MiB / 1.945GiB   3.18%               125MB / 112MB       0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.73%               30.66MiB / 1.945GiB   1.54%               109MB / 1.39MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.76%             63.35MiB / 1.945GiB   3.18%               125MB / 112MB       0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.39%               30.09MiB / 1.945GiB   1.51%               111MB / 1.41MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   119.52%             63.32MiB / 1.945GiB   3.18%               128MB / 114MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.39%               30.09MiB / 1.945GiB   1.51%               111MB / 1.41MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   119.52%             63.32MiB / 1.945GiB   3.18%               128MB / 114MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.51%               30.31MiB / 1.945GiB   1.52%               113MB / 1.44MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.21%             63.3MiB / 1.945GiB    3.18%               130MB / 116MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.51%               30.31MiB / 1.945GiB   1.52%               113MB / 1.44MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.21%             63.3MiB / 1.945GiB    3.18%               130MB / 116MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.04%               27.8MiB / 1.945GiB    1.40%               116MB / 1.47MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.86%             63.21MiB / 1.945GiB   3.17%               132MB / 118MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.04%               27.8MiB / 1.945GiB    1.40%               116MB / 1.47MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.86%             63.21MiB / 1.945GiB   3.17%               132MB / 118MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.97%               28.62MiB / 1.945GiB   1.44%               118MB / 1.49MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.47%             63.15MiB / 1.945GiB   3.17%               134MB / 121MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.97%               28.62MiB / 1.945GiB   1.44%               118MB / 1.49MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.47%             63.15MiB / 1.945GiB   3.17%               134MB / 121MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.54%               27.91MiB / 1.945GiB   1.40%               120MB / 1.52MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.14%             63.26MiB / 1.945GiB   3.18%               137MB / 123MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.54%               27.91MiB / 1.945GiB   1.40%               120MB / 1.52MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.14%             63.26MiB / 1.945GiB   3.18%               137MB / 123MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.66%               29.57MiB / 1.945GiB   1.48%               122MB / 1.54MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.51%             63.12MiB / 1.945GiB   3.17%               139MB / 125MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.66%               29.57MiB / 1.945GiB   1.48%               122MB / 1.54MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.51%             63.12MiB / 1.945GiB   3.17%               139MB / 125MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.63%               25.34MiB / 1.945GiB   1.27%               124MB / 1.57MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.23%             63.16MiB / 1.945GiB   3.17%               141MB / 127MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.63%               25.34MiB / 1.945GiB   1.27%               124MB / 1.57MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.23%             63.16MiB / 1.945GiB   3.17%               141MB / 127MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.78%               26.86MiB / 1.945GiB   1.35%               126MB / 1.6MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.29%             63.17MiB / 1.945GiB   3.17%               143MB / 129MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.78%               26.86MiB / 1.945GiB   1.35%               126MB / 1.6MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.29%             63.17MiB / 1.945GiB   3.17%               143MB / 129MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.72%               28.34MiB / 1.945GiB   1.42%               128MB / 1.63MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.15%             63.31MiB / 1.945GiB   3.18%               146MB / 131MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.72%               28.34MiB / 1.945GiB   1.42%               128MB / 1.63MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.15%             63.31MiB / 1.945GiB   3.18%               146MB / 131MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.88%               28.89MiB / 1.945GiB   1.45%               130MB / 1.65MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.03%             63.23MiB / 1.945GiB   3.18%               148MB / 133MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.88%               28.89MiB / 1.945GiB   1.45%               130MB / 1.65MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.03%             63.23MiB / 1.945GiB   3.18%               148MB / 133MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.64%               27.54MiB / 1.945GiB   1.38%               132MB / 1.68MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.05%             63.32MiB / 1.945GiB   3.18%               150MB / 136MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.64%               27.54MiB / 1.945GiB   1.38%               132MB / 1.68MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.05%             63.32MiB / 1.945GiB   3.18%               150MB / 136MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.34%               28.95MiB / 1.945GiB   1.45%               135MB / 1.71MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.57%             63.23MiB / 1.945GiB   3.18%               153MB / 138MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.34%               28.95MiB / 1.945GiB   1.45%               135MB / 1.71MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.57%             63.23MiB / 1.945GiB   3.18%               153MB / 138MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.33%               29.25MiB / 1.945GiB   1.47%               137MB / 1.74MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.84%             63.23MiB / 1.945GiB   3.17%               155MB / 140MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.33%               29.25MiB / 1.945GiB   1.47%               137MB / 1.74MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.84%             63.23MiB / 1.945GiB   3.17%               155MB / 140MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.13%               27.69MiB / 1.945GiB   1.39%               139MB / 1.77MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   121.22%             63.38MiB / 1.945GiB   3.18%               157MB / 142MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.13%               27.69MiB / 1.945GiB   1.39%               139MB / 1.77MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   121.22%             63.38MiB / 1.945GiB   3.18%               157MB / 142MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.48%               28.95MiB / 1.945GiB   1.45%               141MB / 1.79MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.76%             63.41MiB / 1.945GiB   3.18%               160MB / 145MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.48%               28.95MiB / 1.945GiB   1.45%               141MB / 1.79MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.76%             63.41MiB / 1.945GiB   3.18%               160MB / 145MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.30%               28.64MiB / 1.945GiB   1.44%               143MB / 1.82MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   101.04%             63.38MiB / 1.945GiB   3.18%               162MB / 147MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.30%               28.64MiB / 1.945GiB   1.44%               143MB / 1.82MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   101.04%             63.38MiB / 1.945GiB   3.18%               162MB / 147MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.98%               29.32MiB / 1.945GiB   1.47%               146MB / 1.85MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.05%             63.55MiB / 1.945GiB   3.19%               164MB / 149MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.98%               29.32MiB / 1.945GiB   1.47%               146MB / 1.85MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.05%             63.55MiB / 1.945GiB   3.19%               164MB / 149MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.14%               26.71MiB / 1.945GiB   1.34%               148MB / 1.88MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.08%             63.32MiB / 1.945GiB   3.18%               166MB / 151MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.14%               26.71MiB / 1.945GiB   1.34%               148MB / 1.88MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.08%             63.32MiB / 1.945GiB   3.18%               166MB / 151MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.60%               26.91MiB / 1.945GiB   1.35%               150MB / 1.9MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.44%             63.31MiB / 1.945GiB   3.18%               169MB / 154MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.60%               26.91MiB / 1.945GiB   1.35%               150MB / 1.9MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.44%             63.31MiB / 1.945GiB   3.18%               169MB / 154MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.60%               26.91MiB / 1.945GiB   1.35%               150MB / 1.9MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.44%             63.31MiB / 1.945GiB   3.18%               169MB / 154MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.79%               26MiB / 1.945GiB      1.31%               152MB / 1.93MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.68%             63.34MiB / 1.945GiB   3.18%               171MB / 156MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.79%               26MiB / 1.945GiB      1.31%               152MB / 1.93MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.68%             63.34MiB / 1.945GiB   3.18%               171MB / 156MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.94%               27.94MiB / 1.945GiB   1.40%               154MB / 1.96MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.69%             63.36MiB / 1.945GiB   3.18%               174MB / 158MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.94%               27.94MiB / 1.945GiB   1.40%               154MB / 1.96MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.69%             63.36MiB / 1.945GiB   3.18%               174MB / 158MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.07%               25.93MiB / 1.945GiB   1.30%               157MB / 1.99MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.08%             63.43MiB / 1.945GiB   3.18%               176MB / 160MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.07%               25.93MiB / 1.945GiB   1.30%               157MB / 1.99MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.08%             63.43MiB / 1.945GiB   3.18%               176MB / 160MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.91%               27.44MiB / 1.945GiB   1.38%               159MB / 2.01MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.25%             63.41MiB / 1.945GiB   3.18%               178MB / 162MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.91%               27.44MiB / 1.945GiB   1.38%               159MB / 2.01MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.25%             63.41MiB / 1.945GiB   3.18%               178MB / 162MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.52%               28.54MiB / 1.945GiB   1.43%               161MB / 2.04MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.90%             63.52MiB / 1.945GiB   3.19%               180MB / 164MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.52%               28.54MiB / 1.945GiB   1.43%               161MB / 2.04MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.90%             63.52MiB / 1.945GiB   3.19%               180MB / 164MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.01%               29.31MiB / 1.945GiB   1.47%               163MB / 2.06MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.33%             63.51MiB / 1.945GiB   3.19%               182MB / 167MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.01%               29.31MiB / 1.945GiB   1.47%               163MB / 2.06MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.33%             63.51MiB / 1.945GiB   3.19%               182MB / 167MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       6.41%               27.95MiB / 1.945GiB   1.40%               165MB / 2.09MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.23%             63.57MiB / 1.945GiB   3.19%               185MB / 169MB       0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       6.41%               27.95MiB / 1.945GiB   1.40%               165MB / 2.09MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   102.23%             63.57MiB / 1.945GiB   3.19%               185MB / 169MB       0B / 0B             11
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.61%               29.23MiB / 1.945GiB   1.47%               167MB / 2.12MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.25%             63.48MiB / 1.945GiB   3.19%               187MB / 171MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.61%               29.23MiB / 1.945GiB   1.47%               167MB / 2.12MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.25%             63.48MiB / 1.945GiB   3.19%               187MB / 171MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.51%               29.77MiB / 1.945GiB   1.49%               169MB / 2.15MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.83%             63.6MiB / 1.945GiB    3.19%               189MB / 173MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.51%               29.77MiB / 1.945GiB   1.49%               169MB / 2.15MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.83%             63.6MiB / 1.945GiB    3.19%               189MB / 173MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.58%               30.12MiB / 1.945GiB   1.51%               171MB / 2.17MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.55%             63.45MiB / 1.945GiB   3.19%               191MB / 175MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.58%               30.12MiB / 1.945GiB   1.51%               171MB / 2.17MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.55%             63.45MiB / 1.945GiB   3.19%               191MB / 175MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.44%               28.55MiB / 1.945GiB   1.43%               173MB / 2.2MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.48%             63.56MiB / 1.945GiB   3.19%               194MB / 177MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.44%               28.55MiB / 1.945GiB   1.43%               173MB / 2.2MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.48%             63.56MiB / 1.945GiB   3.19%               194MB / 177MB       0B / 0B             10
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.08%               28.16MiB / 1.945GiB   1.41%               175MB / 2.23MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   100.43%             63.42MiB / 1.945GiB   3.18%               196MB / 180MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.08%               28.16MiB / 1.945GiB   1.41%               175MB / 2.23MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   100.43%             63.42MiB / 1.945GiB   3.18%               196MB / 180MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.03%               29.71MiB / 1.945GiB   1.49%               177MB / 2.25MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.03%             63.59MiB / 1.945GiB   3.19%               198MB / 182MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.03%               29.71MiB / 1.945GiB   1.49%               177MB / 2.25MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.03%             63.59MiB / 1.945GiB   3.19%               198MB / 182MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.47%               27.16MiB / 1.945GiB   1.36%               179MB / 2.28MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.06%             63.49MiB / 1.945GiB   3.19%               200MB / 184MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.47%               27.16MiB / 1.945GiB   1.36%               179MB / 2.28MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.06%             63.49MiB / 1.945GiB   3.19%               200MB / 184MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.49%               27.7MiB / 1.945GiB    1.39%               181MB / 2.3MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.63%             63.56MiB / 1.945GiB   3.19%               202MB / 186MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.49%               27.7MiB / 1.945GiB    1.39%               181MB / 2.3MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.63%             63.56MiB / 1.945GiB   3.19%               202MB / 186MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       9.38%               27.46MiB / 1.945GiB   1.38%               184MB / 2.33MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.94%             63.55MiB / 1.945GiB   3.19%               205MB / 188MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       9.38%               27.46MiB / 1.945GiB   1.38%               184MB / 2.33MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.94%             63.55MiB / 1.945GiB   3.19%               205MB / 188MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               28.59MiB / 1.945GiB   1.44%               186MB / 2.36MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.38%             63.55MiB / 1.945GiB   3.19%               207MB / 190MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               28.59MiB / 1.945GiB   1.44%               186MB / 2.36MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.38%             63.55MiB / 1.945GiB   3.19%               207MB / 190MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.13%               25.94MiB / 1.945GiB   1.30%               188MB / 2.39MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.30%             63.49MiB / 1.945GiB   3.19%               209MB / 192MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.13%               25.94MiB / 1.945GiB   1.30%               188MB / 2.39MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.30%             63.49MiB / 1.945GiB   3.19%               209MB / 192MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.19%               26.18MiB / 1.945GiB   1.31%               189MB / 2.4MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.41%             63.56MiB / 1.945GiB   3.19%               211MB / 194MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.19%               26.18MiB / 1.945GiB   1.31%               189MB / 2.4MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.41%             63.56MiB / 1.945GiB   3.19%               211MB / 194MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.32%               27.26MiB / 1.945GiB   1.37%               192MB / 2.44MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.90%             63.52MiB / 1.945GiB   3.19%               213MB / 197MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.32%               27.26MiB / 1.945GiB   1.37%               192MB / 2.44MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.90%             63.52MiB / 1.945GiB   3.19%               213MB / 197MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.81%               24.91MiB / 1.945GiB   1.25%               194MB / 2.46MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.37%             63.64MiB / 1.945GiB   3.20%               216MB / 198MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.81%               24.91MiB / 1.945GiB   1.25%               194MB / 2.46MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.37%             63.64MiB / 1.945GiB   3.20%               216MB / 198MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.68%               25.18MiB / 1.945GiB   1.26%               196MB / 2.49MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   119.70%             63.48MiB / 1.945GiB   3.19%               218MB / 200MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.68%               25.18MiB / 1.945GiB   1.26%               196MB / 2.49MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   119.70%             63.48MiB / 1.945GiB   3.19%               218MB / 200MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.55%               25.81MiB / 1.945GiB   1.30%               198MB / 2.51MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.77%             63.55MiB / 1.945GiB   3.19%               220MB / 202MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.55%               25.81MiB / 1.945GiB   1.30%               198MB / 2.51MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.77%             63.55MiB / 1.945GiB   3.19%               220MB / 202MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.27%               26.68MiB / 1.945GiB   1.34%               200MB / 2.54MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.91%             63.48MiB / 1.945GiB   3.19%               222MB / 205MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.27%               26.68MiB / 1.945GiB   1.34%               200MB / 2.54MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.91%             63.48MiB / 1.945GiB   3.19%               222MB / 205MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       6.22%               25.61MiB / 1.945GiB   1.29%               202MB / 2.56MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.47%             63.51MiB / 1.945GiB   3.19%               224MB / 207MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       6.22%               25.61MiB / 1.945GiB   1.29%               202MB / 2.56MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.47%             63.51MiB / 1.945GiB   3.19%               224MB / 207MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.50%               26.12MiB / 1.945GiB   1.31%               204MB / 2.59MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.36%             63.79MiB / 1.945GiB   3.20%               226MB / 209MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.50%               26.12MiB / 1.945GiB   1.31%               204MB / 2.59MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.36%             63.79MiB / 1.945GiB   3.20%               226MB / 209MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.14%               23.47MiB / 1.945GiB   1.18%               206MB / 2.62MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   118.89%             63.8MiB / 1.945GiB    3.20%               229MB / 211MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.14%               23.47MiB / 1.945GiB   1.18%               206MB / 2.62MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   118.89%             63.8MiB / 1.945GiB    3.20%               229MB / 211MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.76%               24.89MiB / 1.945GiB   1.25%               208MB / 2.65MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.69%             63.61MiB / 1.945GiB   3.19%               231MB / 213MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.76%               24.89MiB / 1.945GiB   1.25%               208MB / 2.65MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.69%             63.61MiB / 1.945GiB   3.19%               231MB / 213MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.51%               20.2MiB / 1.945GiB    1.01%               211MB / 2.67MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.69%             63.61MiB / 1.945GiB   3.19%               231MB / 213MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.51%               20.2MiB / 1.945GiB    1.01%               211MB / 2.67MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.51%             63.54MiB / 1.945GiB   3.19%               233MB / 216MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.51%               20.2MiB / 1.945GiB    1.01%               211MB / 2.67MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.51%             63.54MiB / 1.945GiB   3.19%               233MB / 216MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.43%               18.05MiB / 1.945GiB   0.91%               213MB / 2.7MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.70%             63.59MiB / 1.945GiB   3.19%               235MB / 218MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.43%               18.05MiB / 1.945GiB   0.91%               213MB / 2.7MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.70%             63.59MiB / 1.945GiB   3.19%               235MB / 218MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.17%               20.67MiB / 1.945GiB   1.04%               215MB / 2.73MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.68%             63.55MiB / 1.945GiB   3.19%               238MB / 220MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.17%               20.67MiB / 1.945GiB   1.04%               215MB / 2.73MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.68%             63.55MiB / 1.945GiB   3.19%               238MB / 220MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.84%               22.2MiB / 1.945GiB    1.11%               217MB / 2.76MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.94%             63.66MiB / 1.945GiB   3.20%               240MB / 222MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.84%               22.2MiB / 1.945GiB    1.11%               217MB / 2.76MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.94%             63.66MiB / 1.945GiB   3.20%               240MB / 222MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.91%               23.97MiB / 1.945GiB   1.20%               219MB / 2.79MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   120.71%             63.83MiB / 1.945GiB   3.21%               242MB / 225MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.91%               23.97MiB / 1.945GiB   1.20%               219MB / 2.79MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   120.71%             63.83MiB / 1.945GiB   3.21%               242MB / 225MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.43%               25.54MiB / 1.945GiB   1.28%               222MB / 2.81MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.27%             63.68MiB / 1.945GiB   3.20%               245MB / 227MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.43%               25.54MiB / 1.945GiB   1.28%               222MB / 2.81MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.27%             63.68MiB / 1.945GiB   3.20%               245MB / 227MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.21%               24.15MiB / 1.945GiB   1.21%               224MB / 2.84MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.42%             63.6MiB / 1.945GiB    3.19%               247MB / 229MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.21%               24.15MiB / 1.945GiB   1.21%               224MB / 2.84MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.42%             63.6MiB / 1.945GiB    3.19%               247MB / 229MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.41%               24.73MiB / 1.945GiB   1.24%               226MB / 2.87MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.29%             63.61MiB / 1.945GiB   3.19%               249MB / 231MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.41%               24.73MiB / 1.945GiB   1.24%               226MB / 2.87MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.29%             63.61MiB / 1.945GiB   3.19%               249MB / 231MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.51%               25.26MiB / 1.945GiB   1.27%               228MB / 2.9MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.71%             63.71MiB / 1.945GiB   3.20%               252MB / 233MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.51%               25.26MiB / 1.945GiB   1.27%               228MB / 2.9MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   112.71%             63.71MiB / 1.945GiB   3.20%               252MB / 233MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.97%               26.1MiB / 1.945GiB    1.31%               230MB / 2.92MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.62%             63.82MiB / 1.945GiB   3.20%               254MB / 236MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.97%               26.1MiB / 1.945GiB    1.31%               230MB / 2.92MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.62%             63.82MiB / 1.945GiB   3.20%               254MB / 236MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.97%               26.1MiB / 1.945GiB    1.31%               230MB / 2.92MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.62%             63.82MiB / 1.945GiB   3.20%               254MB / 236MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       1.23%               26.85MiB / 1.945GiB   1.35%               232MB / 2.95MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   47.08%              63.68MiB / 1.945GiB   3.20%               256MB / 238MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       1.23%               26.85MiB / 1.945GiB   1.35%               232MB / 2.95MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   47.08%              63.68MiB / 1.945GiB   3.20%               256MB / 238MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       1.23%               26.85MiB / 1.945GiB   1.35%               232MB / 2.95MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   47.08%              63.68MiB / 1.945GiB   3.20%               256MB / 238MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.08%               28.23MiB / 1.945GiB   1.42%               235MB / 2.98MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.96%             63.85MiB / 1.945GiB   3.21%               256MB / 241MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.08%               28.23MiB / 1.945GiB   1.42%               235MB / 2.98MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   106.96%             63.85MiB / 1.945GiB   3.21%               256MB / 241MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.19%               29.29MiB / 1.945GiB   1.47%               237MB / 3.01MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.91%             63.86MiB / 1.945GiB   3.21%               261MB / 242MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.19%               29.29MiB / 1.945GiB   1.47%               237MB / 3.01MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.91%             63.86MiB / 1.945GiB   3.21%               261MB / 242MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.17%               30.77MiB / 1.945GiB   1.54%               239MB / 3.04MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.60%             63.89MiB / 1.945GiB   3.21%               263MB / 245MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.17%               30.77MiB / 1.945GiB   1.54%               239MB / 3.04MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.60%             63.89MiB / 1.945GiB   3.21%               263MB / 245MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.07%               27.53MiB / 1.945GiB   1.38%               241MB / 3.06MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   116.07%             63.77MiB / 1.945GiB   3.20%               266MB / 247MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.07%               27.53MiB / 1.945GiB   1.38%               241MB / 3.06MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   116.07%             63.77MiB / 1.945GiB   3.20%               266MB / 247MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.25%               27.99MiB / 1.945GiB   1.41%               244MB / 3.09MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.78%             63.86MiB / 1.945GiB   3.21%               268MB / 249MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.25%               27.99MiB / 1.945GiB   1.41%               244MB / 3.09MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.78%             63.86MiB / 1.945GiB   3.21%               268MB / 249MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.37%               25.62MiB / 1.945GiB   1.29%               245MB / 3.11MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.37%             63.79MiB / 1.945GiB   3.20%               270MB / 251MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.37%               25.62MiB / 1.945GiB   1.29%               245MB / 3.11MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   108.37%             63.79MiB / 1.945GiB   3.20%               270MB / 251MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.79%               26.19MiB / 1.945GiB   1.32%               247MB / 3.14MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.42%             63.83MiB / 1.945GiB   3.21%               273MB / 253MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.79%               26.19MiB / 1.945GiB   1.32%               247MB / 3.14MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   111.42%             63.83MiB / 1.945GiB   3.21%               273MB / 253MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       5.88%               27.12MiB / 1.945GiB   1.36%               249MB / 3.17MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.59%             63.89MiB / 1.945GiB   3.21%               275MB / 255MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       5.88%               27.12MiB / 1.945GiB   1.36%               249MB / 3.17MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   107.59%             63.89MiB / 1.945GiB   3.21%               275MB / 255MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.97%               28.66MiB / 1.945GiB   1.44%               252MB / 3.2MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   119.18%             63.82MiB / 1.945GiB   3.20%               277MB / 258MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.97%               28.66MiB / 1.945GiB   1.44%               252MB / 3.2MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   119.18%             63.82MiB / 1.945GiB   3.20%               277MB / 258MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.91%               25.48MiB / 1.945GiB   1.28%               253MB / 3.22MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.82%             63.73MiB / 1.945GiB   3.20%               279MB / 259MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.91%               25.48MiB / 1.945GiB   1.28%               253MB / 3.22MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.82%             63.73MiB / 1.945GiB   3.20%               279MB / 259MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.87%               26.67MiB / 1.945GiB   1.34%               255MB / 3.24MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.39%             64.03MiB / 1.945GiB   3.22%               282MB / 262MB       0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.87%               26.67MiB / 1.945GiB   1.34%               255MB / 3.24MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.39%             64.03MiB / 1.945GiB   3.22%               282MB / 262MB       0B / 0B             12
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.72%               27.45MiB / 1.945GiB   1.38%               258MB / 3.27MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.41%             63.84MiB / 1.945GiB   3.21%               284MB / 264MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.72%               27.45MiB / 1.945GiB   1.38%               258MB / 3.27MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.41%             63.84MiB / 1.945GiB   3.21%               284MB / 264MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.40%               29.11MiB / 1.945GiB   1.46%               260MB / 3.3MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.79%             63.77MiB / 1.945GiB   3.20%               286MB / 266MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.40%               29.11MiB / 1.945GiB   1.46%               260MB / 3.3MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.79%             63.77MiB / 1.945GiB   3.20%               286MB / 266MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.27%               31.26MiB / 1.945GiB   1.57%               262MB / 3.33MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.24%             63.93MiB / 1.945GiB   3.21%               288MB / 268MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.27%               31.26MiB / 1.945GiB   1.57%               262MB / 3.33MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   117.24%             63.93MiB / 1.945GiB   3.21%               288MB / 268MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.84%               24.26MiB / 1.945GiB   1.22%               264MB / 3.36MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.25%             63.7MiB / 1.945GiB    3.20%               291MB / 271MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.84%               24.26MiB / 1.945GiB   1.22%               264MB / 3.36MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.25%             63.7MiB / 1.945GiB    3.20%               291MB / 271MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.78%               25.57MiB / 1.945GiB   1.28%               266MB / 3.38MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.17%             63.93MiB / 1.945GiB   3.21%               293MB / 273MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.78%               25.57MiB / 1.945GiB   1.28%               266MB / 3.38MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.17%             63.93MiB / 1.945GiB   3.21%               293MB / 273MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.09%               26.76MiB / 1.945GiB   1.34%               269MB / 3.41MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.62%             63.79MiB / 1.945GiB   3.20%               295MB / 275MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.09%               26.76MiB / 1.945GiB   1.34%               269MB / 3.41MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.62%             63.79MiB / 1.945GiB   3.20%               295MB / 275MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.07%               27.78MiB / 1.945GiB   1.40%               271MB / 3.44MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   118.24%             63.66MiB / 1.945GiB   3.20%               298MB / 278MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.07%               27.78MiB / 1.945GiB   1.40%               271MB / 3.44MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   118.24%             63.66MiB / 1.945GiB   3.20%               298MB / 278MB       0B / 0B             5
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               27.3MiB / 1.945GiB    1.37%               273MB / 3.47MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.09%             63.82MiB / 1.945GiB   3.20%               300MB / 279MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.74%               27.3MiB / 1.945GiB    1.37%               273MB / 3.47MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   110.09%             63.82MiB / 1.945GiB   3.20%               300MB / 279MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.77%               28.81MiB / 1.945GiB   1.45%               275MB / 3.49MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.94%             63.82MiB / 1.945GiB   3.20%               302MB / 282MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.77%               28.81MiB / 1.945GiB   1.45%               275MB / 3.49MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   105.94%             63.82MiB / 1.945GiB   3.20%               302MB / 282MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.73%               30.8MiB / 1.945GiB    1.55%               277MB / 3.52MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.63%             63.88MiB / 1.945GiB   3.21%               305MB / 284MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.73%               30.8MiB / 1.945GiB    1.55%               277MB / 3.52MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   104.63%             63.88MiB / 1.945GiB   3.21%               305MB / 284MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.20%               26.99MiB / 1.945GiB   1.36%               280MB / 3.55MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.15%             63.8MiB / 1.945GiB    3.20%               307MB / 286MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.20%               26.99MiB / 1.945GiB   1.36%               280MB / 3.55MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.15%             63.8MiB / 1.945GiB    3.20%               307MB / 286MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.78%               27.67MiB / 1.945GiB   1.39%               282MB / 3.58MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   115.97%             63.94MiB / 1.945GiB   3.21%               310MB / 289MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.78%               27.67MiB / 1.945GiB   1.39%               282MB / 3.58MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   115.97%             63.94MiB / 1.945GiB   3.21%               310MB / 289MB       0B / 0B             9
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.02%               25.8MiB / 1.945GiB    1.30%               284MB / 3.61MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   96.68%              63.93MiB / 1.945GiB   3.21%               312MB / 291MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.02%               25.8MiB / 1.945GiB    1.30%               284MB / 3.61MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   96.68%              63.93MiB / 1.945GiB   3.21%               312MB / 291MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.76%               25.43MiB / 1.945GiB   1.28%               286MB / 3.63MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.41%             63.9MiB / 1.945GiB    3.21%               314MB / 293MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.76%               25.43MiB / 1.945GiB   1.28%               286MB / 3.63MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   103.41%             63.9MiB / 1.945GiB    3.21%               314MB / 293MB       0B / 0B             6
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.19%               27.34MiB / 1.945GiB   1.37%               288MB / 3.66MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   116.35%             63.86MiB / 1.945GiB   3.21%               316MB / 295MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.19%               27.34MiB / 1.945GiB   1.37%               288MB / 3.66MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   116.35%             63.86MiB / 1.945GiB   3.21%               316MB / 295MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.15%               27.69MiB / 1.945GiB   1.39%               291MB / 3.69MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.60%             64MiB / 1.945GiB      3.21%               319MB / 298MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.15%               27.69MiB / 1.945GiB   1.39%               291MB / 3.69MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   109.60%             64MiB / 1.945GiB      3.21%               319MB / 298MB       0B / 0B             8
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       5.46%               29.16MiB / 1.945GiB   1.46%               293MB / 3.72MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   118.04%             63.91MiB / 1.945GiB   3.21%               320MB / 299MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       5.46%               29.16MiB / 1.945GiB   1.46%               293MB / 3.72MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   118.04%             63.91MiB / 1.945GiB   3.21%               320MB / 299MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.94%               30.9MiB / 1.945GiB    1.55%               296MB / 3.75MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.37%             63.91MiB / 1.945GiB   3.21%               322MB / 302MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       2.94%               30.9MiB / 1.945GiB    1.55%               296MB / 3.75MB      0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   114.37%             63.91MiB / 1.945GiB   3.21%               322MB / 302MB       0B / 0B             7
+[2J[HCONTAINER ID        NAME                  CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+bcb2f1bd1175        datawiz_redis_1       3.00%               28.96MiB / 1.945GiB   1.45%               299MB / 3.8MB       0B / 0B             5
+f6cc70f3ca5d        datawiz_clusterer_1   113.24%             63.94MiB / 1.945GiB   3.21%               323MB / 306MB       0B / 0B             6

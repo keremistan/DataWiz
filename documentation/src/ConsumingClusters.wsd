@@ -2,6 +2,7 @@
 
 title Consuming Clusters
 scale 5
+autonumber
 
 Client -> Server: fetch(resource_id)
 Server -> Cache: query(resource_id)
@@ -12,6 +13,12 @@ alt Query Successful
 else
     Server <- Cache: return None
     Client <- Server: return {type: error, message: ResourceNotFound}
+end
+
+Client -> Client: checkForErrors(response)
+alt No Errors
+	Client -> Client: parseStrToJson(response)
+	Client -> Client: visualise(parsedResponse)
 end
 
 

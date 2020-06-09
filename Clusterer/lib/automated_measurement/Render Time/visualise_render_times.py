@@ -27,24 +27,21 @@ def read_data_files():
 
 def visualise_render_time(graph_avg_per_category, point_quantites):
     for curr_avg in graph_avg_per_category:
-        deg = math.floor(math.sqrt(len(point_quantites)))
         cur_categs_vals = graph_avg_per_category[curr_avg]
+        if curr_avg == 'scatterWithClusters':
+            curr_avg = 'scatter_with_clusters'
+        elif curr_avg == 'scatterWithRaw':
+            curr_avg = 'scatter_with_raw'
 
-        for point in cur_categs_vals: # clean nans
-            if math.isnan(point):
-                curr_index = cur_categs_vals.index(point)
-                nans_avg = (cur_categs_vals[curr_index-1] + cur_categs_vals[curr_index+1]) / 2
-                cur_categs_vals[curr_index] = nans_avg
+        df = pd.DataFrame({'x': point_quantites, curr_avg: cur_categs_vals})
 
-        lr = np.polyfit(point_quantites, cur_categs_vals, deg=deg)
-        df = pd.DataFrame({'x': point_quantites, curr_avg: [np.polyval(lr, [el])[0] for el in point_quantites]})
 
         plt.figure()
         plt.plot('x', curr_avg, data=df)
         plt.xlabel('Data Batch Size')
         plt.ylabel('Render Time (Ms)')
         plt.legend()
-        plt.savefig(curr_avg + '.png')
+        plt.savefig(curr_avg + '_performance.png')
 
 if __name__ == "__main__":
     data_files = read_data_files()
@@ -58,6 +55,11 @@ if __name__ == "__main__":
         temp_graphs_data = dict(map(lambda el: (el, []), graphs))
         with open(str(point_quantity) + '.json') as f:
             curr_file_content = f.read()
+            # deneme
+            curr = curr_file_content.split(']')
+            curr = curr[0]
+            curr_file_content = curr + ']'
+            # 
             curr_file_content = json.loads(curr_file_content)
             for meas_point in curr_file_content:
                 temp_graphs_data[meas_point['id']].append(meas_point['actualDuration'])

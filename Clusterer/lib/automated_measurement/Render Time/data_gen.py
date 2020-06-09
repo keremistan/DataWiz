@@ -23,7 +23,7 @@ def start():
 
     headers = {'Content-type': 'application/json'}
     counter = 0
-    amounts_to_be_sent = list(range(250, 25000, 250))
+    amounts_to_be_sent = list(range(250, 25250, 250))
     lap = 5 * 60 # 5 dk
     start_time = time.time()
     resource_ids = ['1']

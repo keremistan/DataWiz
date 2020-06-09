@@ -7,8 +7,8 @@ import { ResponsiveParallelCoordinates, ResponsiveParallelCoordinatesCanvas } fr
 // you'll often use just a few of them.
 const MyResponsiveParallelCoordinates = ({ data }) => (
 
-    // <ResponsiveParallelCoordinates
-    <ResponsiveParallelCoordinatesCanvas
+    <ResponsiveParallelCoordinates
+    // <ResponsiveParallelCoordinatesCanvas
         data={data}
         variables={[
             {

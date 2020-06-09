@@ -2,6 +2,7 @@
 
 title Producing Clusters
 scale 5
+autonumber
 
 DataSource -> Server: post(raw_data)
 Server -> Server: cluster(raw_data)

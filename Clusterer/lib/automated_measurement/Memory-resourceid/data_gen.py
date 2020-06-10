@@ -90,7 +90,7 @@ def stop_containers():
 
 if __name__ == "__main__":
     num_of_requests = [str(el) for el in list(range(1, 247, 2))]
-    secs = 5 * 60  # 5 min
+    secs = 7.5 * 60  # 7.5 min
 
     data_points = '500'
     reqs = 1

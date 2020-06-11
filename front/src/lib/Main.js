@@ -7,14 +7,9 @@ import { useLocation } from 'react-router-dom';
 function Main(props) {
 
   const [data, setData] = useState(null)
-  // const [numOfRetainedClusters, setNumOfRetainedClusters] = useState({
-  //   value: 10,
-  //   bufferValue: 10,
-  //   valid: true
-  // })
   const numOfRetainedClusters = useRef({
-    value: 1,
-    bufferValue: 1,
+    value: 10,
+    bufferValue: 10,
     valid: true
   })
   const clusterData = useRef(null)
@@ -112,7 +107,7 @@ function Main(props) {
     return null
   } else {
     return (
-      <div className="App">
+      <div>
         <form className="control-panel">
           <div className="retained-clusters-wrapper">
             <label className="retained-clusters-label">Retained Clusters: </label>

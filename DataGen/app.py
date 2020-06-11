@@ -10,9 +10,11 @@ if environ.get('FLASK_ENV') is None:
 else:
     URL = 'http://clusterer:4545/dataBroker/'
 
+headers = {'Content-type': 'application/json'}
+
 
 def start():
-    headers = {'Content-type': 'application/json'}
+
     while True:
         try:
             print('new request is sent')
@@ -50,7 +52,28 @@ def start():
         finally:
             pass
 
+def send_cluster():
+    customs_url = URL.replace('dataBroker', 'clusterBroker')
+    while True:
+        try:
+            print('new cluster is sent')
+            clusters = []
+            body = {
+                'clusters': clusters
+            }
+            for resource_id in range(5):
+                for _ in range(10):
+                    clusters.append({
+                        'centroid': (gauss(0, 35), gauss(0, 35)),
+                        'radius': abs(gauss(0, 10))
+                    })
+                post(customs_url+str(resource_id), data=dumps(body), headers=headers)
+            sleep(1)
+        except Exception as e:
+            print(e)
+            sleep(5)
 
 if __name__ == "__main__":
-    start()
+    # start()
+    send_cluster()
     pass

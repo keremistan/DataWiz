@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import { medianAbsoluteDeviation, variance, mean, standardDeviation } from 'simple-statistics'
 // data : {clusters: [], raw: []}
 export function prepareData(categories, data) {
@@ -197,11 +198,45 @@ export function getXandYScales(scatterData, dimensions) {
     var dim2Variance = standardDeviation(dim2Arr)
 
     return {
-        'xScaleMin': dim1Mean - ( dim1Variance * 5),
-        'xScaleMax': dim1Mean + ( dim1Variance * 5),
-        'yScaleMin': dim2Mean - ( dim2Variance * 5),
-        'yScaleMax': dim2Mean + ( dim2Variance * 5),
+        'xScaleMin': dim1Mean - (dim1Variance * 5),
+        'xScaleMax': dim1Mean + (dim1Variance * 5),
+        'yScaleMin': dim2Mean - (dim2Variance * 5),
+        'yScaleMax': dim2Mean + (dim2Variance * 5),
     }
 }
+
+export function useInterval(callback, delay) {
+    // Source: https://overreacted.io/making-setinterval-declarative-with-react-hooks/
+    const savedCallback = useRef();
+
+    // Remember the latest callback.
+    useEffect(() => {
+        savedCallback.current = callback;
+    }, [callback]);
+
+    // Set up the interval.
+    useEffect(() => {
+        function tick() {
+            savedCallback.current();
+        }
+        if (delay !== null) {
+            let id = setInterval(tick, delay);
+            return () => clearInterval(id);
+        }
+    }, [delay]);
+}
+
+export function retainedClusters(arr, parsedData, numOfRetainedClusters) {
+    var clusterElements = parsedData.cluster.map(clusterIndex => parsedData.raw_data[clusterIndex])
+    if (arr.length >= numOfRetainedClusters.value) {
+        arr.shift()
+        arr.push(clusterElements)
+    } else {
+        arr.push(clusterElements)
+    }
+    return arr
+}
+
+
 
 export default { prepareData }

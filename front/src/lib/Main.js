@@ -1,165 +1,76 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ParallelCoord from './ParallelCoord'
-import { prepareData, forScatter, emptyClusterScatter, unclusteredScatter, clusteredScatter, indexToData, getXandYScales } from './prepareData'
+import { prepareData, forScatter, emptyClusterScatter, unclusteredScatter, clusteredScatter, indexToData, getXandYScales, useInterval, retainedClusters } from './prepareData'
 import Scatter from './Scatter';
 import { useLocation } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux'
+import { setDimensions, chooseDimensions } from '../redux/actions/dimensions'
+import { updateClusters, updateNumOfRetainedClusters } from '../redux/actions/clusters'
+import { setClustersOnRaw, resetClustersOnRaw, setUnclusteredRaw, setClusteredRaw, setScales } from '../redux/actions/scatters'
+import ControlPanel from './ControlPanel';
+import Dimensions from './Dimensions';
+
 
 function Main(props) {
 
   const [data, setData] = useState(null)
-  const numOfRetainedClusters = useRef({
-    value: 10,
-    bufferValue: 10,
-    valid: true
-  })
-  const clusterData = useRef(null)
-  const scatterData = useRef(null)
-  const unclusteredScatterData = useRef(null)
-  const clusteredScatterData = useRef(null)
-  const scatterDimensions = useRef([0, 1])
-  const dimensions = useRef(null)
-  const scales = useRef(null)
   const dataForms = ['raw_data', 'cluster']
   var pathname = useLocation().pathname
 
-  useEffect(() => {
+  useInterval(() => {
     pathname = pathname == '/' ? '/default' : pathname
-    setInterval(() => {
-      fetch('/dataBroker' + pathname)
-        .then(res => res.json())
-        .then(resData => {
+    fetch('/dataBroker' + pathname)
+      .then(res => res.json())
+      .then(async resData => {
 
-          if (typeof resData == 'string' && resData.includes('error') && resData.includes('ResourceNotFound')) {
-            throw new Error('ResourceNotFound')
-          }
+        if (typeof resData == 'string' && resData.includes('error') && resData.includes('ResourceNotFound')) {
+          throw new Error('ResourceNotFound')
+        }
 
-          var parsedData = JSON.parse(JSON.parse(resData))
-          dimensions.current = parsedData.dimensions
-          var previousClusters = clusterData.current == null ? [] : clusterData.current
-          clusterData.current = retainedClusters(previousClusters, parsedData)
-          parsedData.cluster = indexToData(parsedData.cluster, parsedData.raw_data)
-          var preparedParsedData = prepareData(dimensions.current, parsedData)
-          setData(preparedParsedData)
+        var parsedData = JSON.parse(JSON.parse(resData))
+        props.setDimensions(parsedData.dimensions)
+        updateClusters(retainedClusters(props.clustersWithRawData, parsedData, props.numOfRetainedClusters))
+        parsedData.cluster = indexToData(parsedData.cluster, parsedData.raw_data)
+        var preparedParsedData = prepareData(props.allDimensions, parsedData)
+        setData(preparedParsedData)
 
-          var forScatterData = JSON.parse(JSON.parse(resData))
-          scatterData.current = forScatter(scatterDimensions.current, forScatterData, scatterData.current, numOfRetainedClusters.current.value)
-          unclusteredScatterData.current = unclusteredScatter(scatterDimensions.current, forScatterData)
-          clusteredScatterData.current = clusteredScatter(scatterDimensions.current, forScatterData)
-          scales.current = getXandYScales(unclusteredScatterData.current, scatterDimensions.current)
-        })
-    }, 500)
-  }, [])
+        var forScatterData = JSON.parse(JSON.parse(resData))
+        props.setClustersOnRaw(forScatter(props.chosenDimensions, forScatterData, props.clustersOnRaw, props.numOfRetainedClusters.value))
+        var unclusteredScatterData = unclusteredScatter(props.chosenDimensions, forScatterData)
+        props.setUnclusteredRaw(unclusteredScatterData)
+        props.setClusteredRaw(clusteredScatter(props.chosenDimensions, forScatterData))
+        props.setScales(getXandYScales(unclusteredScatterData, props.chosenDimensions))
+      })
+  }, 500)
 
-  const retainedClusters = (arr, parsedData) => {
-    var clusterElements = parsedData.cluster.map(clusterIndex => parsedData.raw_data[clusterIndex])
-    if (arr.length >= numOfRetainedClusters.current.value) {
-      arr.shift()
-      arr.push(clusterElements)
-    } else {
-      arr.push(clusterElements)
-    }
-    return arr
-  }
 
-  const submitRetainedClusters = event => {
-    event.preventDefault()
-    console.log('event: ', numOfRetainedClusters);
-
-    if (numOfRetainedClusters.current.valid) {
-      numOfRetainedClusters.current = {
-        ...numOfRetainedClusters.current,
-        value: numOfRetainedClusters.current.bufferValue
-      }
-      scatterData.current.data = []
-    } else {
-      numOfRetainedClusters.current = {
-        ...numOfRetainedClusters.current,
-        bufferValue: numOfRetainedClusters.current.value,
-        valid: true
-      }
-    }
-
-  }
-
-  const retainedClustersChangeHandler = event => {
-    let val = event.target.value
-    let isValid = true
-    if (isNaN(val) || val == "" || val <= 0) {
-      // TODO: show some error about the input being unexpected type
-      console.log('wrong type: ', val);
-      isValid = false
-      numOfRetainedClusters.current = {
-        ...numOfRetainedClusters.current,
-        bufferValue: val,
-        valid: isValid
-      }
-    } else {
-      val = parseInt(val, 10)
-      numOfRetainedClusters.current = {
-        ...numOfRetainedClusters.current,
-        bufferValue: val,
-        valid: isValid
-      }
-    }
-  }
-
-  if (data == null || scatterData.current == null || scales.current == null || dimensions.current == null) {
+  if (data == null || props.clustersOnRaw == null || props.unclusteredRaw == null || props.scales == null || props.allDimensions == []) {
     return null
   } else {
     return (
       <div>
-        <form className="control-panel">
-          <div className="retained-clusters-wrapper">
-            <label className="retained-clusters-label">Retained Clusters: </label>
-            <input type="retained-clusters"
-              className="retained-clusters-input"
-              value={numOfRetainedClusters.current.bufferValue}
-              onChange={retainedClustersChangeHandler}
-            />
-          </div>
-          <button className="control-submitter" type="submit" onClick={submitRetainedClusters}>Update</button>
-        </form>
+        <ControlPanel />
         <div className="category-graph">
           <Scatter
-            data={[unclusteredScatterData.current, scatterData.current]}
+            data={[props.unclusteredRaw, props.clustersOnRaw]}
             nodeSize={d => d.normalizedRadius != undefined ? d.normalizedRadius * 40 : 9}
-            dimNames={scatterDimensions.current.map(dim => dimensions.current[dim])}
-            scales={scales.current}
+            dimNames={props.chosenDimensions.map(dim => props.allDimensions[dim])}
+            scales={props.scales}
           />
         </div>
         <div className="category-graph">
           <Scatter
-            data={clusteredScatterData.current}
-            dimNames={scatterDimensions.current.map(dim => dimensions.current[dim])}
-            scales={scales.current}
+            data={props.clusteredRaw}
+            dimNames={props.chosenDimensions.map(dim => props.allDimensions[dim])}
+            scales={props.scales}
           />
         </div>
-        <div className="choose-dim">
-          {
-            ["First Dimension", "Second Dimension"].map((dim, index) => {
-              return <div>
-                <span>{dim}</span>
-                <select defaultValue={dimensions.current[index]} onChange={event => {
-                  var newScatterDims = index === 0
-                    ? [dimensions.current.indexOf(event.target.value), scatterDimensions.current[1]]
-                    : [scatterDimensions.current[0], dimensions.current.indexOf(event.target.value)]
-                  scatterDimensions.current = newScatterDims
-                  scatterData.current = emptyClusterScatter()
-                }}>
-                  {dimensions.current.map(category => {
-                    return <option value={category} > {category} </option>
-                  })}
-                </select>
-              </div>
-
-            })
-          }
-        </div>
-
+        <Dimensions />
         {dataForms.map(form => {
           return (
             <div className="parallel-graphs">
-              <ParallelCoord data={data[form]} variables={dimensions.current.map(dim => ({'key': dim, 'type': 'linear', 'legend': dim}))} />
+              <ParallelCoord data={data[form]} variables={props.allDimensions.map(dim => ({ 'key': dim, 'type': 'linear', 'legend': dim }))} />
             </div>
           )
         })}
@@ -170,4 +81,31 @@ function Main(props) {
 
 }
 
-export default Main
+
+const mapStateToProps = state => {
+  const { dimensions, clusters, scatters } = state
+  return {
+    allDimensions: dimensions.allDimensions,
+    chosenDimensions: dimensions.chosenDimensions,
+    clustersWithRawData: clusters.clustersWithRawData,
+    clustersOnRaw: scatters.clustersOnRaw,
+    unclusteredRaw: scatters.unclusteredRaw,
+    clusteredRaw: scatters.clusteredRaw,
+    scales: scatters.scales,
+    numOfRetainedClusters: clusters.numOfRetainedClusters,
+  }
+}
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  setDimensions: setDimensions,
+  chooseDimensions: chooseDimensions,
+  updateClusters: updateClusters,
+  setClustersOnRaw: setClustersOnRaw,
+  resetClustersOnRaw: resetClustersOnRaw,
+  setUnclusteredRaw: setUnclusteredRaw,
+  setClusteredRaw: setClusteredRaw,
+  setScales: setScales,
+  updateNumOfRetainedClusters: updateNumOfRetainedClusters,
+}, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Main)

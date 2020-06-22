@@ -20,7 +20,7 @@ def start():
             print('new request is sent')
             body = {
                 'data': [],
-                'dimensions': ["cpu", "traffic", "ram", "kinergy"]
+                'dimensions': ["cpu", "traffic", "ram", "kinergy", "io"]
             }
             for resource_id in range(5):
                 for _ in range(50):
@@ -59,14 +59,16 @@ def send_cluster():
             print('new cluster is sent')
             clusters = []
             body = {
-                'clusters': clusters
+                'clusters': clusters,
+                'dimensions': ['cpu', 'memory']
             }
             for resource_id in range(5):
-                for _ in range(10):
+                for _ in range(20):
                     clusters.append({
-                        'centroid': (gauss(0, 35), gauss(0, 35)),
+                        'centroid': [gauss(0, 35), gauss(0, 35)],
                         'radius': abs(gauss(0, 10))
                     })
+
                 post(customs_url+str(resource_id), data=dumps(body), headers=headers)
             sleep(1)
         except Exception as e:
@@ -74,6 +76,6 @@ def send_cluster():
             sleep(5)
 
 if __name__ == "__main__":
-    # start()
-    send_cluster()
+    start()
+    # send_cluster()
     pass

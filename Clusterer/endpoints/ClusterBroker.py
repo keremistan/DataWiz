@@ -19,16 +19,25 @@ class ClusterBroker(Resource):
     def post(self, resource_id):
         try:
             clusters = request.get_json()['clusters']
-            data = {'clusters': clusters}
-            self.redis_client.set('clustered:'+resource_id, dumps(data))
+            dimensions = request.get_json()['dimensions']
+            data = {
+                'clusters': clusters,
+                'dimensions': dimensions
+            }
+            self.redis_client.set('clustered:'+str(resource_id), dumps(data))
         except Exception as e:
             print_exc(e)
 
     def get(self, resource_id):
         try:
             if resource_id == 'default':
-                resource_id = self.redis_client.keys()[0]
-            latest = self.redis_client.get('clustered:'+resource_id)
+                resources = self.redis_client.keys()
+                clustered_resources = list(map(lambda res: res.decode(), resources))
+                clustered_resources = list(filter(lambda res: 'clustered:' in res, clustered_resources))
+                clustered_resources.sort(key=lambda cluster: int(cluster[-1]))
+                resource_id = clustered_resources[0][-1] # first element's last character (number)
+
+            latest = self.redis_client.get('clustered:' + str(resource_id))
             if latest == None:
                 resource_not_found = dumps(
                     {'type': 'error', 'message': 'ResourceNotFound'})

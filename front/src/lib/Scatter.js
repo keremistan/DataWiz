@@ -5,7 +5,10 @@ import { ResponsiveScatterPlot, ResponsiveScatterPlotCanvas } from '@nivo/scatte
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames, scales }) => {
+const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames, scales, colors }) => {
+    if(!colors){
+        colors = {'scheme': 'red_blue'}
+    }
     return (
         <ResponsiveScatterPlotCanvas
             data={data}
@@ -15,14 +18,14 @@ const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames, 
             yScale={{ type: 'linear', min: scales.yScaleMin, max: scales.yScaleMax }}
             axisTop={null}
             axisRight={null}
-            colors={{ scheme: 'red_blue' }}
+            colors={colors}
             blendMode={'lighten'}
             axisBottom={{
                 orient: 'bottom',
                 tickSize: 5,
                 tickPadding: 5,
                 tickRotation: 0,
-                legend: dimNames[0],
+                legend: dimNames == undefined ? 'X' : dimNames[0],
                 legendPosition: 'middle',
                 legendOffset: 46
             }}
@@ -31,7 +34,7 @@ const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames, 
                 tickSize: 5,
                 tickPadding: 5,
                 tickRotation: 0,
-                legend: dimNames[1],
+                legend: dimNames == undefined ? 'Y' : dimNames[1],
                 legendPosition: 'middle',
                 legendOffset: -60
             }}

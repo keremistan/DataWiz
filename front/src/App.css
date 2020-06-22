@@ -38,6 +38,16 @@
   width: 2em;
 }
 
+.control-submitter:hover{
+	box-shadow: 0.1rem 0.1rem black;
+}
+
+.control-submitter{
+	border: none;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

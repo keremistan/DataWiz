@@ -4,7 +4,7 @@ from time import sleep
 from json import dumps
 from os import environ
 from random import lognormvariate, vonmisesvariate, gauss
-print(environ)
+
 if environ.get('FLASK_ENV') is None:
     URL = 'http://localhost:4545/dataBroker/'
 else:
@@ -76,6 +76,8 @@ def send_cluster():
             sleep(5)
 
 if __name__ == "__main__":
-    start()
-    # send_cluster()
-    pass
+
+    if environ.get('DATA_TO_GEN') is None:
+        start()
+    else:
+        send_cluster()

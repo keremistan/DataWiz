@@ -19,6 +19,16 @@ services:
       - FLASK_ENV=docker
     links:
       - clusterer
+
+  datagen_preclustered:
+    build: DataGen/
+    volumes:
+      - ./DataGen:/usr/src/app
+    environment:
+      - FLASK_ENV=docker
+      - DATA_TO_GEN=clusters
+    links:
+      - clusterer
   
   redis:
     image: redis:latest

@@ -70,7 +70,14 @@ function Main(props) {
         {dataForms.map(form => {
           return (
             <div className="parallel-graphs">
-              <ParallelCoord data={data[form]} variables={props.allDimensions.map(dim => ({ 'key': dim, 'type': 'linear', 'legend': dim }))} />
+              <ParallelCoord data={data[form]} variables={props.allDimensions.map(dim => ({
+                'key': dim,
+                'type': 'linear',
+                'legend': dim,
+                'ticksPosition': 'before',
+                'legendPosition': 'start',
+                'legendOffset': 20
+              }))} />
             </div>
           )
         })}

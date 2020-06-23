@@ -14,9 +14,6 @@ const MyResponsiveParallelCoordinates = ({ data, variables }) => (
         lineOpacity={0.5}
         colors={{ scheme: 'dark2' }}
         margin={{ top: 50, right: 60, bottom: 50, left: 60 }}
-        animate={true}
-        motionStiffness={90}
-        motionDamping={12}
     />
 )
 

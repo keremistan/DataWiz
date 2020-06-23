@@ -24,7 +24,12 @@ class DataBroker(Resource):
     def get(self, resource_id):
         try:
             if resource_id == 'default':
-                resource_id = self.redis_client.keys()[0]
+                resources = self.redis_client.keys()
+                resources = list(map(lambda res: res.decode(), resources))
+                resources = list(filter(lambda res: 'clustered:' not in res, resources))
+                resources.sort(key=lambda cluster: int(cluster))
+                resource_id = resources[0]
+
             latest = self.redis_client.get(resource_id)
             if latest == None:
                 resource_not_found = dumps({'type': 'error', 'message': 'ResourceNotFound'})

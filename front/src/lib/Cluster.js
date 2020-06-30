@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Scatter from './Scatter';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 import { useInterval, increase_brightness } from './prepareData';
@@ -14,20 +14,30 @@ function Cluster(props) {
     const [colors, setColors] = useState([])
 
     var pathname = useLocation().pathname
+    var history = useHistory()
+
     var splittenPathname = pathname.split('/clusters')
     if (splittenPathname[1] == '' && splittenPathname.length == 2) {
         pathname = '/'
-    }else{
+    } else {
         pathname = splittenPathname[1]
     }
     pathname = pathname == '/' ? '/default' : pathname
 
     useInterval(() => {
         fetch('/clusterBroker' + pathname)
-            .then(res => res.json())
+            .then(res => {
+                if (res.status == 500) {
+                    throw new Error(res.status)
+                } else {
+                    return res.json()
+                }
+            })
             .then(resData => {
+                debugger
                 if (typeof resData == 'string' && resData.includes('error') && resData.includes('ResourceNotFound')) {
-                    throw new Error('ResourceNotFound')
+                    history.push("/resourceNotFound")
+                    return
                 }
                 var parsedData = JSON.parse(JSON.parse(resData))
                 var extractedData = parsedData['clusters'].map(cluster => ({
@@ -57,6 +67,10 @@ function Cluster(props) {
                 }
                 tempColors.reverse()
                 setColors(tempColors)
+            }).catch(err => {
+                if (err.message === "500") {
+                    history.push("/serverDown")
+                }
             })
     }, 500)
 
@@ -121,13 +135,11 @@ function Cluster(props) {
                 <ControlPanel />
                 <div className="category-graph">
                     <Scatter
-                        // data={[retainedClusters]}
                         data={retainedClusters}
                         nodeSize={d => d.radius}
                         scales={props.scales}
                         dimNames={props.dimensions}
-                        colors={colors} // TODO: put each cluster as a seperate data into scatter plot so that they can have independent colors
-                    // colors={for(var i = 0; i< retainedClusters.length; i++) increase_brightness('#ff7a8a', (retainedClusters.length / retainedClusters.indexOf(d)) * 9)} // TODO: put each cluster as a seperate data into scatter plot so that they can have independent colors
+                        colors={colors}
                     />
                 </div>
                 <div className="category-graph">

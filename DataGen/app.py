@@ -76,7 +76,6 @@ def send_cluster():
             sleep(5)
 
 if __name__ == "__main__":
-
     if environ.get('DATA_TO_GEN') is None:
         start()
     else:

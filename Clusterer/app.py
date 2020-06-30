@@ -12,6 +12,7 @@ api.add_resource(ClusterBroker, '/clusterBroker/<string:resource_id>')
 
 @app.route("/")
 @app.route("/<resource_id>")
+@app.route("/clusters/<resource_id>")
 def vis(resource_id=None):
     return render_template('index.html')
 

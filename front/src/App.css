@@ -36,6 +36,7 @@
 
 .retained-clusters-input{
   width: 2em;
+  text-align: center;
 }
 
 .control-submitter:hover{
@@ -46,6 +47,13 @@
 	border: none;
   border-radius: 0.5rem;
   background-color: white;
+}
+
+.error{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  font-size: 2rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

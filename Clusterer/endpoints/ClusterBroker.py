@@ -34,7 +34,7 @@ class ClusterBroker(Resource):
                 resources = self.redis_client.keys()
                 clustered_resources = list(map(lambda res: res.decode(), resources))
                 clustered_resources = list(filter(lambda res: 'clustered:' in res, clustered_resources))
-                clustered_resources.sort(key=lambda cluster: int(cluster[-1]))
+                clustered_resources.sort()
                 resource_id = clustered_resources[0][-1] # first element's last character (number)
 
             latest = self.redis_client.get('clustered:' + str(resource_id))

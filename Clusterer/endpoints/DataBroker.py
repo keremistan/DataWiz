@@ -27,7 +27,7 @@ class DataBroker(Resource):
                 resources = self.redis_client.keys()
                 resources = list(map(lambda res: res.decode(), resources))
                 resources = list(filter(lambda res: 'clustered:' not in res, resources))
-                resources.sort(key=lambda cluster: int(cluster))
+                resources.sort()
                 resource_id = resources[0]
 
             latest = self.redis_client.get(resource_id)

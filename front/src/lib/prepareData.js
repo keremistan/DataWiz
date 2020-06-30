@@ -128,12 +128,6 @@ export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
     if (dimensions.length !== 2) throw new Error('not 2 dimensional')
     var first_dim = dimensions[0]
     var second_dim = dimensions[1]
-    scatterData = scatterData == null
-        ? {
-            id: 'microclusters',
-            data: []
-        }
-        : scatterData
     var clusterData = data.cluster.map(clusterIndex => data.raw_data[clusterIndex])
     var sphere
     var firstCluster = clusterData.map(cluster => cluster[first_dim])

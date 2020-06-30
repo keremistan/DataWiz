@@ -11,7 +11,7 @@ import { store } from './redux/store'
 
 import Main from './lib/Main';
 import Cluster from './lib/Cluster'
-
+import { DataAbsentError, ResourceNotFoundError, ServerDownError } from './lib/Error'
 
 function App() {
 
@@ -19,8 +19,16 @@ function App() {
     <Provider store={store}>
       <Router>
         <div className="App">
-
           <Switch>
+            <Route path='/serverDown'>
+              <ServerDownError />
+            </Route>
+            <Route path='/dataAbsent'>
+              <DataAbsentError />
+            </Route>
+            <Route path='/resourceNotFound'>
+              <ResourceNotFoundError />
+            </Route>
             <Route path='/clusters'>
               <Cluster />
             </Route>

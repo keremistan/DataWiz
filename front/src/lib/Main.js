@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ParallelCoord from './ParallelCoord'
-import { prepareData, forScatter, emptyClusterScatter, unclusteredScatter, clusteredScatter, indexToData, getXandYScales, useInterval, retainedClusters } from './prepareData'
+import { prepareData, forScatter, unclusteredScatter, clusteredScatter, indexToData, getXandYScales, useInterval, retainedClusters } from './prepareData'
 import Scatter from './Scatter';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
-import { setDimensions, chooseDimensions } from '../redux/actions/dimensions'
+import { setDimensions } from '../redux/actions/dimensions'
 import { updateClusters, updateNumOfRetainedClusters } from '../redux/actions/clusters'
-import { setClustersOnRaw, resetClustersOnRaw, setUnclusteredRaw, setClusteredRaw, setScales } from '../redux/actions/scatters'
+import { setClustersOnRaw, setUnclusteredRaw, setClusteredRaw, setScales } from '../redux/actions/scatters'
 import ControlPanel from './ControlPanel';
 import Dimensions from './Dimensions';
 
@@ -17,15 +17,25 @@ function Main(props) {
   const [data, setData] = useState(null)
   const dataForms = ['raw_data', 'cluster']
   var pathname = useLocation().pathname
+  var history = useHistory()
 
   useInterval(() => {
     pathname = pathname == '/' ? '/default' : pathname
     fetch('/dataBroker' + pathname)
-      .then(res => res.json())
+      .then(res => {
+        if (res.status == 500) {
+          throw new Error(res.status)
+        } else {
+          return res.json()
+        }
+      })
       .then(async resData => {
-
-        if (typeof resData == 'string' && resData.includes('error') && resData.includes('ResourceNotFound')) {
-          throw new Error('ResourceNotFound')
+        if (resData == null) {
+          history.push("/dataAbsent")
+          return
+        } else if (typeof resData == 'string' && resData.includes('error') && resData.includes('ResourceNotFound')) {
+          history.push("/resourceNotFound")
+          return
         }
 
         var parsedData = JSON.parse(JSON.parse(resData))
@@ -41,6 +51,10 @@ function Main(props) {
         props.setUnclusteredRaw(unclusteredScatterData)
         props.setClusteredRaw(clusteredScatter(props.chosenDimensions, forScatterData))
         props.setScales(getXandYScales(unclusteredScatterData, props.chosenDimensions))
+      }).catch(err => {
+        if (err.message === "500") {
+          history.push("/serverDown")
+        }
       })
   }, 500)
 
@@ -105,10 +119,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => bindActionCreators({
   setDimensions: setDimensions,
-  chooseDimensions: chooseDimensions,
   updateClusters: updateClusters,
   setClustersOnRaw: setClustersOnRaw,
-  resetClustersOnRaw: resetClustersOnRaw,
   setUnclusteredRaw: setUnclusteredRaw,
   setClusteredRaw: setClusteredRaw,
   setScales: setScales,

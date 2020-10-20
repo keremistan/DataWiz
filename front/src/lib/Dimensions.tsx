@@ -1,12 +1,27 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux'
-import { setDimensions, chooseDimensions } from '../redux/dimensions/dimensionsActions'
-import { resetClustersOnRaw } from '../redux/scatters/scattersActions'
+import { AnyAction, bindActionCreators, Dispatch } from 'redux'
+import { chooseDimensions } from '../redux/dimensions/dimensionsActions'
+import { allDimensionsType, chooseDimensionsType, chosenDimensionsType, dimensionsVariableType } from '../redux/dimensions/dimensionsTypes';
+import { resetClustersOnRaw, resetClustersOnRawType } from '../redux/scatters/scattersActions'
 
-function Dimensions(props) {
+type stateProps = {
+    dimensions: dimensionsVariableType
+}
 
-    const dimensionChangeHandler = (event, index) => {
+type dispatchProps = {
+    chooseDimensions: chooseDimensionsType,
+    resetClustersOnRaw: resetClustersOnRawType
+}
+
+type Props = dispatchProps & {
+    chosenDimensions: chosenDimensionsType,
+    allDimensions: allDimensionsType,
+}
+
+function Dimensions(props: Props) {
+
+    const dimensionChangeHandler = (event: React.ChangeEvent<HTMLSelectElement>, index: number): void => {
         var newScatterDims = index === 0
             ? [props.allDimensions.indexOf(event.target.value), props.chosenDimensions[1]]
             : [props.chosenDimensions[0], props.allDimensions.indexOf(event.target.value)]
@@ -24,7 +39,7 @@ function Dimensions(props) {
                             <span>{dim}</span>
                             {/* dimension names are shown differently than they actually are. */}
                             <select defaultValue={props.allDimensions[props.chosenDimensions[index]]} onChange={e => dimensionChangeHandler(e, index)}>
-                                {props.allDimensions.map(category => {
+                                {props.allDimensions.map((category: string) => {
                                     return <option value={category} > {category} </option>
                                 })}
                             </select>
@@ -37,7 +52,7 @@ function Dimensions(props) {
     )
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: stateProps): dimensionsVariableType => {
     const { dimensions } = state
     return {
         allDimensions: dimensions.allDimensions,
@@ -45,8 +60,7 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-    setDimensions: setDimensions,
+const mapDispatchToProps = (dispatch: Dispatch<AnyAction>) => bindActionCreators({
     chooseDimensions: chooseDimensions,
     resetClustersOnRaw: resetClustersOnRaw,
 }, dispatch)

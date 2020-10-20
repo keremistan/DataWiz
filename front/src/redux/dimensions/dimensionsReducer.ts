@@ -8,8 +8,8 @@ var initialState = {
 
 export default (state = initialState, action: action) => {
     switch (action.type) {
+        
         case SET_DIMENSIONS:
-
             return {
                 ...state,
                 allDimensions: action.payload

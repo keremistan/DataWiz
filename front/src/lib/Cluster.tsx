@@ -9,10 +9,11 @@ import { setDimensions } from '../redux/dimensions/dimensionsActions'
 import ControlPanel from './ControlPanel';
 import { numOfRetainedClustersType } from '../redux/clusters/clusterTypes';
 import { scales } from '../redux/scatters/scattersReducer';
+import { setDimensionsType } from '../redux/dimensions/dimensionsTypes';
 
 type Props = {
     setScales: typeof setScales
-    setDimensions: typeof setDimensions,
+    setDimensions: setDimensionsType,
     numOfRetainedClusters: numOfRetainedClustersType,
     scales: scales,
     dimensions: string[]
@@ -77,7 +78,7 @@ function Cluster(props: Props){
                 }])
                 extractAndSetScales(extractedData)
                 retainBiggestClustersSeperately(extractedData)
-
+                debugger
                 if (parsedData.dimensions) {
                     props.setDimensions(parsedData.dimensions)
                 } else {

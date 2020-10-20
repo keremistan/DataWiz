@@ -3,6 +3,11 @@ import DimensionsReducer from './dimensionsReducer'
 import ClustersReducer from './clustersReducer'
 import ScattersReducer from './scattersReducer'
 
+export interface action {
+    type: string;
+    payload: string;
+}
+
 export default combineReducers({
     dimensions: DimensionsReducer,
     clusters: ClustersReducer,

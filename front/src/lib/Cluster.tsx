@@ -1,21 +1,46 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import Scatter from './Scatter';
 import { useLocation, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux'
+import { AnyAction, bindActionCreators, Dispatch } from 'redux'
 import { useInterval, increase_brightness } from './prepareData';
 import { setScales } from '../redux/actions/scatters'
 import { setDimensions } from '../redux/actions/dimensions'
 import ControlPanel from './ControlPanel';
+import { numOfRetainedClusters } from '../redux/reducers/clustersReducer';
+import { scales } from '../redux/reducers/scattersReducer';
 
-function Cluster(props) {
-    const [clusterData, setClusterData] = useState([])
-    const [retainedClusters, setRetainedClusters] = useState([])
-    const [colors, setColors] = useState([])
+type Props = {
+    setScales: typeof setScales
+    setDimensions: typeof setDimensions,
+    numOfRetainedClusters: numOfRetainedClusters,
+    scales: scales,
+    dimensions: string[]
+}
+
+interface clusterData {
+    id: string;
+    data: string;
+}
+
+interface retainedClusters {
+    id: string;
+    data: {
+        x: number;
+        y: number;
+        radius: number;
+    }[];
+}
+
+function Cluster(props: Props){
+    const [clusterData, setClusterData] = useState<clusterData[]>([])
+    const [retainedClusters, setRetainedClusters] = useState<retainedClusters[]>([]) // TODO: enter the type of this.
+    const [colors, setColors] = useState<string[]>([])
 
     var pathname = useLocation().pathname
     var history = useHistory()
 
+    // var splittenPathname = pathname.split('/clusters')
     var splittenPathname = pathname.split('/clusters')
     if (splittenPathname[1] == '' && splittenPathname.length == 2) {
         pathname = '/'
@@ -28,7 +53,7 @@ function Cluster(props) {
         fetch('/clusterBroker' + pathname)
             .then(res => {
                 if (res.status == 500) {
-                    throw new Error(res.status)
+                    throw new Error(res.status.toString())
                 } else {
                     return res.json()
                 }
@@ -40,7 +65,7 @@ function Cluster(props) {
                     return
                 }
                 var parsedData = JSON.parse(JSON.parse(resData))
-                var extractedData = parsedData['clusters'].map(cluster => ({
+                var extractedData = parsedData['clusters'].map((cluster: { centroid: any[]; radius: any; }) => ({
                     x: cluster.centroid[0],
                     y: cluster.centroid[1],
                     radius: cluster.radius
@@ -74,10 +99,10 @@ function Cluster(props) {
             })
     }, 500)
 
-    const retainBiggestClustersSeperately = clusterElements => {
+    const retainBiggestClustersSeperately = (clusterElements: any[]) => {
         var tempRetainedCluster = [...retainedClusters]
-        var biggestEl = [...clusterElements.sort((a, b) => a.radius - b.radius)].pop()
-
+        var biggestEl = [...clusterElements.sort((a: { radius: number; }, b: { radius: number; }) => a.radius - b.radius)].pop()
+        debugger
         if (tempRetainedCluster.some(item => biggestEl.x == item.data[0].x && biggestEl.y == item.data[0].y && biggestEl.radius == item.data[0].radius)) { // The same already exists ?
             return
         }
@@ -104,11 +129,11 @@ function Cluster(props) {
         setRetainedClusters(tempRetainedCluster)
     }
 
-    const extractAndSetScales = extractedData => {
+    const extractAndSetScales = (extractedData: any[]) => {
 
-        const ascOrder = (a, b) => a - b
-        var xVals = extractedData.map(item => item.x).sort(ascOrder)
-        var yVals = extractedData.map(item => item.y).sort(ascOrder)
+        const ascOrder = (a: number, b: number) => a - b
+        var xVals = extractedData.map((item: { x: any; }) => item.x).sort(ascOrder)
+        var yVals = extractedData.map((item: { y: any; }) => item.y).sort(ascOrder)
 
         if (props.scales) {
             props.setScales({
@@ -136,7 +161,7 @@ function Cluster(props) {
                 <div className="category-graph">
                     <Scatter
                         data={retainedClusters}
-                        nodeSize={d => d.radius}
+                        nodeSize={(d: { radius: any; }) => d.radius}
                         scales={props.scales}
                         dimNames={props.dimensions}
                         colors={colors}
@@ -145,9 +170,10 @@ function Cluster(props) {
                 <div className="category-graph">
                     <Scatter
                         data={clusterData}
-                        nodeSize={d => d.radius}
+                        nodeSize={(d: { radius: any; }) => d.radius}
                         scales={props.scales}
                         dimNames={props.dimensions}
+                        colors={null}
                     />
                 </div>
             </div>
@@ -155,7 +181,7 @@ function Cluster(props) {
     }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: { scatters: any; clusters: any; dimensions: any; }) => {
     const { scatters, clusters, dimensions } = state
     return {
         scales: scatters.scales,
@@ -164,7 +190,7 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({
+const mapDispatchToProps = (dispatch: Dispatch<AnyAction>) => bindActionCreators({
     setScales: setScales,
     setDimensions: setDimensions,
 }, dispatch)

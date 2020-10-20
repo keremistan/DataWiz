@@ -1,13 +1,24 @@
-import React, { useState, useEffect, useRef } from 'react';
+// import * as React from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux'
-import { updateNumOfRetainedClusters } from '../redux/actions/clusters'
-import { resetClustersOnRaw } from '../redux/actions/scatters'
+import { AnyAction, bindActionCreators, Dispatch } from 'redux'
+import { updateNumOfRetainedClusters } from '../redux/clusters/actions'
+import { resetClustersOnRaw, resetClustersOnRawType } from '../redux/actions/scatters'
+import { numOfRetainedClustersType, updateNumOfRetainedClustersType } from '../redux/clusters/types';
 
+// TODO: regroup actions and reducers acc to their areas. Also add "types" into their own files.
+interface ActionProps {
+    updateNumOfRetainedClusters: updateNumOfRetainedClustersType;
+    resetClustersOnRaw: resetClustersOnRawType;
+}
 
-function ControlPanel(props) {
+interface StateProps {
+    numOfRetainedClusters: numOfRetainedClustersType;
+}
 
-    const submitRetainedClusters = event => {
+function ControlPanel(props: StateProps & ActionProps) {
+
+    const submitRetainedClusters = (event: React.MouseEvent<HTMLElement>) => {
         event.preventDefault()
 
 
@@ -27,12 +38,10 @@ function ControlPanel(props) {
 
     }
 
-    const retainedClustersChangeHandler = event => {
-        let val = event.target.value
+    const retainedClustersChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+        let val = parseInt(event.target.value, 10)
         let isValid = true
-        if (isNaN(val) || val == "" || val <= 0) {
-            // TODO: show some error about the input being unexpected type
-
+        if (isNaN(val) || val <= 0) {
             isValid = false
             props.updateNumOfRetainedClusters({
                 ...props.numOfRetainedClusters,
@@ -40,7 +49,6 @@ function ControlPanel(props) {
                 valid: isValid
             })
         } else {
-            val = parseInt(val, 10)
             props.updateNumOfRetainedClusters({
                 ...props.numOfRetainedClusters,
                 bufferValue: val,
@@ -69,17 +77,24 @@ function ControlPanel(props) {
 }
 
 
+interface ControlPanelState {
+    clusters: any;
+}
 
-const mapStateToProps = state => {
+interface ControlPanelProps { }
+
+// TODO: change the any type
+// const mapStateToProps = (state: {clusters: any}) => {
+const mapStateToProps = (state: ControlPanelState): StateProps => {
     const { clusters } = state
     return {
         numOfRetainedClusters: clusters.numOfRetainedClusters,
     }
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-    updateNumOfRetainedClusters: updateNumOfRetainedClusters,
-    resetClustersOnRaw: resetClustersOnRaw,
+const mapDispatchToProps = (dispatch: Dispatch<AnyAction>): ActionProps => bindActionCreators({
+    updateNumOfRetainedClusters,
+    resetClustersOnRaw,
 }, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(ControlPanel)

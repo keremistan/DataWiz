@@ -1,11 +1,5 @@
 import { UPDATE_CLUSTERS, UPDATE_NUM_OF_RETAINED_CLUSTERS } from '../actions/actionTypes'
-import { action } from './rootReducer'
-
-export interface numOfRetainedClusters {
-    value: number;
-    bufferValue: number;
-    valid: boolean;
-}
+import { action } from './types'
 
 var initialState = {
     clustersWithRawData: [],

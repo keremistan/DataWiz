@@ -6,7 +6,7 @@ import { useLocation, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 import { setDimensions } from '../redux/actions/dimensions'
-import { updateClusters, updateNumOfRetainedClusters } from '../redux/actions/clusters'
+import { updateClusters, updateNumOfRetainedClusters } from '../redux/clusters/actions'
 import { setClustersOnRaw, setUnclusteredRaw, setClusteredRaw, setScales } from '../redux/actions/scatters'
 import ControlPanel from './ControlPanel';
 import Dimensions from './Dimensions';

@@ -7,13 +7,13 @@ import { useInterval, increase_brightness } from './prepareData';
 import { setScales } from '../redux/actions/scatters'
 import { setDimensions } from '../redux/actions/dimensions'
 import ControlPanel from './ControlPanel';
-import { numOfRetainedClusters } from '../redux/reducers/clustersReducer';
+import { numOfRetainedClustersType } from '../redux/clusters/types';
 import { scales } from '../redux/reducers/scattersReducer';
 
 type Props = {
     setScales: typeof setScales
     setDimensions: typeof setDimensions,
-    numOfRetainedClusters: numOfRetainedClusters,
+    numOfRetainedClusters: numOfRetainedClustersType,
     scales: scales,
     dimensions: string[]
 }
@@ -181,6 +181,7 @@ function Cluster(props: Props){
     }
 }
 
+// TODO: change the any type
 const mapStateToProps = (state: { scatters: any; clusters: any; dimensions: any; }) => {
     const { scatters, clusters, dimensions } = state
     return {

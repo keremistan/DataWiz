@@ -1,5 +1,5 @@
-import { numOfRetainedClustersType } from './types'
-import { UPDATE_CLUSTERS, UPDATE_NUM_OF_RETAINED_CLUSTERS } from '../actions/actionTypes'
+import { numOfRetainedClustersType } from './clusterTypes'
+import { UPDATE_CLUSTERS, UPDATE_NUM_OF_RETAINED_CLUSTERS } from '../actionTypes'
 
 export const updateClusters = (clusters: any[]) => {
     return ({

@@ -1,5 +1,5 @@
-import { UPDATE_CLUSTERS, UPDATE_NUM_OF_RETAINED_CLUSTERS } from '../actions/actionTypes'
-import { action } from './types'
+import { UPDATE_CLUSTERS, UPDATE_NUM_OF_RETAINED_CLUSTERS } from '../actionTypes'
+import { action } from './clusterTypes'
 
 var initialState = {
     clustersWithRawData: [],

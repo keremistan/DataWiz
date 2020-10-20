@@ -2,9 +2,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { AnyAction, bindActionCreators, Dispatch } from 'redux'
-import { updateNumOfRetainedClusters } from '../redux/clusters/actions'
-import { resetClustersOnRaw, resetClustersOnRawType } from '../redux/actions/scatters'
-import { numOfRetainedClustersType, updateNumOfRetainedClustersType } from '../redux/clusters/types';
+import { updateNumOfRetainedClusters } from '../redux/clusters/clustersActions'
+import { resetClustersOnRaw, resetClustersOnRawType } from '../redux/scatters/scattersActions'
+import { numOfRetainedClustersType, updateNumOfRetainedClustersType } from '../redux/clusters/clusterTypes';
 
 // TODO: regroup actions and reducers acc to their areas. Also add "types" into their own files.
 interface ActionProps {
@@ -81,10 +81,7 @@ interface ControlPanelState {
     clusters: any;
 }
 
-interface ControlPanelProps { }
-
 // TODO: change the any type
-// const mapStateToProps = (state: {clusters: any}) => {
 const mapStateToProps = (state: ControlPanelState): StateProps => {
     const { clusters } = state
     return {

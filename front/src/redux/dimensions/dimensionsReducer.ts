@@ -1,5 +1,5 @@
-import { SET_DIMENSIONS, UPDATE_CHOSEN_DIMENSIONS } from '../actions/actionTypes'
-import { action } from './rootReducer'
+import { SET_DIMENSIONS, UPDATE_CHOSEN_DIMENSIONS } from '../actionTypes'
+import { action } from '../rootReducer'
 
 var initialState = {
     allDimensions: [],

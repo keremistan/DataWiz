@@ -1,4 +1,4 @@
-import { SET_DIMENSIONS, UPDATE_CHOSEN_DIMENSIONS } from './actionTypes'
+import { SET_DIMENSIONS, UPDATE_CHOSEN_DIMENSIONS } from '../actionTypes'
 
 export const setDimensions = dimensions => {
     return ({

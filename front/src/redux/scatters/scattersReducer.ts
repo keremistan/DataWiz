@@ -1,5 +1,5 @@
-import { SET_CLUSTERS_ON_RAW, RESET_CLUSTERS_ON_RAW, SET_UNCLUSTERED_RAW, SET_CLUSTERED_RAW, SET_SCALES } from '../actions/actionTypes'
-import { action } from './rootReducer'
+import { SET_CLUSTERS_ON_RAW, RESET_CLUSTERS_ON_RAW, SET_UNCLUSTERED_RAW, SET_CLUSTERED_RAW, SET_SCALES } from '../actionTypes'
+import { action } from '../rootReducer'
 
 export interface scales {
     'xScaleMin': number,

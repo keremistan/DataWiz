@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
-import { setDimensions, chooseDimensions } from '../redux/actions/dimensions'
-import { resetClustersOnRaw } from '../redux/actions/scatters'
+import { setDimensions, chooseDimensions } from '../redux/dimensions/dimensionsActions'
+import { resetClustersOnRaw } from '../redux/scatters/scattersActions'
 
 function Dimensions(props) {
 

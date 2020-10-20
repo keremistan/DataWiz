@@ -4,11 +4,11 @@ import { useLocation, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { AnyAction, bindActionCreators, Dispatch } from 'redux'
 import { useInterval, increase_brightness } from './prepareData';
-import { setScales } from '../redux/actions/scatters'
-import { setDimensions } from '../redux/actions/dimensions'
+import { setScales } from '../redux/scatters/scattersActions'
+import { setDimensions } from '../redux/dimensions/dimensionsActions'
 import ControlPanel from './ControlPanel';
-import { numOfRetainedClustersType } from '../redux/clusters/types';
-import { scales } from '../redux/reducers/scattersReducer';
+import { numOfRetainedClustersType } from '../redux/clusters/clusterTypes';
+import { scales } from '../redux/scatters/scattersReducer';
 
 type Props = {
     setScales: typeof setScales

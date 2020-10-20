@@ -5,9 +5,9 @@ import Scatter from './Scatter';
 import { useLocation, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
-import { setDimensions } from '../redux/actions/dimensions'
-import { updateClusters, updateNumOfRetainedClusters } from '../redux/clusters/actions'
-import { setClustersOnRaw, setUnclusteredRaw, setClusteredRaw, setScales } from '../redux/actions/scatters'
+import { setDimensions } from '../redux/dimensions/dimensionsActions'
+import { updateClusters, updateNumOfRetainedClusters } from '../redux/clusters/clustersActions'
+import { setClustersOnRaw, setUnclusteredRaw, setClusteredRaw, setScales } from '../redux/scatters/scattersActions'
 import ControlPanel from './ControlPanel';
 import Dimensions from './Dimensions';
 

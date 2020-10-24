@@ -1,4 +1,5 @@
-import { SET_CLUSTERS_ON_RAW, RESET_CLUSTERS_ON_RAW, SET_UNCLUSTERED_RAW, SET_CLUSTERED_RAW, SET_SCALES } from '../actions/actionTypes'
+import { SET_CLUSTERS_ON_RAW, RESET_CLUSTERS_ON_RAW, SET_UNCLUSTERED_RAW, SET_CLUSTERED_RAW, SET_SCALES } from '../actionTypes'
+import { actionType } from './scattersTypes'
 
 const clustersOnRawInit = {
     id: 'microclusters',
@@ -12,12 +13,12 @@ var initialState = {
     scales: null
 }
 
-function makeDeepCopy(str){
+function makeDeepCopy(str: { id: string; data: number[] }) {
     return JSON.parse(JSON.stringify(str))
 }
 
 
-export default (state = initialState, action) => {
+export default (state = initialState, action: actionType) => {
     switch (action.type) {
         case SET_CLUSTERS_ON_RAW:
             return {

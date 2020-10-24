@@ -1,46 +1,71 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import Scatter from './Scatter';
 import { useLocation, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux'
+import { AnyAction, bindActionCreators, Dispatch } from 'redux'
 import { useInterval, increase_brightness } from './prepareData';
-import { setScales } from '../redux/actions/scatters'
-import { setDimensions } from '../redux/actions/dimensions'
+import { setScales } from '../redux/scatters/scattersActions'
+import { setDimensions } from '../redux/dimensions/dimensionsActions'
 import ControlPanel from './ControlPanel';
+import { numOfRetainedClustersType } from '../redux/clusters/clusterTypes';
+import { setDimensionsType } from '../redux/dimensions/dimensionsTypes';
+import { scales } from '../redux/scatters/scattersTypes';
 
-function Cluster(props) {
-    const [clusterData, setClusterData] = useState([])
-    const [retainedClusters, setRetainedClusters] = useState([])
-    const [colors, setColors] = useState([])
+type Props = {
+    setScales: typeof setScales
+    setDimensions: setDimensionsType,
+    numOfRetainedClusters: numOfRetainedClustersType,
+    scales: scales,
+    dimensions: string[]
+}
+
+interface clusterData {
+    id: string;
+    data: string;
+}
+
+interface retainedClusters {
+    id: string;
+    data: {
+        x: number;
+        y: number;
+        radius: number;
+    }[];
+}
+
+function Cluster(props: Props){
+    const [clusterData, setClusterData] = useState<clusterData[]>([])
+    const [retainedClusters, setRetainedClusters] = useState<retainedClusters[]>([]) // TODO: enter the type of this.
+    const [colors, setColors] = useState<string[]>([])
 
     var pathname = useLocation().pathname
     var history = useHistory()
 
+    // var splittenPathname = pathname.split('/clusters')
     var splittenPathname = pathname.split('/clusters')
-    if (splittenPathname[1] == '' && splittenPathname.length == 2) {
+    if (splittenPathname[1] === '' && splittenPathname.length === 2) {
         pathname = '/'
     } else {
         pathname = splittenPathname[1]
     }
-    pathname = pathname == '/' ? '/default' : pathname
+    pathname = pathname === '/' ? '/default' : pathname
 
     useInterval(() => {
         fetch('/clusterBroker' + pathname)
             .then(res => {
-                if (res.status == 500) {
-                    throw new Error(res.status)
+                if (res.status === 500) {
+                    throw new Error(res.status.toString())
                 } else {
                     return res.json()
                 }
             })
             .then(resData => {
-                debugger
                 if (typeof resData == 'string' && resData.includes('error') && resData.includes('ResourceNotFound')) {
                     history.push("/resourceNotFound")
                     return
                 }
                 var parsedData = JSON.parse(JSON.parse(resData))
-                var extractedData = parsedData['clusters'].map(cluster => ({
+                var extractedData = parsedData['clusters'].map((cluster: { centroid: any[]; radius: any; }) => ({
                     x: cluster.centroid[0],
                     y: cluster.centroid[1],
                     radius: cluster.radius
@@ -52,7 +77,7 @@ function Cluster(props) {
                 }])
                 extractAndSetScales(extractedData)
                 retainBiggestClustersSeperately(extractedData)
-
+                debugger
                 if (parsedData.dimensions) {
                     props.setDimensions(parsedData.dimensions)
                 } else {
@@ -62,7 +87,7 @@ function Cluster(props) {
                 var tempColors = []
                 for (var i = 0; i < retainedClusters.length; i++) {
                     var percent = 100 * ((retainedClusters.length - i) / (retainedClusters.length * 2) + 0.5)
-                    percent = percent == 100 ? 1 : 100 - percent
+                    percent = percent === 100 ? 1 : 100 - percent
                     tempColors.push(increase_brightness('#C9202C', percent))
                 }
                 tempColors.reverse()
@@ -74,11 +99,11 @@ function Cluster(props) {
             })
     }, 500)
 
-    const retainBiggestClustersSeperately = clusterElements => {
+    const retainBiggestClustersSeperately = (clusterElements: any[]) => {
         var tempRetainedCluster = [...retainedClusters]
-        var biggestEl = [...clusterElements.sort((a, b) => a.radius - b.radius)].pop()
+        var biggestEl = [...clusterElements.sort((a: { radius: number; }, b: { radius: number; }) => a.radius - b.radius)].pop()
 
-        if (tempRetainedCluster.some(item => biggestEl.x == item.data[0].x && biggestEl.y == item.data[0].y && biggestEl.radius == item.data[0].radius)) { // The same already exists ?
+        if (tempRetainedCluster.some(item => biggestEl.x === item.data[0].x && biggestEl.y === item.data[0].y && biggestEl.radius === item.data[0].radius)) { // The same already exists ?
             return
         }
 
@@ -104,11 +129,11 @@ function Cluster(props) {
         setRetainedClusters(tempRetainedCluster)
     }
 
-    const extractAndSetScales = extractedData => {
+    const extractAndSetScales = (extractedData: any[]) => {
 
-        const ascOrder = (a, b) => a - b
-        var xVals = extractedData.map(item => item.x).sort(ascOrder)
-        var yVals = extractedData.map(item => item.y).sort(ascOrder)
+        const ascOrder = (a: number, b: number) => a - b
+        var xVals = extractedData.map((item: { x: any; }) => item.x).sort(ascOrder)
+        var yVals = extractedData.map((item: { y: any; }) => item.y).sort(ascOrder)
 
         if (props.scales) {
             props.setScales({
@@ -127,7 +152,7 @@ function Cluster(props) {
         }
     }
 
-    if (clusterData == [] || props.scales == null) {
+    if (clusterData === [] || props.scales == null) {
         return null
     } else {
         return (
@@ -136,7 +161,7 @@ function Cluster(props) {
                 <div className="category-graph">
                     <Scatter
                         data={retainedClusters}
-                        nodeSize={d => d.radius}
+                        nodeSize={(d: { radius: any; }) => d.radius}
                         scales={props.scales}
                         dimNames={props.dimensions}
                         colors={colors}
@@ -145,9 +170,10 @@ function Cluster(props) {
                 <div className="category-graph">
                     <Scatter
                         data={clusterData}
-                        nodeSize={d => d.radius}
+                        nodeSize={(d: { radius: any; }) => d.radius}
                         scales={props.scales}
                         dimNames={props.dimensions}
+                        colors={null}
                     />
                 </div>
             </div>
@@ -155,7 +181,8 @@ function Cluster(props) {
     }
 }
 
-const mapStateToProps = state => {
+// TODO: change the any type
+const mapStateToProps = (state: { scatters: any; clusters: any; dimensions: any; }) => {
     const { scatters, clusters, dimensions } = state
     return {
         scales: scatters.scales,
@@ -164,7 +191,7 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({
+const mapDispatchToProps = (dispatch: Dispatch<AnyAction>) => bindActionCreators({
     setScales: setScales,
     setDimensions: setDimensions,
 }, dispatch)

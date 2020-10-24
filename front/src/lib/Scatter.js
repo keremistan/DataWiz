@@ -1,13 +1,17 @@
 import React from 'react'
-import { ResponsiveScatterPlot, ResponsiveScatterPlotCanvas } from '@nivo/scatterplot'
+import { ResponsiveScatterPlotCanvas } from '@nivo/scatterplot'
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
 const MyResponsiveScatterPlot = ({ data /* see data tab */, nodeSize, dimNames, scales, colors }) => {
+    debugger
     if(!colors){
         colors = {'scheme': 'red_blue'}
+    }
+    if(!nodeSize){
+        nodeSize = 9
     }
     return (
         <ResponsiveScatterPlotCanvas

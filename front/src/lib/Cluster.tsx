@@ -8,8 +8,8 @@ import { setScales } from '../redux/scatters/scattersActions'
 import { setDimensions } from '../redux/dimensions/dimensionsActions'
 import ControlPanel from './ControlPanel';
 import { numOfRetainedClustersType } from '../redux/clusters/clusterTypes';
-import { scales } from '../redux/scatters/scattersReducer';
 import { setDimensionsType } from '../redux/dimensions/dimensionsTypes';
+import { scales } from '../redux/scatters/scattersTypes';
 
 type Props = {
     setScales: typeof setScales
@@ -43,24 +43,23 @@ function Cluster(props: Props){
 
     // var splittenPathname = pathname.split('/clusters')
     var splittenPathname = pathname.split('/clusters')
-    if (splittenPathname[1] == '' && splittenPathname.length == 2) {
+    if (splittenPathname[1] === '' && splittenPathname.length === 2) {
         pathname = '/'
     } else {
         pathname = splittenPathname[1]
     }
-    pathname = pathname == '/' ? '/default' : pathname
+    pathname = pathname === '/' ? '/default' : pathname
 
     useInterval(() => {
         fetch('/clusterBroker' + pathname)
             .then(res => {
-                if (res.status == 500) {
+                if (res.status === 500) {
                     throw new Error(res.status.toString())
                 } else {
                     return res.json()
                 }
             })
             .then(resData => {
-                debugger
                 if (typeof resData == 'string' && resData.includes('error') && resData.includes('ResourceNotFound')) {
                     history.push("/resourceNotFound")
                     return
@@ -88,7 +87,7 @@ function Cluster(props: Props){
                 var tempColors = []
                 for (var i = 0; i < retainedClusters.length; i++) {
                     var percent = 100 * ((retainedClusters.length - i) / (retainedClusters.length * 2) + 0.5)
-                    percent = percent == 100 ? 1 : 100 - percent
+                    percent = percent === 100 ? 1 : 100 - percent
                     tempColors.push(increase_brightness('#C9202C', percent))
                 }
                 tempColors.reverse()
@@ -103,8 +102,8 @@ function Cluster(props: Props){
     const retainBiggestClustersSeperately = (clusterElements: any[]) => {
         var tempRetainedCluster = [...retainedClusters]
         var biggestEl = [...clusterElements.sort((a: { radius: number; }, b: { radius: number; }) => a.radius - b.radius)].pop()
-        debugger
-        if (tempRetainedCluster.some(item => biggestEl.x == item.data[0].x && biggestEl.y == item.data[0].y && biggestEl.radius == item.data[0].radius)) { // The same already exists ?
+
+        if (tempRetainedCluster.some(item => biggestEl.x === item.data[0].x && biggestEl.y === item.data[0].y && biggestEl.radius === item.data[0].radius)) { // The same already exists ?
             return
         }
 
@@ -153,7 +152,7 @@ function Cluster(props: Props){
         }
     }
 
-    if (clusterData == [] || props.scales == null) {
+    if (clusterData === [] || props.scales == null) {
         return null
     } else {
         return (

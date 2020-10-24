@@ -8,3 +8,8 @@ export interface dimensionsVariableType {
     allDimensions: allDimensionsType,
     chosenDimensions: chosenDimensionsType
 }
+
+export type actionType = {
+    type: string,
+    payload: number[]
+}

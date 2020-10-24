@@ -1,68 +1,65 @@
 import React, { useEffect, useRef } from 'react';
-import { medianAbsoluteDeviation, variance, mean, standardDeviation } from 'simple-statistics'
-// data : {clusters: [], raw: []}
-export function prepareData(categories, data) {
-    var data = JSON.parse(JSON.stringify(data))
+import { mean, standardDeviation } from 'simple-statistics'
+import { numOfRetainedClustersType } from '../redux/clusters/clusterTypes';
+import { scales } from '../redux/scatters/scattersTypes';
 
-    Object.keys(data).forEach(category => {
-        data[category].forEach((dataPoint, index) => {
-            var tempDataPoint = {}
-            categories.map((dimension, index) => {
-                tempDataPoint[dimension] = dataPoint[index]
+interface dataFromServer {
+    all_clusters: number[],
+    cluster: number[],
+    dimensions: string[],
+    raw_data: number[][]
+}
+
+interface parsedData {
+    [categories: string]: number[] | number[][] | string[],
+    cluster: number[][],
+    raw_data: number[][]
+}
+
+interface preparedDataType {
+    [key: string]: Array<object>,
+    cluster: Array<object>,
+    raw_data: Array<object>
+}
+
+export function prepareData(dimensions: string[], data: parsedData): preparedDataType {
+    let dataToBePrepared: string[] = ["cluster", "raw_data"]
+    let preparedData: preparedDataType = { cluster: [], raw_data: [] }
+
+    for (let i: number = 0; i < dataToBePrepared.length; i++) {
+        for (let j: number = 0; j < dimensions.length; j++) {
+            let dataPoint = data[dataToBePrepared[i]][j]
+            let tempDataPoint: { [category: string]: number } = {}
+
+            dimensions.map((dimension, index) => {
+                tempDataPoint[dimension] = (dataPoint as number[])[index]
             })
-            data[category][index] = tempDataPoint
+            preparedData[dataToBePrepared[i]][j] = tempDataPoint
             tempDataPoint = {}
-        })
-    });
-    return data
-}
-
-// data: {cluster: [], raw: []}
-// categories: [...]
-// return { 'traffic': [{..},], 'io': [{..},] }
-export function forLine(categories, data) {
-    var forLineTransformedData = {}
-    var counter = 0
-    for (const category of categories) {
-        forLineTransformedData[category] = getTransformedData(counter, data)
-        counter += 1
-    }
-    return forLineTransformedData
-}
-
-function getTransformedData(category, data) {
-    var dataInThisCatefory = []
-    var dataStates = Object.keys(data)
-    for (const state of dataStates) {
-        var tempData = []
-        var counter = 0
-        for (const dataPoint of data[state]) {
-            tempData.push({
-                "x": counter,
-                "y": dataPoint[category]
-            })
-            counter += 1
         }
-        dataInThisCatefory.push({
-            "id": state,
-            "color": "rgb(0, 0, 0)",
-            "data": tempData
-        })
     }
-    return dataInThisCatefory
+
+    return preparedData
 }
 
-export function unclusteredScatter(dimensions, data) {
+interface dataPointType {
+    x: number,
+    y: number
+}
+
+type dimensionsType = number[]
+
+export function unclusteredScatter(dimensions: dimensionsType, data: { raw_data: number[][] }): { id: string, data: dataPointType[] } {
     if (dimensions.length !== 2) throw new Error('not 2 dimensional')
     var first_dim = dimensions[0]
     var second_dim = dimensions[1]
     var scatterData = []
-    if (data == null) return []
+    if (data == null) return { id: '', data: [] }
     var raw_data = data.raw_data
     var firstDimData = raw_data.map(dataPoint => dataPoint[first_dim])
     var secondDimData = raw_data.map(dataPoint => dataPoint[second_dim])
 
-    var dataPoints = []
+    var dataPoints: dataPointType[] = []
     firstDimData.map((fdd, index) => {
         dataPoints.push({
             x: fdd,
@@ -76,7 +73,7 @@ export function unclusteredScatter(dimensions, data) {
     }
 }
 
-export function clusteredScatter(dimensions, data) {
+export function clusteredScatter(dimensions: number[], data: { raw_data: number[][], all_clusters: number[] }) {
     if (dimensions.length !== 2) throw new Error('not 2 dimensional')
     var first_dim = dimensions[0]
     var second_dim = dimensions[1]
@@ -124,7 +121,24 @@ export function clusteredScatter(dimensions, data) {
     return scatterData
 }
 
-export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
+export function forScatter(
+    dimensions: dimensionsType,
+    data: {
+        cluster: number[],
+        raw_data: number[][]
+    },
+    scatterData: {
+        id: string,
+        data:
+        {
+            x: number,
+            y: number,
+            radius: number,
+            normalizedRadius: number
+        }[]
+    },
+    maxNumOfEl = 10
+) {
     if (dimensions.length !== 2) throw new Error('not 2 dimensional')
     var first_dim = dimensions[0]
     var second_dim = dimensions[1]
@@ -140,9 +154,12 @@ export function forScatter(dimensions, data, scatterData, maxNumOfEl = 10) {
     let yy = (L2 / N) ** 2
     var radiusX = Math.sqrt(S / N - xx)
     var radiusY = Math.sqrt(S / N - yy)
-    var radius = parseInt(Math.max(radiusX, radiusY))
-    var x = parseInt(L1 / N)
-    var y = parseInt(L2 / N)
+    // var radius = parseInt(Math.max(radiusX, radiusY))
+    // var x = parseInt(L1 / N)
+    // var y = parseInt(L2 / N)
+    var radius = Math.max(radiusX, radiusY)
+    var x = L1 / N
+    var y = L2 / N
 
     var meanRadius = scatterData.data.reduce((acc, dataPoint) => dataPoint.radius + acc, 0) / scatterData.data.length
     scatterData.data.forEach(clusterPoint => clusterPoint.normalizedRadius = clusterPoint.radius / meanRadius)
@@ -171,15 +188,14 @@ export function emptyClusterScatter() {
     }
 }
 
-// indexes: [], dataArr: []
-export function indexToData(indexes, dataArr) {
+export function indexToData(indexes: number[], dataArr: number[][]) {
 
     var mappedIndexes = indexes.map(singleIndex => dataArr[singleIndex])
     return mappedIndexes
 
 }
 
-export function getXandYScales(scatterData, dimensions) {
+export function getXandYScales(scatterData: { id: string, data: dataPointType[] }, dimensions: number[]): scales {
     if (dimensions.length != 2) throw new Error('length of dimension must be 2')
 
     var data = scatterData.data
@@ -199,9 +215,11 @@ export function getXandYScales(scatterData, dimensions) {
     }
 }
 
-export function useInterval(callback, delay) {
+type refObj = () => void
+
+export function useInterval(callback: refObj, delay: number) {
     // Source: https://overreacted.io/making-setinterval-declarative-with-react-hooks/
-    const savedCallback = useRef();
+    const savedCallback = useRef<refObj>();
 
     // Remember the latest callback.
     useEffect(() => {
@@ -211,7 +229,9 @@ export function useInterval(callback, delay) {
     // Set up the interval.
     useEffect(() => {
         function tick() {
-            savedCallback.current();
+            if (savedCallback.current) {
+                savedCallback.current();
+            }
         }
         if (delay !== null) {
             let id = setInterval(tick, delay);
@@ -220,7 +240,11 @@ export function useInterval(callback, delay) {
     }, [delay]);
 }
 
-export function retainedClusters(arr, parsedData, numOfRetainedClusters) {
+export function retainedClusters(
+    arr: Array<number[][]>,
+    parsedData: dataFromServer,
+    numOfRetainedClusters: numOfRetainedClustersType
+) {
     var clusterElements = parsedData.cluster.map(clusterIndex => parsedData.raw_data[clusterIndex])
     if (arr.length >= numOfRetainedClusters.value) {
         arr.shift()
@@ -231,7 +255,7 @@ export function retainedClusters(arr, parsedData, numOfRetainedClusters) {
     return arr
 }
 
-export function increase_brightness(hex, percent) {
+export function increase_brightness(hex: string, percent: number) {
     // Source: https://stackoverflow.com/questions/6443990/javascript-calculate-brighter-colour?noredirect=1&lq=1
     // strip the leading # if it's there
     hex = hex.replace(/^\s*#|\s*$/g, '');
@@ -250,6 +274,3 @@ export function increase_brightness(hex, percent) {
         ((0 | (1 << 8) + g + (256 - g) * percent / 100).toString(16)).substr(1) +
         ((0 | (1 << 8) + b + (256 - b) * percent / 100).toString(16)).substr(1);
 }
-
-
-export default { prepareData }

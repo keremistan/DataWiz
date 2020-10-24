@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { AnyAction, bindActionCreators, Dispatch } from 'redux'
 import { chooseDimensions } from '../redux/dimensions/dimensionsActions'
 import { allDimensionsType, chooseDimensionsType, chosenDimensionsType, dimensionsVariableType } from '../redux/dimensions/dimensionsTypes';
-import { resetClustersOnRaw, resetClustersOnRawType } from '../redux/scatters/scattersActions'
+import { resetClustersOnRaw } from '../redux/scatters/scattersActions'
+import { resetClustersOnRawType } from '../redux/scatters/scattersTypes';
 
 type stateProps = {
     dimensions: dimensionsVariableType

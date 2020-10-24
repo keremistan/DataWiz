@@ -1,12 +1,5 @@
 import { SET_CLUSTERS_ON_RAW, RESET_CLUSTERS_ON_RAW, SET_UNCLUSTERED_RAW, SET_CLUSTERED_RAW, SET_SCALES } from '../actionTypes'
-import { action } from '../rootReducer'
-
-export interface scales {
-    'xScaleMin': number,
-    'xScaleMax': number,
-    'yScaleMin': number,
-    'yScaleMax': number,
-}
+import { actionType } from './scattersTypes'
 
 const clustersOnRawInit = {
     id: 'microclusters',
@@ -20,12 +13,12 @@ var initialState = {
     scales: null
 }
 
-function makeDeepCopy(str: { id: string; data: never[] }) {
+function makeDeepCopy(str: { id: string; data: number[] }) {
     return JSON.parse(JSON.stringify(str))
 }
 
 
-export default (state = initialState, action: action) => {
+export default (state = initialState, action: actionType) => {
     switch (action.type) {
         case SET_CLUSTERS_ON_RAW:
             return {

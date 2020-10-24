@@ -1,15 +1,15 @@
-// import * as React from 'react';
 import React from 'react';
 import { connect } from 'react-redux';
 import { AnyAction, bindActionCreators, Dispatch } from 'redux'
 import { updateNumOfRetainedClusters } from '../redux/clusters/clustersActions'
-import { resetClustersOnRaw, resetClustersOnRawType } from '../redux/scatters/scattersActions'
+import { resetClustersOnRaw } from '../redux/scatters/scattersActions'
 import { numOfRetainedClustersType, updateNumOfRetainedClustersType } from '../redux/clusters/clusterTypes';
+import { resetClustersOnRawType } from '../redux/scatters/scattersTypes';
 
 // TODO: regroup actions and reducers acc to their areas. Also add "types" into their own files.
 interface ActionProps {
     updateNumOfRetainedClusters: updateNumOfRetainedClustersType;
-    resetClustersOnRaw: resetClustersOnRawType;
+    resetClustersOnRaw: resetClustersOnRawType
 }
 
 interface StateProps {
